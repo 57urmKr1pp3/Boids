@@ -3,9 +3,9 @@ from ursina import *
 class Boid (object):
 
     #Initialisierung der Klasse
-    def __init__ (self, pos, dir):
-        self.pos = Vec3(pos)
-        self.dir = Vec3(dir)
+    def __init__ (self, posX, posY, posZ, dirX, dirY, dirZ):
+        self.pos = Vec3(posX, posY, posZ)
+        self.dir = Vec3(dirX, dirY, dirZ)
 
     #Getter geben den Wert der Eigenschaft zurück
     def getPos(self):
@@ -15,11 +15,11 @@ class Boid (object):
         return self.dir
 
     #Setter überschreiben die Werte der Eigenschaften
-    def setPos(self, nPos):
-        self.pos = Vec3(nPos)
+    def setPos(self, nPosX, nPosY, nPosZ):
+        self.pos = Vec3(nPosX, nPosY, nPosZ)
 
-    def setDir(self, nDir):
-        self.dir = Vec3(nDir)
+    def setDir(self, nDirX, nDirY, nDirZ):
+        self.dir = Vec3(nDirX, nDirY, nDirZ)
 
     def updatePos(self):
         self.pos = self.pos + self.dir

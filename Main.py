@@ -14,13 +14,13 @@ def adaptDir(Liste_Boids):
                 averageDir[0] = (Liste_Boids[i].getPos()[0] + Liste_Boids[j].getPos()[0]) / 2
                 averageDir[1] = (Liste_Boids[i].getPos()[1] + Liste_Boids[j].getPos()[1]) / 2
                 averageDir[2] = (Liste_Boids[i].getPos()[2] + Liste_Boids[j].getPos()[2]) / 2
-                Liste_Boids[i].setDir(averageDir)
-                Liste_Boids[j].setDir(averageDir)
+                Liste_Boids[i].setDir(averageDir[0], averageDir[1], averageDir[2])
+                Liste_Boids[j].setDir(averageDir[0], averageDir[1], averageDir[2])
 
 def checkPos(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
         for j in range(len(Liste_Boids)-1):
             if Liste_Boids[i].getPos() == Liste_Boids[j].getPos():
-                nPos=(Liste_Boids[i].getPos()[0] + 5, Liste_Boids[i].getPos()[1] + 5, Liste_Boids[i].getPos()[2] + 5)
-                Liste_Boids[i].setPos(nPos)
+                nPos=[Liste_Boids[i].getPos()[0] + 5, Liste_Boids[i].getPos()[1] + 5, Liste_Boids[i].getPos()[2] + 5]
+                Liste_Boids[i].setPos(nPos[0], nPos[1], nPos[2])
             
