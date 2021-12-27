@@ -1,6 +1,6 @@
 from ursina import *
 
-class Boids (object):
+class Boid (object):
 
     #Initialisierung der Klasse
     def __init__ (self, pos, dir):
