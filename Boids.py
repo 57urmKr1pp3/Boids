@@ -24,4 +24,3 @@ class Boid (object):
     #Aktualisiert die Position mithilfe der Vektoraddition von Position und Geschwindigkeit
     def updatePos(self):
         self.pos = self.pos + self.dir
-    
