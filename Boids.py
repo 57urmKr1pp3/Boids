@@ -21,6 +21,7 @@ class Boid (object):
     def setDir(self, nDirX, nDirY, nDirZ):
         self.dir = Vec3(nDirX, nDirY, nDirZ)
 
+    #Aktualisiert die Position mithilfe der Vektoraddition von Position und Geschwindigkeit
     def updatePos(self):
         self.pos = self.pos + self.dir
     

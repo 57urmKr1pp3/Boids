@@ -2,6 +2,7 @@ from Boids import Boid
 from ursina import *
 from random import randint
 
+#Angleichung der Geschwindigkeit/Direction
 def adaptDir(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
         for j in range(i, len(Liste_Boids)):
@@ -17,10 +18,10 @@ def adaptDir(Liste_Boids):
                 Liste_Boids[i].setDir(averageDir[0], averageDir[1], averageDir[2])
                 Liste_Boids[j].setDir(averageDir[0], averageDir[1], averageDir[2])
 
+#versetzt Boid wenn er auf einem anderen ist
 def checkPos(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
         for j in range(len(Liste_Boids)-1):
             if Liste_Boids[i].getPos() == Liste_Boids[j].getPos():
                 nPos=[Liste_Boids[i].getPos()[0] + 5, Liste_Boids[i].getPos()[1] + 5, Liste_Boids[i].getPos()[2] + 5]
                 Liste_Boids[i].setPos(nPos[0], nPos[1], nPos[2])
-            
