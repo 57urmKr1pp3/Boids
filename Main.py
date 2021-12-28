@@ -28,11 +28,15 @@ def checkPos(Liste_Boids):
                 Liste_Boids[i].setPos(nPos[0], nPos[1], nPos[2])
 
 
-#app = Ursina()
+app = Ursina()
+
+#später ersetzen durch GUI User Input
 count = int(input("Wieviele Boids sollen erstellt werden?"))
+#speichern der Boids in einer Liste
+
 Liste_Boids = []
 for i in range(count):
     temp = Boid(randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100))
     Liste_Boids.append(temp)
-print(Liste_Boids)
-#app.run()
+
+app.run()
