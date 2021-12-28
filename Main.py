@@ -1,3 +1,4 @@
+import ursina
 from Boids import Boid
 from ursina import *
 from random import randint
@@ -25,3 +26,13 @@ def checkPos(Liste_Boids):
             if Liste_Boids[i].getPos() == Liste_Boids[j].getPos():
                 nPos=[Liste_Boids[i].getPos()[0] + 5, Liste_Boids[i].getPos()[1] + 5, Liste_Boids[i].getPos()[2] + 5]
                 Liste_Boids[i].setPos(nPos[0], nPos[1], nPos[2])
+
+
+#app = Ursina()
+count = int(input("Wieviele Boids sollen erstellt werden?"))
+Liste_Boids = []
+for i in range(count):
+    temp = Boid(randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100))
+    Liste_Boids.append(temp)
+print(Liste_Boids)
+#app.run()
