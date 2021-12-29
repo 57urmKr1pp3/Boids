@@ -1,31 +1,44 @@
+from os import closerange
 from ursina import *
-
+from random import randint
 class Boid (Entity):
     #Konstruktor der Klasse Entity und Boid wird aufgerufen
     #Position ist ein § dimensioanler Vektor mit x, y und z Koordinate
     #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
-    def __init__(self, posX, posY, posZ, dirX, dirY, dirZ, color):
-        super().__init__()
+    def __init__(self, index, posX, posY, posZ, dirX, dirY, dirZ):
+        super().__init__(2)
+        #self.parent = parent
+        self.index = index
         self.position = Vec3(posX, posY, posZ)
         self.direction = Vec3(dirX, dirY, dirZ)
         self.color = color.random_color()
+        self.model = 'cube'
+        self.scale = .2
 
     #Getter geben die Werte der Eigenschaft zurück
-    def getPos(self):
+    def getPosition(self):
         return self.position
 
-    def getDir(self):
+    def getDirection(self):
         return self.direction
 
     #Setter berschreiben die Eigenschaften mit den neuen Werten
-    def setPos (self, nPosX, nPosY, nPosZ):
+    def setPosition(self, nPosX, nPosY, nPosZ):
         self.position = Vec3(nPosX, nPosY, nPosZ)
     
-    def setDir(self, nDirX, nDirY, nDirZ):
+    def setDirection(self, nDirX, nDirY, nDirZ):
         self.direction = Vec3(nDirX, nDirY, nDirZ)
 
     #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
     def update(self):
-        self.position += self.direction * time.dt
+        self.position = (self.position + self.direction) * time.dt
 
+
+class Space(Entity):
+    
+    def __init__(self):
+        super().__init__()
+        self.model = 'cube'
+        self.scale = 10
+        self.color = color.clear
