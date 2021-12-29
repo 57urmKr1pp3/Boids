@@ -33,7 +33,7 @@ bereich = Space
 camera.position = (0,15,-26)
 camera.rotation_x = 30
 #später ersetzen durch GUI User Input
-count = int(input("Wieviele Boids sollen erstellt werden?"))
+count = 5
 #speichern der Boids in einer Liste
 
 Liste_Boids = []

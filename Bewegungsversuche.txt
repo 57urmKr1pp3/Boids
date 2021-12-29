@@ -1,0 +1,9 @@
+        self.X += 5
+        self.Y += 5
+        self.Z += 5
+	self.positionY += 5
+        self.positionX += 5
+        self.positionZ += 5
+	self.positionX += self.directionX *time.dt
+        self.positionY += self.directionY *time.dt
+        self.positionZ += self.directionZ *time.dt
