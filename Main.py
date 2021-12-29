@@ -1,4 +1,4 @@
-import ursina
+from subprocess import run
 from Classes import Boid
 from Classes import Space
 from ursina import *
@@ -30,9 +30,9 @@ def checkPos(Liste_Boids):
 
 
 app = Ursina()
-
-
-
+bereich = Space
+camera.position = (0,15,-26)
+camera.rotation_x = 30
 #später ersetzen durch GUI User Input
 count = int(input("Wieviele Boids sollen erstellt werden?"))
 #speichern der Boids in einer Liste
@@ -42,5 +42,11 @@ for i in range(count):
     temp = Boid(i, randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100))
     Liste_Boids.append(temp)
 print(Liste_Boids)
+
+#while run():
+#    for i in Liste_Boids:
+#        i.update()
+#    adaptDir(Liste_Boids)
+#    checkPos(Liste_Boids)
 
 app.run()

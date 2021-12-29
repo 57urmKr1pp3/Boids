@@ -6,13 +6,15 @@ class Boid (Entity):
     #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
     def __init__(self, index, posX, posY, posZ, dirX, dirY, dirZ):
         super().__init__(2)
-        #self.parent = parent
+#        self.parent = parent
         self.index = index
         self.position = Vec3(posX, posY, posZ)
         self.direction = Vec3(dirX, dirY, dirZ)
         self.color = color.random_color()
-        self.model = 'cube'
+        self.model = 'sprites'
         self.scale = .2
+        self.collider = "sprites"
+#        self.rotation_directions = 
 
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
@@ -33,11 +35,11 @@ class Boid (Entity):
     def update(self):
         self.position = (self.position + self.direction) * time.dt
 
-
 class Space(Entity):
     
     def __init__(self):
         super().__init__()
         self.model = 'cube'
-        self.scale = 10
-        self.color = color.clear
+        self.scale = 100
+        self.color = color.transperent
+        self.position = (0,0,0)
