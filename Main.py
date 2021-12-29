@@ -1,4 +1,3 @@
-from subprocess import run
 from Classes import Boid
 from Classes import Space
 from ursina import *
@@ -7,7 +6,7 @@ from random import randint
 #Angleichung der Geschwindigkeit/Direction
 def adaptDir(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
-        for j in range(i, len(Liste_Boids)):
+        for j in range(i, len(Liste_Boids)-1):
             difPos = [0, 0 ,0]
             difPos[0] = Liste_Boids[i].getPosition()[0] - Liste_Boids[j].getPosition()[0]
             difPos[1] = Liste_Boids[i].getPosition()[1] - Liste_Boids[j].getPosition()[1]
