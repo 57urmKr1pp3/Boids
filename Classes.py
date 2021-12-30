@@ -5,7 +5,7 @@ class Boid (Entity):
     #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
     #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
     def __init__(self, index, posX, posY, posZ, dirX, dirY, dirZ):
-        super().__init__(2)
+        super().__init__()
 #        self.parent = parent
         self.index = index
 #        self.position = Vec3(posX, posY, posZ)
@@ -13,9 +13,9 @@ class Boid (Entity):
         self.Y = posY
         self.Z = posZ
 #        self.direction = Vec3(dirX, dirY, dirZ)
-#        self.directionX = dirX
-#        self.directionY = dirY
-#        self.directionZ = dirZ
+        self.directionX = dirX
+        self.directionY = dirY
+        self.directionZ = dirZ
         self.color = color.random_color()
         self.model = 'sprites'
         self.scale = .1
@@ -39,9 +39,9 @@ class Boid (Entity):
     #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
     def update(self):
-        self.X += 5
-        self.Y += 5
-        self.Z += 5
+        self.X += self.directionX
+        self.Y += self.directionY
+        self.Z += self.directionZ
         
 class Space(Entity):
     
