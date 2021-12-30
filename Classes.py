@@ -8,20 +8,15 @@ class Boid (Entity):
         super().__init__()
 #        self.parent = parent
         self.index = index
-#        self.position = Vec3(posX, posY, posZ)
-        self.X = posX
-        self.Y = posY
-        self.Z = posZ
-#        self.direction = Vec3(dirX, dirY, dirZ)
+        self.position = (posX, posY, posZ)
         self.directionX = dirX
         self.directionY = dirY
         self.directionZ = dirZ
         self.color = color.random_color()
         self.model = 'sprites'
-        self.scale = .1
-        self.collider = "sprites"
-#        self.rotation_directions = 
-
+        self.scale = 1
+        self.collider = "boxes"
+        
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
         return self.position
@@ -31,18 +26,20 @@ class Boid (Entity):
 
     #Setter berschreiben die Eigenschaften mit den neuen Werten
     def setPosition(self, nPosX, nPosY, nPosZ):
-        self.position = Vec3(nPosX, nPosY, nPosZ)
+        self.position =(nPosX, nPosY, nPosZ)
     
     def setDirection(self, nDirX, nDirY, nDirZ):
-        self.direction = Vec3(nDirX, nDirY, nDirZ)
+        self.direction = (nDirX, nDirY, nDirZ)
 
     #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
     def update(self):
-        self.X += self.directionX
-        self.Y += self.directionY
-        self.Z += self.directionZ
+        self.x += self.directionX * time.dt
+        self.y += self.directionY * time.dt
+        self.z += self.directionZ * time.dt
+        hit_info = raycast(origin=(self.position), direction = (self.directionX, self.directionY, self.directionZ), distance = 5, debug = True)
         
+        self.look_at(hit_info, axis='forward')
 class Space(Entity):
     
     def __init__(self):
