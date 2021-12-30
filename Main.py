@@ -38,10 +38,10 @@ count = 5
 
 Liste_Boids = []
 for i in range(count):
-    temp = Boid(i, randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100), randint(1,100))
+    temp = Boid(i, randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,10))
     Liste_Boids.append(temp)
 print(Liste_Boids)
-
+EditorCamera()
 #while run():
 #    for i in Liste_Boids:
 #        i.update()
