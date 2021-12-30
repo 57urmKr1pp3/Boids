@@ -16,6 +16,9 @@ class Boid (Entity):
         self.model = 'sprites'
         self.scale = 1
         self.collider = "boxes"
+        self.rotation_x = self.directionX
+        self.rotation_y = self.directionY
+        self.rotation_z = self.directionZ
         
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
@@ -37,9 +40,12 @@ class Boid (Entity):
         self.x += self.directionX * time.dt
         self.y += self.directionY * time.dt
         self.z += self.directionZ * time.dt
-        hit_info = raycast(origin=(self.position), direction = (self.directionX, self.directionY, self.directionZ), distance = 5, debug = True)
+        self.rotation_x = self.directionX * time.dt
+        self.rotation_y = self.directionY * time.dt
+        self.rotation_z = self.directionZ * time.dt
+        #hit_info = raycast(origin=(self.position), direction = (self.directionX, self.directionY, self.directionZ), distance = 5, debug = True)
         
-        self.look_at(hit_info, axis='forward')
+        #self.look_at(hit_info, axis='forward')
 class Space(Entity):
     
     def __init__(self):
