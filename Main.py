@@ -33,7 +33,7 @@ bereich = Space(100)
 camera.position = (0,15,-26)
 camera.rotation_x = 30
 #später ersetzen durch GUI User Input
-count = 5
+count = 50
 #speichern der Boids in einer Liste
 
 Liste_Boids = []

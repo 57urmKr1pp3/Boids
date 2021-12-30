@@ -4,9 +4,9 @@ class Boid (Entity):
     #Konstruktor der Klasse Entity und Boid wird aufgerufen
     #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
     #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
-    def __init__(self, index, posX, posY, posZ, dirX, dirY, dirZ):
+    def __init__(self, index, parent, posX, posY, posZ, dirX, dirY, dirZ):
         super().__init__()
-#        self.parent = parent
+        self.parent = parent
         self.index = index
         self.position = (posX, posY, posZ)
         self.directionX = dirX
@@ -16,9 +16,7 @@ class Boid (Entity):
         self.model = 'sprites'
         self.scale = 1
         self.collider = "boxes"
-        self.rotation_x = self.directionX
-        self.rotation_y = self.directionY
-        self.rotation_z = self.directionZ
+
         
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
