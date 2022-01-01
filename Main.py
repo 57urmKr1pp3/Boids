@@ -27,21 +27,42 @@ def checkPos(Liste_Boids):
                 nPos=[Liste_Boids[i].getPosition()[0] + 5, Liste_Boids[i].getPosition()[1] + 5, Liste_Boids[i].getPosition()[2] + 5]
                 Liste_Boids[i].setPosition(nPos[0], nPos[1], nPos[2])
 
+def input(keys):
+    #Kamerabewegung
+    #rechts, links
+    if held_keys["d"]:
+        camera.position += (time.dt, 0, 0)
+    if held_keys["a"]:
+        camera.position -= (time.dt, 0, 0)
+    #hoch, runter
+    if held_keys["space"]:
+        camera.position += (0, time.dt, 0)
+    if held_keys["left_control"]:
+        camera.position -= (0, time.dt, 0)
+    #vorwaerts, rueckwaerts
+    if held_keys["w"]:
+        camera.position += (0, 0, time.dt)
+    if held_keys["s"]:
+        camera.position -= (0, 0, time.dt)
 
 app = Ursina()
-
-camera.position = (0,15,-26)
+#Fenster
+window.title = "Boids Simulation"
+#Kamera
+camera.position = (0,10,-350)
 camera.rotation_x = 30
-#später ersetzen durch GUI User Input
-count = 50
-#speichern der Boids in einer Liste
+EditorCamera()
+#Wireframe
 
+#Erstellen der Boids
+#später ersetzen durch GUI User Input
+count = 250
+#speichern der Boids in einer Liste
 Liste_Boids = []
 for i in range(count):
     temp = Boid(i, randint(0,10), randint(0,10), randint(0,10), randint(-10,10), randint(-10,10), randint(-10,10))
     Liste_Boids.append(temp)
 print(Liste_Boids)
-EditorCamera()
 
 
 app.run()
