@@ -29,7 +29,7 @@ def checkPos(Liste_Boids):
 
 
 app = Ursina()
-bereich = Space(100)
+
 camera.position = (0,15,-26)
 camera.rotation_x = 30
 #später ersetzen durch GUI User Input
@@ -38,14 +38,10 @@ count = 50
 
 Liste_Boids = []
 for i in range(count):
-    temp = Boid(i, bereich,  randint(0,10), randint(0,10), randint(0,10), randint(-10,10), randint(-10,10), randint(-10,10))
+    temp = Boid(i, randint(0,10), randint(0,10), randint(0,10), randint(-10,10), randint(-10,10), randint(-10,10))
     Liste_Boids.append(temp)
 print(Liste_Boids)
 EditorCamera()
-#while run():
-#    for i in Liste_Boids:
-#        i.update()
-#    adaptDir(Liste_Boids)
-#    checkPos(Liste_Boids)
+
 
 app.run()
