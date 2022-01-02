@@ -55,4 +55,3 @@ class Boid (Entity):
         #self.rotation_x = self.directionX * time.dt
         #self.rotation_y = self.directionY * time.dt
         #self.rotation_z = self.directionZ * time.dt
-        

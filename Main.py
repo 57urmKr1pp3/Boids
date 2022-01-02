@@ -1,3 +1,4 @@
+from ursina import entity
 from Classes import Boid
 from Classes import Space
 from ursina import *
@@ -53,10 +54,21 @@ camera.position = (0,10,-350)
 camera.rotation_x = 30
 EditorCamera()
 #Wireframe
+wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
+wf2 = Entity(model = "cube", position = (-51, 0, -51), scale_y = 102)
+wf3 = Entity(model = "cube", position = (-51, -51, 0), scale_z = 102)
+wf4 = Entity(model = "cube", position = (50, -51, 0), scale_z = 102)
+wf5 = Entity(model = "cube", position = (50, 0, -51), scale_y = 102)
+wf6 = Entity(model = "cube", position = (50, 0, 50), scale_x = -102)
+wf7 = Entity(model = "cube", position = (50, 0, 50), scale_y = 102)
+wf8 = Entity(model = "cube", position = (-50, 50, 50), scale_x = 102)
+wf9 = Entity(model = "cube", position = (-50, 50, 50), scale_y = -102)
+wf10 = Entity(model = "cube", position =(-50, 50, 50), scale_z = -102)
+wf11 = Entity(model = "cube", position =(50, 50, -50), scale_z = 102)
+wf12 = Entity(model = "cube", position =(50, 50, -50), scale_x = -102)
 
 #Erstellen der Boids
-#später ersetzen durch GUI User Input
-count = 250
+count = 5
 #speichern der Boids in einer Liste
 Liste_Boids = []
 for i in range(count):
