@@ -1,5 +1,5 @@
 from ursina import *
-
+import math
 class Boid (Entity):
     #Konstruktor der Klasse Entity und Boid wird aufgerufen
     #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
@@ -13,9 +13,9 @@ class Boid (Entity):
         self.directionZ = dirZ
         self.color = color.random_color()
         self.model = 'sprites'
-        self.scale = 1
+        self.scale = .5
         self.collider = "boxes"
-
+        
         
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
@@ -28,8 +28,14 @@ class Boid (Entity):
     def setPosition(self, nPosX, nPosY, nPosZ):
         self.position =(nPosX, nPosY, nPosZ)
     
-    def setDirection(self, nDirX, nDirY, nDirZ):
-        self.direction = (nDirX, nDirY, nDirZ)
+    def setDirectionX(self, nDirX):
+        self.directionX = nDirX
+
+    def setDirectionY(self, nDirY):
+        self.directionY = nDirY
+
+    def setDirectionZ(self, nDirZ):
+        self.directionZ = nDirZ
 
     #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
@@ -51,7 +57,19 @@ class Boid (Entity):
             self.directionZ = -self.directionZ
         if self.z >= 50:
             self.directionZ = -self.directionZ
+        #Teleport zur anderen Seite
+        # if self.x <= -50:
+        #     self.x = 49
+        # if self.x >= 50:
+        #     self.x = -49
+        # if self.y <= -50:
+        #     self.y = 49
+        # if self.y >= 50:
+        #     self.y = -49
+        # if self.z <= -50:
+        #     self.z = 49
+        # if self.z >= 50:
+        #     self.z = -49
+        
         #Rotation
-        #self.rotation_x = self.directionX * time.dt
-        #self.rotation_y = self.directionY * time.dt
-        #self.rotation_z = self.directionZ * time.dt
+        
