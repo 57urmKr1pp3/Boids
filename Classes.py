@@ -15,7 +15,7 @@ class Boid (Entity):
         self.model = 'sprites'
         self.scale = .5
         self.collider = "boxes"
-        
+        #self.rotation = (self.directionX, self.directionY, self.directionZ)
         
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
@@ -57,6 +57,7 @@ class Boid (Entity):
             self.directionZ = -self.directionZ
         if self.z >= 50:
             self.directionZ = -self.directionZ
+        self.rotation = (self.directionX, self.directionY, self.directionZ)
         #Teleport zur anderen Seite
         # if self.x <= -50:
         #     self.x = 49

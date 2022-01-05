@@ -22,23 +22,38 @@ def create_Boids(anzahl, liste):
         temp = Boid(i, randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20))
         Liste_Boids.append(temp)
 
+
+
+
 def input(key):
     #Kamerabewegung
     #rechts, links
     if held_keys["d"]:
-        camera.position += (time.dt*1000, 0, 0)
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.right * time.dt*500
+        camera.position = kamerabox.position
     if held_keys["a"]:
-        camera.position -= (time.dt*1000, 0, 0)
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.left * time.dt*500
+        camera.position = kamerabox.position
     #hoch, runter
-    if held_keys["space"]:
-        camera.position += (0, time.dt*1000, 0)
-    if held_keys["left_control"]:
-        camera.position -= (0, time.dt*1000, 0)
+    if held_keys["m"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.up * time.dt*500
+        camera.position = kamerabox.position
+    if held_keys["n"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.down * time.dt*500
+        camera.position = kamerabox.position
     #vorwaerts, rueckwaerts
     if held_keys["w"]:
-        camera.z += time.dt*1000
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.forward * time.dt*500
+        camera.position = kamerabox.position
     if held_keys["s"]:
-        camera.z -= time.dt*1000
+        kamerabox.rotation = camera.rotation
+        kamerabox.position +=kamerabox.back* time.dt*500
+        camera.position = kamerabox.position
 
 app = Ursina()
 #Fenster
@@ -47,6 +62,20 @@ window.title = "Boids Simulation"
 camera.position = (0,10,-350)
 camera.rotation_x = 30
 EditorCamera()
+kamerabox = Entity(model = 'cube', scale = (.01, .01, .01), position = camera.position, rotation_x = camera.rotation_x)
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Wireframe
 create_Wireframe()
 #Erstellen der Boids
