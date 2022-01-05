@@ -1,6 +1,6 @@
-from Classes import Boid
 from ursina import *
 from random import randint
+from Classes import Boid
 def create_Wireframe():
     #Wireframe
     wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
@@ -15,7 +15,6 @@ def create_Wireframe():
     wf10 = Entity(model = "cube", position =(0, 51, 51), scale_x = -102)
     wf11 = Entity(model = "cube", position =(51, 51, 0), scale_z = 102)
     wf12 = Entity(model = "cube", position =(0, 51, -51), scale_x = -102)
-
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):
@@ -29,14 +28,20 @@ def input(key):
     #Kamerabewegung
     #rechts, links
     if held_keys["d"]:
+        camera.position += (time.dt*1000, 0, 0)
         kamerabox.rotation = camera.rotation
         kamerabox.position += kamerabox.right * time.dt*500
         camera.position = kamerabox.position
     if held_keys["a"]:
+        camera.position -= (time.dt*1000, 0, 0)
         kamerabox.rotation = camera.rotation
         kamerabox.position += kamerabox.left * time.dt*500
         camera.position = kamerabox.position
     #hoch, runter
+    if held_keys["space"]:
+        camera.position += (0, time.dt*1000, 0)
+    if held_keys["left_control"]:
+        camera.position -= (0, time.dt*1000, 0)
     if held_keys["m"]:
         kamerabox.rotation = camera.rotation
         kamerabox.position += kamerabox.up * time.dt*500
@@ -47,10 +52,12 @@ def input(key):
         camera.position = kamerabox.position
     #vorwaerts, rueckwaerts
     if held_keys["w"]:
+        camera.z += time.dt*1000
         kamerabox.rotation = camera.rotation
         kamerabox.position += kamerabox.forward * time.dt*500
         camera.position = kamerabox.position
     if held_keys["s"]:
+        camera.z -= time.dt*1000
         kamerabox.rotation = camera.rotation
         kamerabox.position +=kamerabox.back* time.dt*500
         camera.position = kamerabox.position
@@ -85,6 +92,4 @@ anzahl = 20
 Liste_Boids = []
 create_Boids(anzahl, Liste_Boids)
 print(Liste_Boids)
-
-
 app.run()

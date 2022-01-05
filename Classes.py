@@ -73,4 +73,3 @@ class Boid (Entity):
         #     self.z = -49
         
         #Rotation
-        

@@ -33,3 +33,162 @@ def checkPos(Liste_Boids):
             if Liste_Boids[i].getPosition() == Liste_Boids[j].getPosition():
                 nPos=[Liste_Boids[i].getPosition()[0] + 5, Liste_Boids[i].getPosition()[1] + 5, Liste_Boids[i].getPosition()[2] + 5]
                 Liste_Boids[i].setPosition(nPos[0], nPos[1], nPos[2])
+from ursina import *
+import math
+class Boid (Entity):
+    #Konstruktor der Klasse Entity und Boid wird aufgerufen
+    #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
+    #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
+    def __init__(self, posX, posY, posZ, dirForward, rotX, rotY, rotZ):
+        super().__init__(model = "sprites.blend", position = (posX,posY, posZ), rotation = (rotX, rotY, rotZ), scale = .5, color = color.random_color())
+        self.dirforward = dirForward
+        
+    #Getter geben die Werte der Eigenschaft zurück
+    def getPosition(self):
+        return self.position
+
+    def getDirection(self):
+        return self.direction
+
+    #Setter berschreiben die Eigenschaften mit den neuen Werten
+    def setPosition(self, nPosX, nPosY, nPosZ):
+        self.position =(nPosX, nPosY, nPosZ)
+    
+    def setDirectionX(self, nDirX):
+        self.directionX = nDirX
+
+    def setDirectionY(self, nDirY):
+        self.directionY = nDirY
+
+    def setDirectionZ(self, nDirZ):
+        self.directionZ = nDirZ
+
+    #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
+    #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
+    def update(self):
+        self.position += self.up*self.dirforward*time.dt
+    # def update(self):
+    #     #Bewegung
+    #     self.x += self.directionX * time.dt
+    #     self.y += self.directionY * time.dt
+    #     self.z += self.directionZ * time.dt
+    #     #Richtungsänderung beim Erreichen der Grenze
+    #     if self.x <= -50:
+    #         self.directionX = -self.directionX
+    #     if self.x >= 50:
+    #         self.directionX = -self.directionX
+    #     if self.y <= -50:
+    #         self.directionY = -self.directionY
+    #     if self.y >= 50:
+    #         self.directionY = -self.directionY
+    #     if self.z <= -50:
+    #         self.directionZ = -self.directionZ
+    #     if self.z >= 50:
+    #         self.directionZ = -self.directionZ
+    #     self.rotation = (self.directionX, self.directionY, self.directionZ)
+    #     #Teleport zur anderen Seite
+    #     # if self.x <= -50:
+    #     #     self.x = 49
+    #     # if self.x >= 50:
+    #     #     self.x = -49
+    #     # if self.y <= -50:
+    #     #     self.y = 49
+    #     # if self.y >= 50:
+    #     #     self.y = -49
+    #     # if self.z <= -50:
+    #     #     self.z = 49
+    #     # if self.z >= 50:
+    #     #     self.z = -49
+        
+    #     #Rotation
+        
+        from Classes import Boid
+from ursina import *
+from random import randint
+def create_Wireframe():
+    #Wireframe
+    wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
+    wf2 = Entity(model = "cube", position = (-51, -51, 0), scale_z = 102)
+    wf3 = Entity(model = "cube", position = (0, -51, 51), scale_x = 102)
+    wf4 = Entity(model = "cube", position = (51, -51, 0), scale_z = 102)
+    wf5 = Entity(model = "cube", position = (51, 0, 51), scale_y = 102)
+    wf6 = Entity(model = "cube", position = (51, 0, -51), scale_y = -102)
+    wf7 = Entity(model = "cube", position = (-51, 0, 51), scale_y = 102)
+    wf8 = Entity(model = "cube", position = (-51, 0, -51), scale_y = 102)
+    wf9 = Entity(model = "cube", position = (-51, 51, 0), scale_z = -102)
+    wf10 = Entity(model = "cube", position =(0, 51, 51), scale_x = -102)
+    wf11 = Entity(model = "cube", position =(51, 51, 0), scale_z = 102)
+    wf12 = Entity(model = "cube", position =(0, 51, -51), scale_x = -102)
+
+def create_Boids(anzahl, liste):
+    #Erstellen und speichern der Boids in einer Liste
+    for i in range(anzahl):
+        temp = Boid(i, randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20))
+        Liste_Boids.append(temp)
+
+
+
+
+def input(key):
+    #Kamerabewegung
+    #rechts, links
+    if held_keys["d"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.right * time.dt*500
+        camera.position = kamerabox.position
+    if held_keys["a"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.left * time.dt*500
+        camera.position = kamerabox.position
+    #hoch, runter
+    if held_keys["m"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.up * time.dt*500
+        camera.position = kamerabox.position
+    if held_keys["n"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.down * time.dt*500
+        camera.position = kamerabox.position
+    #vorwaerts, rueckwaerts
+    if held_keys["w"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position += kamerabox.forward * time.dt*500
+        camera.position = kamerabox.position
+    if held_keys["s"]:
+        kamerabox.rotation = camera.rotation
+        kamerabox.position +=kamerabox.back* time.dt*500
+        camera.position = kamerabox.position
+
+app = Ursina()
+#Fenster
+window.title = "Boids Simulation"
+#Kamera
+camera.position = (0,10,-350)
+camera.rotation_x = 30
+EditorCamera()
+kamerabox = Entity(model = 'cube', scale = (.01, .01, .01), position = camera.position, rotation_x = camera.rotation_x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Wireframe
+create_Wireframe()
+#Erstellen der Boids
+######################################################################################################################################
+anzahl = 20
+######################################################################################################################################
+Liste_Boids = []
+create_Boids(anzahl, Liste_Boids)
+print(Liste_Boids)
+
+
+app.run()
