@@ -13,7 +13,7 @@ class Boid (Entity):
         self.directionZ = dirZ
         self.color = color.random_color()
         self.model = 'sprites'
-        self.scale = .5
+        self.scale = 1
         self.collider = "boxes"
         #self.rotation = (self.directionX, self.directionY, self.directionZ)
         

@@ -27,12 +27,13 @@ window.title = "Boids Simulation"
 #Kamera
 camera.position = (0,10,-350)
 EditorCamera()
+#Erstellen
 #Wireframe
 create_Wireframe()
-#Erstellen der Boids
 ######################################################################################################################################
 anzahl = 20
 ######################################################################################################################################
+#Boids
 Liste_Boids = []
 create_Boids(anzahl, Liste_Boids)
 print(Liste_Boids)
