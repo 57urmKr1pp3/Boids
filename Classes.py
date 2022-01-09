@@ -1,19 +1,19 @@
 from ursina import *
 import math
+from working_on import rotation
 class Boid (Entity):
     #Konstruktor der Klasse Entity und Boid wird aufgerufen
     #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
     #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
-    def __init__(self, index, posX, posY, posZ, dirX, dirY, dirZ):
+    def __init__(self, posX, posY, posZ, dirX, dirY, dirZ):
         super().__init__()
-        self.index = index
         self.position = (posX, posY, posZ)
         self.directionX = dirX
         self.directionY = dirY
         self.directionZ = dirZ
         self.color = color.random_color()
         self.model = 'sprites'
-        self.scale = 1
+        self.scale = 5
         self.collider = "boxes"
         #self.rotation = (self.directionX, self.directionY, self.directionZ)
         
@@ -45,17 +45,17 @@ class Boid (Entity):
         self.y += self.directionY * time.dt
         self.z += self.directionZ * time.dt
         #Richtungsänderung beim Erreichen der Grenze
-        if self.x <= -50:
+        if self.x <= -49:
             self.directionX = -self.directionX
-        if self.x >= 50:
+        elif self.x >= 49:
             self.directionX = -self.directionX
-        if self.y <= -50:
+        if self.y <= -49:
             self.directionY = -self.directionY
-        if self.y >= 50:
+        elif self.y >= 49:
             self.directionY = -self.directionY
-        if self.z <= -50:
+        if self.z <= -49:
             self.directionZ = -self.directionZ
-        if self.z >= 50:
+        elif self.z >= 49:
             self.directionZ = -self.directionZ
         self.rotation = (self.directionX, self.directionY, self.directionZ)
         #Teleport zur anderen Seite
@@ -71,5 +71,18 @@ class Boid (Entity):
         #     self.z = 49
         # if self.z >= 50:
         #     self.z = -49
-        
+        #Bug beim hinzufügen der Boids verursacht das Boids ausserhalb des Würfels sind
+        if self.x < -50:
+            self.x = -49
+        elif self.x > 50:
+            self.x = 49
+        if self.y < -50:
+            self.y = -49
+        elif self.y > 50:
+            self.y = 49
+        if self.z < -50:
+            self.z = -49
+        elif self.z > 50:
+            self.z = 49
         #Rotation
+        rotation(self)
