@@ -57,7 +57,6 @@ class Boid (Entity):
             self.directionZ = -self.directionZ
         elif self.z >= 49:
             self.directionZ = -self.directionZ
-        self.rotation = (self.directionX, self.directionY, self.directionZ)
         #Teleport zur anderen Seite
         # if self.x <= -50:
         #     self.x = 49
