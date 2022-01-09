@@ -18,9 +18,16 @@ def create_Wireframe():
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):
-        temp = Boid(i, randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20))
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20))
         Liste_Boids.append(temp)
+def input(key):
 
+    if held_keys["+"]:
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20))
+        Liste_Boids.append(temp)
+    if held_keys["-"]:
+        Liste_Boids[len(Liste_Boids)-1].disable()
+        Liste_Boids.pop()
 app = Ursina()
 #Fenster
 window.title = "Boids Simulation"
@@ -31,7 +38,7 @@ EditorCamera()
 #Wireframe
 create_Wireframe()
 ######################################################################################################################################
-anzahl = 20
+anzahl = 1
 ######################################################################################################################################
 #Boids
 Liste_Boids = []
