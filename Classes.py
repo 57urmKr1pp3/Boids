@@ -9,15 +9,15 @@ class Boid (Entity):
     #Konstruktor der Klasse Entity und Boid wird aufgerufen
     #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
     #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
-    def __init__(self, posX, posY, posZ, dirX, dirY, dirZ, mode):
+    def __init__(self, posX, posY, posZ, dirX, dirY, dirZ, mode, scale):
         super().__init__()
         self.position = (posX, posY, posZ)
-        self.directionX = dirX
-        self.directionY = dirY
-        self.directionZ = dirZ
+        self.directionX = int(dirX)
+        self.directionY = int(dirY)
+        self.directionZ = int(dirZ)
         self.color = color.random_color()
         self.model = 'sprites'
-        self.scale = 5
+        self.scale = scale
         self.mode = mode
         #self.rotation = (self.directionX, self.directionY, self.directionZ)
         
@@ -27,6 +27,15 @@ class Boid (Entity):
 
     def getDirection(self):
         return (self.directionX, self.directionY, self.directionZ)
+
+    def getDirectionX(self):
+        return self.directionX
+    
+    def getDirectionY(self):
+        return self.directionY
+    
+    def getDirectionZ(self):
+        return self.directionZ
 
     def getMode(self):
         return self.mode

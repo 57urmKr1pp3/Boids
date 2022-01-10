@@ -1,5 +1,32 @@
 import math
+from re import L
+###############################
+# in Main-Update()
+###############################
+def adaptdir(Boid1, Boid2):
+    #Differenz der einzelnen Positionen
+    difX = Boid1.x - Boid2.x
+    difY = Boid1.y - Boid2.y
+    difZ = Boid1.z - Boid2.z
+    if difX < 5 and difX > 5 and difY < 5 and difY > -5 and difZ < 5 and difZ > -5:
+        avDirX = (Boid1.getDirectionX + Boid2.getDirectionX)/2
+        avDirY = (Boid1.getDirectionY + Boid2.getDirectionY)/2
+        avDirZ = (Boid1.getDirectionZ + Boid2.getDirectionZ)/2
+        Boid1.setDirectionX = avDirX
+        Boid1.setDirectionYavDirY = avDirY
+        Boid1.setDirectionZ = avDirZ
 
+def checkCollision(Liste_Boids):
+    for i in range(len(Liste_Boids)-1):
+        for j in range(i, len(Liste_Boids)-1):
+            difX = Liste_Boids[i].x - Liste_Boids[j].x
+            difY = Liste_Boids[i].y - Liste_Boids[j].y
+            difZ = Liste_Boids[i].z - Liste_Boids[j].z
+            if difX < .5 and difX > .5 and difY < .5 and difY > -.5 and difZ < .5 and difZ > -.5:
+                Boid1X = Liste_Boids[i].x + .5
+                Boid1Y = Liste_Boids[i].y + .5
+                Boid1Z = Liste_Boids[i].z + .5
+                Liste_Boids[i].setPosition(Boid1X, Boid1Y, Boid1Z)
 # #############################
 # #in Boids und update()
 # #############################
@@ -70,36 +97,52 @@ def rotation(self):
     except:
         pass
     #Rotieren
-    if tempPosX > tempPosY and tempPosX > tempPosZ:
-        #z-Rotation
-        if angleXY < 0:
-            self.world_rotation_z = angleXY
-        else:
-            self.world_rotation_z = angleXY
-        #x-Rotation
-        if angleXY < 0:
-            self.world_rotation_x = angleYZ
-        else:
-            self.world_rotation_x = angleYZ
-    if tempPosY > tempPosX and tempPosY > tempPosZ:
-        #x-Rotation
-        if angleXY < 0:
-            self.world_rotation_x = angleYZ
-        else:
-            self.world_rotation_x = angleYZ
-        #y-Rotation
-        if angleXZ < 0:
-            self.world_rotation_y = angleXZ
-        else:
-            self.world_rotation_y = angleXZ
-    if tempPosZ > tempPosX and tempPosZ > tempPosY:
-        #x-Rotation
-        if angleXY < 0:
-            self.world_rotation_x = angleYZ
-        else:
-            self.world_rotation_x = angleYZ
-        #z-Rotation
-        if angleXY < 0:
-            self.world_rotation_z = angleXY
-        else:
-            self.world_rotation_z = angleXY
+    try:
+        if tempPosX > tempPosY and tempPosX > tempPosZ:
+            #da gelegentlich ein UnboundLocalError hervortritt muss dies auch in eine try/except-Verzweigung
+            #z-Rotation
+            if angleXY < 0:
+                self.world_rotation_z = angleXY
+            else:
+                self.world_rotation_z = angleXY
+            #x-Rotation
+            if angleXY < 0:
+                self.world_rotation_x = angleYZ
+            else:
+                self.world_rotation_x = angleYZ
+    except:
+        self.world_rotation_x = 0
+        self.world_rotation_y = 0
+        self.world_rotation_z = 0
+    try:
+        if tempPosY > tempPosX and tempPosY > tempPosZ:
+            #x-Rotation
+            if angleXY < 0:
+                self.world_rotation_x = angleYZ
+            else:
+                self.world_rotation_x = angleYZ
+            #y-Rotation
+            if angleXZ < 0:
+                self.world_rotation_y = angleXZ
+            else:
+                self.world_rotation_y = angleXZ
+    except:
+        self.world_rotation_x = 0
+        self.world_rotation_y = 0
+        self.world_rotation_z = 0
+    try:
+        if tempPosZ > tempPosX and tempPosZ > tempPosY:
+            #x-Rotation
+            if angleXY < 0:
+                self.world_rotation_x = angleYZ
+            else:
+                self.world_rotation_x = angleYZ
+            #z-Rotation
+            if angleXY < 0:
+                self.world_rotation_z = angleXY
+            else:
+                self.world_rotation_z = angleXY
+    except:
+        self.world_rotation_x = 0
+        self.world_rotation_y = 0
+        self.world_rotation_z = 0
