@@ -9,7 +9,7 @@ def checkCollision(Liste_Boids):
             difX = Liste_Boids[i].x - Liste_Boids[j].x
             difY = Liste_Boids[i].y - Liste_Boids[j].y
             difZ = Liste_Boids[i].z - Liste_Boids[j].z
-            if difX < .5 and difX > .5 and difY < .5 and difY > -.5 and difZ < .5 and difZ > -.5:
+            if difX < 6.5 and difX > 6.5 and difY < 6.5 and difY > -6.5 and difZ < 6.5 and difZ > -6.5:
                 print("True")
                 Boid1X = Liste_Boids[i].x + .5
                 Boid1Y = Liste_Boids[i].y + .5
@@ -21,13 +21,12 @@ def adaptdir(Boid1, Boid2):
     difY = Boid1.y - Boid2.y
     difZ = Boid1.z - Boid2.z
     if (difX < 5 and difX > 5) or (difY < 5 and difY > -5) or (difZ < 5 and difZ > -5):
-        Boid1dirX = Boid1.getDirectionX
-        print(Boid1dirX)
-        Boid1dirY = Boid1.getDirectionY
-        Boid1dirZ = Boid1.getDirectionZ
-        Boid2dirX = Boid2.getDirectionX
-        Boid2dirY = Boid2.getDirectionY
-        Boid2dirZ = Boid2.getDirectionZ
+        Boid1dirX = Boid1.directionX
+        Boid1dirY = Boid1.directionY
+        Boid1dirZ = Boid1.directionZ
+        Boid2dirX = Boid2.directionX
+        Boid2dirY = Boid2.directionY
+        Boid2dirZ = Boid2.directionZ
         avDirX = (Boid1dirX + Boid2dirX)/2
         avDirY = (Boid1dirY + Boid2dirY)/2
         avDirZ = (Boid1dirZ + Boid2dirZ)/2
@@ -62,7 +61,7 @@ def update():
 def input(key):
 
     if held_keys["+"]:
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 5)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 7)
         Liste_Boids.append(temp)
     if held_keys["-"]:
         Liste_Boids[len(Liste_Boids)-1].disable()
