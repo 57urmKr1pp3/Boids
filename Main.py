@@ -1,6 +1,8 @@
+#Imports
 from ursina import *
 from random import randint
 from Classes import Boid
+#Funktionen
 def create_Wireframe():
     #Wireframe
     wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
@@ -34,20 +36,24 @@ def input(key):
     if held_keys["2"]:
         for i in Liste_Boids:
             i.setMode(2)
+#Anwendung
 app = Ursina()
 #Fenster
 window.title = "Boids Simulation"
 #Kamera
 camera.position = (0,10,-350)
 EditorCamera()
+
 #Erstellen
 #Wireframe
 create_Wireframe()
+#Boids
+
 ######################################################################################################################################
 anzahl = 1
 ######################################################################################################################################
-#Boids
 Liste_Boids = []
 create_Boids(anzahl, Liste_Boids)
 print(Liste_Boids)
+
 app.run()

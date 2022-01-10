@@ -1,7 +1,11 @@
+#Import
 from ursina import *
 import math
 from working_on import rotation
+
+#Klasse
 class Boid (Entity):
+
     #Konstruktor der Klasse Entity und Boid wird aufgerufen
     #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
     #Direction ist die Geschwindigkeit mit welcher sich der Boid bewegt, welcher ebenfalls ein 3 dimensioanler Vektor ist
@@ -14,7 +18,6 @@ class Boid (Entity):
         self.color = color.random_color()
         self.model = 'sprites'
         self.scale = 5
-        self.collider = "boxes"
         self.mode = mode
         #self.rotation = (self.directionX, self.directionY, self.directionZ)
         
@@ -27,6 +30,16 @@ class Boid (Entity):
 
     def getMode(self):
         return self.mode
+    
+    def getColor(self):
+        return self.color
+    
+    def getModel(self):
+        return self.model
+    
+    def getScale(self):
+        return self.scale
+    
     #Setter berschreiben die Eigenschaften mit den neuen Werten
     def setPosition(self, nPosX, nPosY, nPosZ):
         self.position =(nPosX, nPosY, nPosZ)
@@ -39,6 +52,15 @@ class Boid (Entity):
 
     def setDirectionZ(self, nDirZ):
         self.directionZ = nDirZ
+        
+    def setColor(self, nColor):
+        self.color = color.nColor
+
+    def setScale (self, nScale):
+        self.scale = nScale
+
+    def setModel (self, nModel):
+        self.model = nModel
 
     def setMode(self, nMode):
         self.mode = nMode
