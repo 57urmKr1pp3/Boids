@@ -18,7 +18,7 @@ def create_Wireframe():
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20))
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1)
         Liste_Boids.append(temp)
 def input(key):
 
@@ -28,6 +28,12 @@ def input(key):
     if held_keys["-"]:
         Liste_Boids[len(Liste_Boids)-1].disable()
         Liste_Boids.pop()
+    if held_keys["1"]:
+        for i in Liste_Boids:
+            i.setMode(1)
+    if held_keys["2"]:
+        for i in Liste_Boids:
+            i.setMode(2)
 app = Ursina()
 #Fenster
 window.title = "Boids Simulation"
