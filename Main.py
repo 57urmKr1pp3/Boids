@@ -20,13 +20,14 @@ def adaptdir(Boid1, Boid2):
     difX = Boid1.x - Boid2.x
     difY = Boid1.y - Boid2.y
     difZ = Boid1.z - Boid2.z
-    if (difX < 10 and difX > 10) or (difY < 10 and difY > -10) or (difZ < 10 and difZ > -10):
-        Boid1dirX = Boid1.directionX
-        Boid1dirY = Boid1.directionY
-        Boid1dirZ = Boid1.directionZ
-        Boid2dirX = Boid2.directionX
-        Boid2dirY = Boid2.directionY
-        Boid2dirZ = Boid2.directionZ
+    if (difX < 5 and difX > 5) or (difY < 5 and difY > -5) or (difZ < 5 and difZ > -5):
+        Boid1dirX = Boid1.getDirectionX
+        print(Boid1dirX)
+        Boid1dirY = Boid1.getDirectionY
+        Boid1dirZ = Boid1.getDirectionZ
+        Boid2dirX = Boid2.getDirectionX
+        Boid2dirY = Boid2.getDirectionY
+        Boid2dirZ = Boid2.getDirectionZ
         avDirX = (Boid1dirX + Boid2dirX)/2
         avDirY = (Boid1dirY + Boid2dirY)/2
         avDirZ = (Boid1dirZ + Boid2dirZ)/2
@@ -50,7 +51,7 @@ def create_Wireframe():
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 10)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 7)
         Liste_Boids.append(temp)
 def update():
     checkCollision(Liste_Boids)
@@ -61,7 +62,7 @@ def update():
 def input(key):
 
     if held_keys["+"]:
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 10)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 5)
         Liste_Boids.append(temp)
     if held_keys["-"]:
         Liste_Boids[len(Liste_Boids)-1].disable()
