@@ -5,18 +5,26 @@ Plannung:
 
 1. Boid-Klasse erstellen
     Eigenschaften:
-        geschwindigkeit Vector3
-        position        Vector3
+        geschwindigkeit, da Vector3 nicht funktioniert, aufteilen
+        position       , (x, y, z)
     Funktionen
         Positionsupdate
-            if gleiche Position leicht versetzen
-        Angleichung der Richtung --> Flock
+            Rotation (in Arbeit)
+            if gleiche Position leicht versetzen (in Arbeit)
+        Angleichung der Richtung --> Flock (in Arbeit)
         
 2. Darstellungsebene (Ursina)
     Bereich höchstwahrscheinlich Würfel
-        Wenn Wand berührt auf der anderen Seite
-        Darstellung
-    Tasteninput resultiert im Drehen des Würfels
+        Wenn Wand berührt
+        1. auf der anderen Seite
+        2. "dotzen"
 
+        Darstellung
+    Tasteninput resultiert in 
+        Modusänderung
+        Anzahl der Boids
+
+    Maus rotiert Kamera
+    
 3. LaTeX Dokumentation
     LaTeX Studio oder so
