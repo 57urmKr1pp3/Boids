@@ -3,7 +3,7 @@ from ursina import *
 from random import randint
 from Classes import Boid
 #Funktionen
-def checkCollision(Liste_Boids):
+def Eigenschaften(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
         for j in range(i, len(Liste_Boids)-1):
             difX = Liste_Boids[i].x - Liste_Boids[j].x
@@ -15,24 +15,22 @@ def checkCollision(Liste_Boids):
                 Boid1Y = Liste_Boids[i].y + .5
                 Boid1Z = Liste_Boids[i].z + .5
                 Liste_Boids[i].setPosition(Boid1X, Boid1Y, Boid1Z)
-def adaptdir(Boid1, Boid2):
-    #Differenz der einzelnen Positionen
-    difX = Boid1.x - Boid2.x
-    difY = Boid1.y - Boid2.y
-    difZ = Boid1.z - Boid2.z
-    if (difX < 5 and difX > 5) or (difY < 5 and difY > -5) or (difZ < 5 and difZ > -5):
-        Boid1dirX = Boid1.directionX
-        Boid1dirY = Boid1.directionY
-        Boid1dirZ = Boid1.directionZ
-        Boid2dirX = Boid2.directionX
-        Boid2dirY = Boid2.directionY
-        Boid2dirZ = Boid2.directionZ
-        avDirX = (Boid1dirX + Boid2dirX)/2
-        avDirY = (Boid1dirY + Boid2dirY)/2
-        avDirZ = (Boid1dirZ + Boid2dirZ)/2
-        Boid1.setDirectionX = avDirX
-        Boid1.setDirectionYavDirY = avDirY
-        Boid1.setDirectionZ = avDirZ
+
+            if (difX < 30 and difX > 30) or (difY < 30 and difY > -30) or (difZ < 30 and difZ > -30):
+                Boid1dirX = Liste_Boids[i].directionX
+                Boid1dirY = Liste_Boids[i].directionY
+                Boid1dirZ = Liste_Boids[i].directionZ
+                Boid2dirX = Liste_Boids[j].directionX
+                Boid2dirY = Liste_Boids[j].directionY
+                Boid2dirZ = Liste_Boids[j].directionZ
+                avDirX = (Boid1dirX + Boid2dirX)/2
+                avDirY = (Boid1dirY + Boid2dirY)/2
+                avDirZ = (Boid1dirZ + Boid2dirZ)/2
+                Liste_Boids[i].setDirectionX = avDirX
+                Liste_Boids[i].setDirectionYavDirY = avDirY
+                Liste_Boids[i].setDirectionZ = avDirZ
+            
+
 def create_Wireframe():
     #Wireframe
     wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
@@ -50,18 +48,15 @@ def create_Wireframe():
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 10)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
         Liste_Boids.append(temp)
 def update():
-    checkCollision(Liste_Boids)
-    for i in range(len(Liste_Boids)-1):
-        if i != len(Liste_Boids)-1:
-            adaptdir(Liste_Boids[i], Liste_Boids[i+1])
+    Eigenschaften(Liste_Boids)
 
 def input(key):
 
     if held_keys["+"]:
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 7)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
         Liste_Boids.append(temp)
     if held_keys["-"]:
         Liste_Boids[len(Liste_Boids)-1].disable()

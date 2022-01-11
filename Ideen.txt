@@ -192,3 +192,23 @@ print(Liste_Boids)
 
 
 app.run()
+
+adapt Direction
+def adaptdir(Boid1, Boid2):
+    #Differenz der einzelnen Positionen
+    difX = Boid1.x - Boid2.x
+    difY = Boid1.y - Boid2.y
+    difZ = Boid1.z - Boid2.z
+    if (difX < 15 and difX > 15) or (difY < 15 and difY > -15) or (difZ < 15 and difZ > -15):
+        Boid1dirX = Boid1.directionX
+        Boid1dirY = Boid1.directionY
+        Boid1dirZ = Boid1.directionZ
+        Boid2dirX = Boid2.directionX
+        Boid2dirY = Boid2.directionY
+        Boid2dirZ = Boid2.directionZ
+        avDirX = (Boid1dirX + Boid2dirX)/2
+        avDirY = (Boid1dirY + Boid2dirY)/2
+        avDirZ = (Boid1dirZ + Boid2dirZ)/2
+        Boid1.setDirectionX = avDirX
+        Boid1.setDirectionYavDirY = avDirY
+        Boid1.setDirectionZ = avDirZ
