@@ -19,7 +19,6 @@ class Boid (Entity):
         self.model = 'sprites'
         self.scale = scale
         self.mode = mode
-        #self.rotation = (self.directionX, self.directionY, self.directionZ)
         
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
@@ -73,9 +72,9 @@ class Boid (Entity):
 
     def setMode(self, nMode):
         self.mode = nMode
+        
     #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
-    #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
-    def update(self):
+    def move(self):
         #Bewegung
         self.x += self.directionX * time.dt
         self.y += self.directionY * time.dt
@@ -123,3 +122,26 @@ class Boid (Entity):
             self.z = 49
         #Rotation
         rotation(self)
+    #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
+    def update(self):
+        self.move()
+
+class Wireframe(Entity):
+
+    def __init__(self, position, scale):
+        super().__init__()
+        self.position = position
+        self.scale = scale
+        self.model = 'cube'
+
+    def getPosition(self):
+        return self.position
+    def getScale(self):
+        return self.scale
+
+    def setPosition(self, nPos):
+        self.position = nPos
+    def setScale(self, nScale):
+        self.scale = nScale
+
+        

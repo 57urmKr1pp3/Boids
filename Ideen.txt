@@ -212,3 +212,17 @@ def adaptdir(Boid1, Boid2):
         Boid1.setDirectionX = avDirX
         Boid1.setDirectionYavDirY = avDirY
         Boid1.setDirectionZ = avDirZ
+
+wf1 = Entity(model = "cube", position = (0, -51, -51), scale = (102,1,1))
+    wf2 = Entity(model = "cube", position = (-51, -51, 0), scale = (1,1,102))
+    wf3 = Entity(model = "cube", position = (0, -51, 51), scale = (102,1,1))
+    wf4 = Entity(model = "cube", position = (51, -51, 0), scale = (1,1,102))
+    wf5 = Entity(model = "cube", position = (51, 0, 51), scale = (1,102,1))
+    wf6 = Entity(model = "cube", position = (51, 0, -51), scale = (1,-102,1))
+    wf7 = Entity(model = "cube", position = (-51, 0, 51), scale = (1,102,1))
+    wf8 = Entity(model = "cube", position = (-51, 0, -51), scale = (1,102,1))
+    wf9 = Entity(model = "cube", position = (-51, 51, 0), scale = (1,1,-102))
+    wf10 = Entity(model = "cube", position =(0, 51, 51), scale = (-102,1,1))
+    wf11 = Entity(model = "cube", position =(51, 51, 0), scale = (1,1,102))
+    wf12 = Entity(model = "cube", position =(0, 51, -51), scale = (-102,1,1))
+    
