@@ -50,7 +50,7 @@ def create_Wireframe():
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 7)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1, 10)
         Liste_Boids.append(temp)
 def update():
     checkCollision(Liste_Boids)
@@ -86,7 +86,7 @@ create_Wireframe()
 #Boids
 
 ######################################################################################################################################
-anzahl = 50
+anzahl = 2
 ######################################################################################################################################
 Liste_Boids = []
 create_Boids(anzahl, Liste_Boids)

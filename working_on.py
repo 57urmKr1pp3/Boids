@@ -66,6 +66,7 @@ def rotation(self):
     # VektorXY = [2, 5]
     # VektorYZ = [6, 3]
     # VektorXZ = [4, 1]
+    #try/except weil de Chance besteht dass im Nenner eine Null vorkommt
     try:
         #Berechnung von Skalarprodukt und Betragprdukt, da sonst falsches Ergebnis
         #Winkel zwischen XY
@@ -76,6 +77,9 @@ def rotation(self):
             angleXY = -(-180+math.degrees(radXY))
         else:
             angleXY = -math.degrees(radXY)
+    except:
+        angleXY = 0
+    try:
         #Winkel zwischen XZ
         skalarXZ = VektorXZ[0]*EinheitsvektorXZ[0] + VektorXZ[1]*EinheitsvektorXZ[1]
         betragXZ = math.sqrt(VektorXZ[0]**2+VektorXZ[1]**2)*math.sqrt(EinheitsvektorXZ[0]**2+EinheitsvektorXZ[1]**2)
@@ -84,7 +88,9 @@ def rotation(self):
             angleXZ = -(-180+math.degrees(radXZ))
         else:
             angleXZ = -math.degrees(radXZ)
-
+    except:
+        angleXZ = 0
+    try:
         #Winkel zwischen YZ
         skalarYZ = VektorYZ[0]*EinheitsvektorYZ[0] + VektorYZ[1]*EinheitsvektorYZ[1]
         betragYZ = math.sqrt(VektorYZ[0]**2+VektorYZ[1]**2)*math.sqrt(EinheitsvektorYZ[0]**2+EinheitsvektorYZ[1]**2)
@@ -93,56 +99,40 @@ def rotation(self):
             angleYZ = -(-180+math.degrees(radYZ))
         else:
             angleYZ = -math.degrees(radYZ)
-            
     except:
-        pass
+        angleYZ = 0
     #Rotieren
-    try:
-        if tempPosX > tempPosY and tempPosX > tempPosZ:
-            #da gelegentlich ein UnboundLocalError hervortritt muss dies auch in eine try/except-Verzweigung
-            #z-Rotation
-            if angleXY < 0:
-                self.world_rotation_z = angleXY
-            else:
-                self.world_rotation_z = angleXY
-            #x-Rotation
-            if angleXY < 0:
-                self.world_rotation_x = angleYZ
-            else:
-                self.world_rotation_x = angleYZ
-    except:
-        self.world_rotation_x = 0
-        self.world_rotation_y = 0
-        self.world_rotation_z = 0
-    try:
-        if tempPosY > tempPosX and tempPosY > tempPosZ:
-            #x-Rotation
-            if angleXY < 0:
-                self.world_rotation_x = angleYZ
-            else:
-                self.world_rotation_x = angleYZ
-            #y-Rotation
-            if angleXZ < 0:
-                self.world_rotation_y = angleXZ
-            else:
-                self.world_rotation_y = angleXZ
-    except:
-        self.world_rotation_x = 0
-        self.world_rotation_y = 0
-        self.world_rotation_z = 0
-    try:
-        if tempPosZ > tempPosX and tempPosZ > tempPosY:
-            #x-Rotation
-            if angleXY < 0:
-                self.world_rotation_x = angleYZ
-            else:
-                self.world_rotation_x = angleYZ
-            #z-Rotation
-            if angleXY < 0:
-                self.world_rotation_z = angleXY
-            else:
-                self.world_rotation_z = angleXY
-    except:
-        self.world_rotation_x = 0
-        self.world_rotation_y = 0
-        self.world_rotation_z = 0
+    if tempPosX > tempPosY and tempPosX > tempPosZ:
+        #da gelegentlich ein UnboundLocalError hervortritt muss dies auch in eine try/except-Verzweigung
+        #z-Rotation
+        if angleXY < 0:
+            self.world_rotation_z = angleXY
+        else:
+            self.world_rotation_z = angleXY
+        #x-Rotation
+        if angleXY < 0:
+            self.world_rotation_x = angleYZ
+        else:
+            self.world_rotation_x = angleYZ
+    if tempPosY > tempPosX and tempPosY > tempPosZ:
+        #x-Rotation
+        if angleXY < 0:
+            self.world_rotation_x = angleYZ
+        else:
+            self.world_rotation_x = angleYZ
+        #y-Rotation
+        if angleXZ < 0:
+            self.world_rotation_y = angleXZ
+        else:
+            self.world_rotation_y = angleXZ
+    if tempPosZ > tempPosX and tempPosZ > tempPosY:
+        #x-Rotation
+        if angleXY < 0:
+            self.world_rotation_x = angleYZ
+        else:
+            self.world_rotation_x = angleYZ
+        #z-Rotation
+        if angleXY < 0:
+            self.world_rotation_z = angleXY
+        else:
+            self.world_rotation_z = angleXY
