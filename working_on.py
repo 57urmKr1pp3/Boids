@@ -1,8 +1,11 @@
 import math
+
 ###############################
 # in Main-Update()
 ###############################
+
 def adaptdir(Boid1, Boid2):
+
     #Differenz der einzelnen Positionen
     difX = Boid1.x - Boid2.x
     difY = Boid1.y - Boid2.y
@@ -26,9 +29,11 @@ def checkCollision(Liste_Boids):
                 Boid1Y = Liste_Boids[i].y + .5
                 Boid1Z = Liste_Boids[i].z + .5
                 Liste_Boids[i].setPosition(Boid1X, Boid1Y, Boid1Z)
+
 # #############################
 # #in Boids und update()
 # #############################
+
 def rotation(self):
     #Rotation davor
     tempRotX = self.rotation_x
@@ -54,6 +59,7 @@ def rotation(self):
         valueZ = -tempPosZ
     else:
         valueZ = tempPosZ
+    
     #Berechnung
     #bei der Berechnung benutze ich 2D-Vektoren um die einzelnen Winkel zu berechnen
     EinheitsvektorXY = [1, 0]
@@ -65,6 +71,7 @@ def rotation(self):
     # VektorXY = [2, 5]
     # VektorYZ = [6, 3]
     # VektorXZ = [4, 1]
+
     #try/except weil de Chance besteht dass im Nenner eine Null vorkommt
     try:
         #Berechnung von Skalarprodukt und Betragprdukt, da sonst falsches Ergebnis
@@ -100,6 +107,7 @@ def rotation(self):
             angleYZ = -math.degrees(radYZ)
     except:
         angleYZ = 0
+        
     #Rotieren
     if tempPosX > tempPosY and tempPosX > tempPosZ:
         #da gelegentlich ein UnboundLocalError hervortritt muss dies auch in eine try/except-Verzweigung

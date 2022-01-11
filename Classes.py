@@ -75,10 +75,12 @@ class Boid (Entity):
         
     #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
     def move(self):
+
         #Bewegung
         self.x += self.directionX * time.dt
         self.y += self.directionY * time.dt
         self.z += self.directionZ * time.dt
+
         if self.mode == 1:
             #Richtungsänderung beim Erreichen der Grenze
             if self.x <= -49:
@@ -93,6 +95,7 @@ class Boid (Entity):
                 self.directionZ = -self.directionZ
             elif self.z >= 49:
                 self.directionZ = -self.directionZ
+
         elif self.mode == 2:
             #Teleport zur anderen Seite
             if self.x <= -50:
@@ -107,6 +110,7 @@ class Boid (Entity):
                 self.z = 49
             if self.z >= 50:
                 self.z = -49
+
         #Bug beim hinzufügen der Boids verursacht das Boids ausserhalb des Würfels sind
         if self.x < -50:
             self.x = -49
@@ -120,8 +124,10 @@ class Boid (Entity):
             self.z = -49
         elif self.z > 50:
             self.z = 49
+
         #Rotation
         rotation(self)
+        
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
     def update(self):
         self.move()
