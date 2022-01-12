@@ -35,6 +35,7 @@ def checkCollision(Liste_Boids):
 # #############################
 
 def rotation(self):
+    #https://stackoverflow.com/questions/14607640/rotating-a-vector-in-3d-space
     #Rotation davor
     tempRotX = self.rotation_x
     tempRotY = self.rotation_y
@@ -63,7 +64,7 @@ def rotation(self):
     #Berechnung
     #bei der Berechnung benutze ich 2D-Vektoren um die einzelnen Winkel zu berechnen
     EinheitsvektorXY = [1, 0]
-    EinheitsvektorXZ = [1, 0]
+    EinheitsvektorXZ = [0, 1]
     EinheitsvektorYZ = [1, 0]
     VektorXY = [self.directionX, self.directionY]
     VektorYZ = [self.directionZ, self.directionY]
@@ -80,66 +81,72 @@ def rotation(self):
         betragXY = math.sqrt(VektorXY[0]**2+VektorXY[1]**2)*math.sqrt(EinheitsvektorXY[0]**2+EinheitsvektorXY[1]**2)
         radXY = math.acos(skalarXY/betragXY)
         if VektorXY[1] < 0:
-            angleXY = -(-180+math.degrees(radXY))
+            thetaXY = -(-180+math.degrees(radXY))
         else:
-            angleXY = -math.degrees(radXY)
+            thetaXY = -math.degrees(radXY)
     except:
-        angleXY = 0
+        thetaXY = 0
     try:
         #Winkel zwischen XZ
         skalarXZ = VektorXZ[0]*EinheitsvektorXZ[0] + VektorXZ[1]*EinheitsvektorXZ[1]
         betragXZ = math.sqrt(VektorXZ[0]**2+VektorXZ[1]**2)*math.sqrt(EinheitsvektorXZ[0]**2+EinheitsvektorXZ[1]**2)
         radXZ = math.acos(skalarXZ/betragXZ)
         if VektorXZ[1] < 0:
-            angleXZ = -(-180+math.degrees(radXZ))
+            thetaXZ = -(-180+math.degrees(radXZ))
         else:
-            angleXZ = -math.degrees(radXZ)
+            thetaXZ = -math.degrees(radXZ)
     except:
-        angleXZ = 0
+        thetaXZ = 0
     try:
         #Winkel zwischen YZ
         skalarYZ = VektorYZ[0]*EinheitsvektorYZ[0] + VektorYZ[1]*EinheitsvektorYZ[1]
         betragYZ = math.sqrt(VektorYZ[0]**2+VektorYZ[1]**2)*math.sqrt(EinheitsvektorYZ[0]**2+EinheitsvektorYZ[1]**2)
         radYZ = math.acos(skalarYZ/betragYZ)
         if VektorYZ[1] < 0:
-            angleYZ = -(-180+math.degrees(radYZ))
+            thetaYZ = -(-180+math.degrees(radYZ))
         else:
-            angleYZ = -math.degrees(radYZ)
+            thetaYZ = -math.degrees(radYZ)
     except:
-        angleYZ = 0
-        
+        thetaYZ = 0
+    #Wert durch Drehmatrix herausfinden
+    #X-Rotation
+    angleX
+    #Y-Rotation
+    angleY
+    #Z-Rotation
+    angleZ
     #Rotieren
     if tempPosX > tempPosY and tempPosX > tempPosZ:
         #da gelegentlich ein UnboundLocalError hervortritt muss dies auch in eine try/except-Verzweigung
         #z-Rotation
-        if angleXY < 0:
-            self.world_rotation_z = angleXY
+        if thetaXY < 0:
+            self.world_rotation_z = thetaXY
         else:
-            self.world_rotation_z = angleXY
+            self.world_rotation_z = thetaXY
         #x-Rotation
-        if angleXY < 0:
-            self.world_rotation_x = angleYZ
+        if thetaXY < 0:
+            self.world_rotation_x = thetaYZ
         else:
-            self.world_rotation_x = angleYZ
+            self.world_rotation_x = thetaYZ
     if tempPosY > tempPosX and tempPosY > tempPosZ:
         #x-Rotation
-        if angleXY < 0:
-            self.world_rotation_x = angleYZ
+        if thetaXY < 0:
+            self.world_rotation_x = thetaYZ
         else:
-            self.world_rotation_x = angleYZ
+            self.world_rotation_x = thetaYZ
         #y-Rotation
-        if angleXZ < 0:
-            self.world_rotation_y = angleXZ
+        if thetaXZ < 0:
+            self.world_rotation_y = thetaXZ
         else:
-            self.world_rotation_y = angleXZ
+            self.world_rotation_y = thetaXZ
     if tempPosZ > tempPosX and tempPosZ > tempPosY:
         #x-Rotation
-        if angleXY < 0:
-            self.world_rotation_x = angleYZ
+        if thetaXY < 0:
+            self.world_rotation_x = thetaYZ
         else:
-            self.world_rotation_x = angleYZ
+            self.world_rotation_x = thetaYZ
         #z-Rotation
-        if angleXY < 0:
-            self.world_rotation_z = angleXY
+        if thetaXY < 0:
+            self.world_rotation_z = thetaXY
         else:
-            self.world_rotation_z = angleXY
+            self.world_rotation_z = thetaXY
