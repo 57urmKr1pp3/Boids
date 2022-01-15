@@ -2,6 +2,7 @@
 from ursina import *
 from random import randint
 from Classes import Boid, Wireframe
+
 #Funktionen
 def Eigenschaften(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
@@ -27,11 +28,12 @@ def Eigenschaften(Liste_Boids):
                 avDirY = (Boid1dirY + Boid2dirY)/2
                 avDirZ = (Boid1dirZ + Boid2dirZ)/2
                 Liste_Boids[i].setDirectionX = avDirX
-                Liste_Boids[i].setDirectionYavDirY = avDirY
+                Liste_Boids[i].setDirectionY = avDirY
                 Liste_Boids[i].setDirectionZ = avDirZ
 
 def create_Wireframe():
     #Wireframe
+
     wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
     wf2 = Entity(model = "cube", position = (-51, -51, 0), scale_z = 102)
     wf3 = Entity(model = "cube", position = (0, -51, 51), scale_x = 102)
@@ -45,16 +47,17 @@ def create_Wireframe():
     wf11 = Entity(model = "cube", position =(51, 51, 0), scale_z = 102)
     wf12 = Entity(model = "cube", position =(0, 51, -51), scale_x = -102)
     
+
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):
         temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
         Liste_Boids.append(temp)
+
 def update():
     Eigenschaften(Liste_Boids)
 
 def input(key):
-
     if held_keys["+"]:
         temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
         Liste_Boids.append(temp)
@@ -67,10 +70,13 @@ def input(key):
     if held_keys["2"]:
         for i in Liste_Boids:
             i.setMode(2)
+
 #Anwendung
 app = Ursina()
+
 #Fenster
 window.title = "Boids Simulation"
+
 #Kamera
 camera.position = (0,10,-350)
 EditorCamera()
@@ -79,10 +85,10 @@ EditorCamera()
 #Wireframe
 create_Wireframe()
 #Boids
-
 ######################################################################################################################################
 anzahl = 2
 ######################################################################################################################################
+
 Liste_Boids = []
 create_Boids(anzahl, Liste_Boids)
 
