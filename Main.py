@@ -32,18 +32,19 @@ def Eigenschaften(Liste_Boids):
 
 def create_Wireframe():
     #Wireframe
-    wf1 = Entity(model = "cube", position = (0, -51, -51), scale = (102,1,1))
-    wf2 = Entity(model = "cube", position = (-51, -51, 0), scale = (1,1,102))
-    wf3 = Entity(model = "cube", position = (0, -51, 51), scale = (102,1,1))
-    wf4 = Entity(model = "cube", position = (51, -51, 0), scale = (1,1,102))
-    wf5 = Entity(model = "cube", position = (51, 0, 51), scale = (1,102,1))
-    wf6 = Entity(model = "cube", position = (51, 0, -51), scale = (1,-102,1))
-    wf7 = Entity(model = "cube", position = (-51, 0, 51), scale = (1,102,1))
-    wf8 = Entity(model = "cube", position = (-51, 0, -51), scale = (1,102,1))
-    wf9 = Entity(model = "cube", position = (-51, 51, 0), scale = (1,1,-102))
-    wf10 = Entity(model = "cube", position =(0, 51, 51), scale = (-102,1,1))
-    wf11 = Entity(model = "cube", position =(51, 51, 0), scale = (1,1,102))
-    wf12 = Entity(model = "cube", position =(0, 51, -51), scale = (-102,1,1))
+    wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
+    wf2 = Entity(model = "cube", position = (-51, -51, 0), scale_z = 102)
+    wf3 = Entity(model = "cube", position = (0, -51, 51), scale_x = 102)
+    wf4 = Entity(model = "cube", position = (51, -51, 0), scale_z = 102)
+    wf5 = Entity(model = "cube", position = (51, 0, 51), scale_y = 102)
+    wf6 = Entity(model = "cube", position = (51, 0, -51), scale_y = -102)
+    wf7 = Entity(model = "cube", position = (-51, 0, 51), scale_y = 102)
+    wf8 = Entity(model = "cube", position = (-51, 0, -51), scale_y = 102)
+    wf9 = Entity(model = "cube", position = (-51, 51, 0), scale_z = -102)
+    wf10 = Entity(model = "cube", position =(0, 51, 51), scale_x = -102)
+    wf11 = Entity(model = "cube", position =(51, 51, 0), scale_z = 102)
+    wf12 = Entity(model = "cube", position =(0, 51, -51), scale_x = -102)
+    
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     for i in range(anzahl):

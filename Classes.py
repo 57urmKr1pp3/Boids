@@ -126,22 +126,29 @@ class Boid (Entity):
     def update(self):
         self.move()
 
-class Wireframe(Entity):
+# #Rekursionsfehler
+# class Wireframe(Entity):
 
-    def __init__(self, position, scale):
-        super().__init__()
-        self.position = position
-        self.scale = scale
-        self.model = 'cube'
+#     def __init__(self, position, scale_achse, scale_wert):
+#         super().__init__()
 
-    def getPosition(self):
-        return self.position
-    def getScale(self):
-        return self.scale
+#         self.position = position
 
-    def setPosition(self, nPos):
-        self.position = nPos
-    def setScale(self, nScale):
-        self.scale = nScale
+#         if scale_achse == "x":
+#             self.scale_x = scale_wert
+#         elif scale_achse == "y":
+#             self.scale_y = scale_wert
+#         elif scale_achse == "z":
+#             self.scale_z = scale_wert
+
+#         self.model = 'cube'
+
+#     def getPosition(self):
+#         return self.position
+
+#     def setPosition(self, nPos):
+#         self.position = nPos
+#     def setScale(self, nScale):
+#         self.scale = nScale
 
         
