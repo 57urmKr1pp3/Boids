@@ -4,7 +4,7 @@ from random import randint
 from Classes import Boid
 
 #Funktionen
-def Eigenschaften(Liste_Boids):
+def eigenschaften(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
         for j in range(i, len(Liste_Boids)-1):
             difX = Liste_Boids[i].x - Liste_Boids[j].x
@@ -31,7 +31,7 @@ def Eigenschaften(Liste_Boids):
                 Liste_Boids[i].setDirectionY = avDirY
                 Liste_Boids[i].setDirectionZ = avDirZ
 
-def create_Wireframe():
+def create_wireframe():
     #05.01.2022
     #Wireframe
     wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
@@ -48,7 +48,7 @@ def create_Wireframe():
     wf12 = Entity(model = "cube", position =(0, 51, -51), scale_x = -102)
     
 
-def create_Boids(anzahl, liste):
+def create_boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     #05.01.2022
     for i in range(anzahl):
@@ -57,7 +57,7 @@ def create_Boids(anzahl, liste):
 
 def update():
     #https://www.ursinaengine.org/entity_basics.html 10.01.2022
-    Eigenschaften(Liste_Boids)
+    eigenschaften(Liste_Boids)
 
 def input(key):
     #https://www.ursinaengine.org/entity_basics.html 10.01.2022
@@ -75,7 +75,7 @@ def input(key):
         for i in Liste_Boids:
             i.setMode(2)
 
-def createInstruction():
+def create_instruction():
     #https://www.youtube.com/watch?v=kb2wJYTwTHw 15.01.2022
     text_Beschreibung = '''Kamera drehen:
                             \nRechtsklick + Mausbewegen
@@ -92,7 +92,7 @@ def createInstruction():
                             \nweniger:              [-]
                             \n\nBoidverhalten:
                             \nAbprallen:           [1]
-                            \nWarp:                  [2]
+                            \nWarp:                   [2]
 
 
                         '''
@@ -112,14 +112,14 @@ EditorCamera()
 
 #Erstellen
 #Wireframe
-create_Wireframe()
-createInstruction()
+create_wireframe()
+create_instruction()
 #Boids
 ######################################################################################################################################
 anzahl = 2
 ######################################################################################################################################
 
 Liste_Boids = []
-create_Boids(anzahl, Liste_Boids)
+create_boids(anzahl, Liste_Boids)
 
 app.run()
