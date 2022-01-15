@@ -5,6 +5,8 @@ from working_on import rotation
 
 #Klasse
 class Boid (Entity):
+    #Entity https://www.ursinaengine.org/entity_basics.html 15.01.2022
+    #cheat sheet https://www.ursinaengine.org/cheat_sheet_dark.html 15.01.2022
 
     #Konstruktor der Klasse Entity und Boid wird aufgerufen
     #Position ist ein 3 dimensioanler Vektor mit x, y und z Koordinate
@@ -73,16 +75,18 @@ class Boid (Entity):
     def setMode(self, nMode):
         self.mode = nMode
         
-    #Update-Funktion bewegt den Boid durch Vektoraddition der Position und der Richtung
+    #Move-Funktion bewegt den Boid durch Addition der Position und der Richtung
     def move(self):
 
         #Bewegung
+        #https://www.ursinaengine.org/entity_basics.html 30.12.21
         self.x += self.directionX * time.dt
         self.y += self.directionY * time.dt
         self.z += self.directionZ * time.dt
 
         if self.mode == 1:
             #Richtungsänderung beim Erreichen der Grenze
+            #https://www.youtube.com/watch?v=NLn-hB1P9tQ
             if self.x <= -49:
                 self.directionX = -self.directionX
             elif self.x >= 49:
@@ -129,6 +133,7 @@ class Boid (Entity):
         rotation(self)
         
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
+    #https://www.ursinaengine.org/entity_basics.html 30.12.21
     def update(self):
         self.move()
 

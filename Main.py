@@ -1,7 +1,7 @@
 #Imports
 from ursina import *
 from random import randint
-from Classes import Boid, Wireframe
+from Classes import Boid
 
 #Funktionen
 def Eigenschaften(Liste_Boids):
@@ -32,8 +32,8 @@ def Eigenschaften(Liste_Boids):
                 Liste_Boids[i].setDirectionZ = avDirZ
 
 def create_Wireframe():
+    #05.01.2022
     #Wireframe
-
     wf1 = Entity(model = "cube", position = (0, -51, -51), scale_x = 102)
     wf2 = Entity(model = "cube", position = (-51, -51, 0), scale_z = 102)
     wf3 = Entity(model = "cube", position = (0, -51, 51), scale_x = 102)
@@ -50,14 +50,18 @@ def create_Wireframe():
 
 def create_Boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
+    #05.01.2022
     for i in range(anzahl):
         temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
         Liste_Boids.append(temp)
 
 def update():
+    #https://www.ursinaengine.org/entity_basics.html 10.01.2022
     Eigenschaften(Liste_Boids)
 
 def input(key):
+    #https://www.ursinaengine.org/entity_basics.html 10.01.2022
+    #10.01.2022
     if held_keys["+"]:
         temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
         Liste_Boids.append(temp)
@@ -71,19 +75,45 @@ def input(key):
         for i in Liste_Boids:
             i.setMode(2)
 
-#Anwendung
+def createInstruction():
+    #https://www.youtube.com/watch?v=kb2wJYTwTHw 15.01.2022
+    text_Beschreibung = '''Kamera drehen:
+                            \nRechtsklick + Mausbewegen
+                            \n\nKamerabewegen:
+                            \nRechtsklick +
+                            \nrechts:                [A]
+                            \nlinks:                   [D]
+                            \nvorwärts:           [W]
+                            \nrückwärts:          [S]
+                            \nhoch:                   [E]
+                            \nrunter:                [Q]
+                            \n\nBoidanzahl ändern:
+                            \nmehr:                  [+]
+                            \nweniger:              [-]
+                            \n\nBoidverhalten:
+                            \nAbprallen:           [1]
+                            \nWarp:                  [2]
+
+
+                        '''
+    beschreibung = Text(text_Beschreibung, line_height = 0.5, scale = 0.7, x = -.8, y = -.12, color = color.white)
+
+#Anwendung 
+#https://www.ursinaengine.org/cheat_sheet.html#window 28.12.2021
 app = Ursina()
 
 #Fenster
 window.title = "Boids Simulation"
 
 #Kamera
+#https://www.ursinaengine.org/cheat_sheet.html#camera 30.12.2021
 camera.position = (0,10,-350)
 EditorCamera()
 
 #Erstellen
 #Wireframe
 create_Wireframe()
+createInstruction()
 #Boids
 ######################################################################################################################################
 anzahl = 2

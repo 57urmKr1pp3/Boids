@@ -11,12 +11,12 @@ def adaptdir(Boid1, Boid2):
     difY = Boid1.y - Boid2.y
     difZ = Boid1.z - Boid2.z
     if difX < 5 and difX > 5 and difY < 5 and difY > -5 and difZ < 5 and difZ > -5:
-        avDirX = (Boid1.getDirectionX + Boid2.getDirectionX)/2
-        avDirY = (Boid1.getDirectionY + Boid2.getDirectionY)/2
-        avDirZ = (Boid1.getDirectionZ + Boid2.getDirectionZ)/2
-        Boid1.setDirectionX = avDirX
-        Boid1.setDirectionYavDirY = avDirY
-        Boid1.setDirectionZ = avDirZ
+        avDirX = (Boid1.getDirectionX() + Boid2.getDirectionX())/2
+        avDirY = (Boid1.getDirectionY() + Boid2.getDirectionY())/2
+        avDirZ = (Boid1.getDirectionZ() + Boid2.getDirectionZ())/2
+        Boid1.setDirectionX(avDirX)
+        Boid1.setDirectionYavDirY(avDirY)
+        Boid1.setDirectionZ(avDirZ)
 
 def checkCollision(Liste_Boids):
     for i in range(len(Liste_Boids)-1):
@@ -35,32 +35,15 @@ def checkCollision(Liste_Boids):
 # #############################
 
 def rotation(self):
-    #https://stackoverflow.com/questions/14607640/rotating-a-vector-in-3d-space
-    #Rotation davor
-    tempRotX = self.rotation_x
-    tempRotY = self.rotation_y
-    tempRotZ = self.rotation_z
-    #Position davor
+
     tempPosX = self.x
     tempPosY = self.y
     tempPosZ = self.z
-    #Betrag
-    if tempPosX < 0:
-        valueX = -tempPosX
-    else:
-        valueX = tempPosX
-
-    if tempPosY < 0:
-        valueY = -tempPosY
-
-    else:
-        valueY = tempPosY
-
-    if tempPosZ < 0:
-        valueZ = -tempPosZ
-    else:
-        valueZ = tempPosZ
     
+    #Matrix: https://stackoverflow.com/questions/14607640/rotating-a-vector-in-3d-space
+    #Berechnung: https://www.mathebibel.de/winkel-zwischen-zwei-vektoren
+    #math docs.python.org/3/library/math.html 10.01.2022
+    #Rotation https://www.ursinaengine.org/coordinate_system.html 15.01.2022
     #Berechnung
     #bei der Berechnung benutze ich 2D-Vektoren um die einzelnen Winkel zu berechnen
     EinheitsvektorXY = [1, 0]
@@ -69,6 +52,7 @@ def rotation(self):
     VektorXY = [self.directionX, self.directionY]
     VektorYZ = [self.directionZ, self.directionY]
     VektorXZ = [self.directionX, self.directionX]
+    #Testvektoren
     # VektorXY = [2, 5]
     # VektorYZ = [6, 3]
     # VektorXZ = [4, 1]
@@ -108,13 +92,7 @@ def rotation(self):
             thetaYZ = -math.degrees(radYZ)
     except:
         thetaYZ = 0
-    #Wert durch Drehmatrix herausfinden
-    #X-Rotation
-    angleX
-    #Y-Rotation
-    angleY
-    #Z-Rotation
-    angleZ
+
     #Rotieren
     if tempPosX > tempPosY and tempPosX > tempPosZ:
         #da gelegentlich ein UnboundLocalError hervortritt muss dies auch in eine try/except-Verzweigung
