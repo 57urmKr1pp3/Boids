@@ -25,7 +25,7 @@ def create_Boids(anzahl, liste):
 def input(key):
 
     if held_keys["+"]:
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20))
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-20, 20), randint(-20, 20), randint(-20, 20), 1)
         Liste_Boids.append(temp)
     if held_keys["-"]:
         Liste_Boids[len(Liste_Boids)-1].disable()
@@ -50,7 +50,7 @@ create_Wireframe()
 #Boids
 
 ######################################################################################################################################
-anzahl = 1
+anzahl = 5
 ######################################################################################################################################
 Liste_Boids = []
 create_Boids(anzahl, Liste_Boids)
