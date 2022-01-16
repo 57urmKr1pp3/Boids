@@ -21,6 +21,7 @@ class Boid (Entity):
         self.model = 'sprites'
         self.scale = scale
         self.mode = mode
+        self.collider = 'box'
         
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
@@ -131,7 +132,24 @@ class Boid (Entity):
 
         #Rotation
         rotation(self)
-        
+    
+    def collision(self):
+        #https://www.ursinaengine.org/collision.html 16.01.2022
+        #https://www.ursinaengine.org/cheat_sheet.html#HitInfo 16.01.2022
+        collision_raycast1 = raycast(origin = self.position, direction = (self.directionX, self.directionY, self.directionZ), distance = 1, traverse_target = Boid, debug = True)
+        collision_raycast2 = raycast(origin = self.position, direction = (self.directionX, 0, self.directionZ), distance = 1, traverse_target = Boid, debug = True)
+        collision_raycast3 = raycast(origin = self.position, direction = (self.directionX, 0, self.directionZ), distance = 1, traverse_target = Boid, debug = True)
+        collision_raycast4 = raycast(origin = self.position, direction = (0, self.getDirectionY, self.directionZ), distance = 1, traverse_target = Boid, debug = True)
+        collision_raycast5 = raycast(origin = self.position, direction = (0, -self.getDirectionY, self.directionZ), distance = 1, traverse_target = Boid, debug = True)
+
+
+    def adaptDir(self):
+        adaptDir_raycast1 = raycast(origin = self.position, direction = (self.directionX, self.directionY, self.directionZ), distance = 5, traverse_target = Boid, debug = True)
+        adaptDir_raycast2 = raycast(origin = self.position, direction = (self.directionX, 0, self.directionZ), distance = 5, traverse_target = Boid, debug = True)
+        adaptDir_raycast3 = raycast(origin = self.position, direction = (self.directionX, 0, self.directionZ), distance = 5, traverse_target = Boid, debug = True)
+        adaptDir_raycast4 = raycast(origin = self.position, direction = (0, self.getDirectionY, self.directionZ), distance = 5, traverse_target = Boid, debug = True)
+        adaptDir_raycast5 = raycast(origin = self.position, direction = (0, -self.getDirectionY, self.directionZ), distance = 5, traverse_target = Boid, debug = True)
+
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
     #https://www.ursinaengine.org/entity_basics.html 30.12.21
     def update(self):
