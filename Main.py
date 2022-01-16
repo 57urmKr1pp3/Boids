@@ -52,7 +52,7 @@ def create_boids(anzahl, liste):
     #Erstellen und speichern der Boids in einer Liste
     #05.01.2022
     for i in range(anzahl):
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, groesse)
         Liste_Boids.append(temp)
 
 def update():
@@ -63,7 +63,7 @@ def input(key):
     #https://www.ursinaengine.org/entity_basics.html 10.01.2022
     #10.01.2022
     if held_keys["+"]:
-        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, 15)
+        temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, groesse)
         Liste_Boids.append(temp)
     if held_keys["-"]:
         Liste_Boids[len(Liste_Boids)-1].disable()
@@ -117,6 +117,7 @@ create_instruction()
 #Boids
 ######################################################################################################################################
 anzahl = 2
+groesse = 20
 ######################################################################################################################################
 
 Liste_Boids = []

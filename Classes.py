@@ -86,7 +86,7 @@ class Boid (Entity):
 
         if self.mode == 1:
             #Richtungsänderung beim Erreichen der Grenze
-            #https://www.youtube.com/watch?v=NLn-hB1P9tQ
+            #https://www.youtube.com/watch?v=NLn-hB1P9tQ 01.01.2022
             if self.x <= -49:
                 self.directionX = -self.directionX
             elif self.x >= 49:
