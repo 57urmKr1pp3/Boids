@@ -1,7 +1,9 @@
-\contentsline {section}{\numberline {1}Abbildungsverzeichnis}{2}{}%
-\contentsline {section}{\numberline {2}Quellennachweis}{3}{}%
-\contentsline {section}{\numberline {3}UML-Diagramm}{4}{}%
-\contentsline {section}{\numberline {4}Grundidee}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Allgemein}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Umgebung}{5}{}%
-\contentsline {section}{\numberline {5}wichtigste Funktionen}{6}{}%
+\contentsline {section}{\numberline {1}Abbildungsverzeichnis}{2}{section.1}%
+\contentsline {section}{\numberline {2}Quellennachweis}{3}{section.2}%
+\contentsline {section}{\numberline {3}UML-Diagramm}{5}{section.3}%
+\contentsline {section}{\numberline {4}Grundidee}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Umgebung}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Umsetzung des Raumes}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Umsetzung der Boids}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Regeln}{7}{subsection.4.4}%
+\contentsline {section}{\numberline {5}wichtigste Funktionen}{8}{section.5}%
