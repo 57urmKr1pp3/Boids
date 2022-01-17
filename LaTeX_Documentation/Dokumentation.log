@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  16 JAN 2022 01:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  16 JAN 2022 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,7 +523,7 @@ Package rerunfilecheck Warning: File `Dokumentation.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Dokumentation.out':
-(rerunfilecheck)             Before: 8A156219D08CEC0B17E6BDF3CAF775CC;1113
+(rerunfilecheck)             Before: F60B9484C89C030350B9A79C6CA3DF50;1122
 (rerunfilecheck)             After:  1FE73F144456D5B79C33E394362D5C45;1113.
  ) 
 Here is how much of TeX's memory you used:
@@ -545,7 +545,7 @@ ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/olive/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C
 :/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/esvect/vect10.pf
 b>
-Output written on Dokumentation.pdf (9 pages, 151486 bytes).
+Output written on Dokumentation.pdf (9 pages, 151489 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
