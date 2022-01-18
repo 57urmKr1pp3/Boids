@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  16 JAN 2022 01:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  18 JAN 2022 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,10 +461,10 @@ l.23 	\newpage
 
 pdfTeX warning: pdflatex.exe (file ./UML/Boids_UML.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<UML/Boids_UML.pdf, id=76, page=2, 598.15468pt x 847.24525pt>
+<UML/Boids_UML.pdf, id=76, page=1, 598.15468pt x 847.24525pt>
 File: UML/Boids_UML.pdf Graphic file (type pdf)
-<use UML/Boids_UML.pdf, page 2>
-Package pdftex.def Info: UML/Boids_UML.pdf , page2 used on input line 32.
+<use UML/Boids_UML.pdf, page 1>
+Package pdftex.def Info: UML/Boids_UML.pdf , page1 used on input line 32.
 (pdftex.def)             Requested size: 448.6149pt x 635.43237pt.
 
 Overfull \hbox (58.6149pt too wide) in paragraph at lines 32--33
@@ -517,14 +517,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--66
  []
 
 [7] [8] (Dokumentation.aux)
-
-Package rerunfilecheck Warning: File `Dokumentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Dokumentation.out':
-(rerunfilecheck)             Before: 8A156219D08CEC0B17E6BDF3CAF775CC;1113
-(rerunfilecheck)             After:  1FE73F144456D5B79C33E394362D5C45;1113.
+Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
+(rerunfilecheck)             Checksum: 1FE73F144456D5B79C33E394362D5C45;1113.
  ) 
 Here is how much of TeX's memory you used:
  10964 strings out of 478659
@@ -545,7 +539,7 @@ ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/olive/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C
 :/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/esvect/vect10.pf
 b>
-Output written on Dokumentation.pdf (9 pages, 151486 bytes).
+Output written on Dokumentation.pdf (9 pages, 151336 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
