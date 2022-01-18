@@ -1,36 +1,6 @@
 import math
 from ursina import *
 
-###############################
-# in Main-Update()
-###############################
-
-# def adaptdir(Boid1, Boid2):
-
-#     #Differenz der einzelnen Positionen
-#     difX = Boid1.x - Boid2.x
-#     difY = Boid1.y - Boid2.y
-#     difZ = Boid1.z - Boid2.z
-#     if difX < 5 and difX > 5 and difY < 5 and difY > -5 and difZ < 5 and difZ > -5:
-#         avDirX = (Boid1.getDirectionX() + Boid2.getDirectionX())/2
-#         avDirY = (Boid1.getDirectionY() + Boid2.getDirectionY())/2
-#         avDirZ = (Boid1.getDirectionZ() + Boid2.getDirectionZ())/2
-#         Boid1.setDirectionX(avDirX)
-#         Boid1.setDirectionYavDirY(avDirY)
-#         Boid1.setDirectionZ(avDirZ)
-
-# def checkCollision(Liste_Boids):
-#     for i in range(len(Liste_Boids)-1):
-#         for j in range(i, len(Liste_Boids)-1):
-#             difX = Liste_Boids[i].x - Liste_Boids[j].x
-#             difY = Liste_Boids[i].y - Liste_Boids[j].y
-#             difZ = Liste_Boids[i].z - Liste_Boids[j].z
-#             if difX < .5 and difX > .5 and difY < .5 and difY > -.5 and difZ < .5 and difZ > -.5:
-#                 Boid1X = Liste_Boids[i].x + .5
-#                 Boid1Y = Liste_Boids[i].y + .5
-#                 Boid1Z = Liste_Boids[i].z + .5
-#                 Liste_Boids[i].setPosition(Boid1X, Boid1Y, Boid1Z)
-
 # #############################
 # #in Boids und update()
 # #############################
@@ -134,6 +104,8 @@ def rotation(self):
 def eigenschaften(self):
     #https://www.ursinaengine.org/collision.html 16.01.2022
     #https://www.ursinaengine.org/cheat_sheet.html#HitInfo 16.01.2022
+    #Ausrichtung Müll
+    #Ausrichtung muss durch Matrix passieren
     Boid1Pos = self.position
     Boid1DirX = self.directionX
     Boid1DirY = self.directionY
