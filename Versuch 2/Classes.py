@@ -13,6 +13,65 @@ class Boid (Entity):
         self.mode = mode
         self.collider = 'mesh'
 
+    #Getter
+    def getModel(self):
+        return self.model
+
+    def getPosition(self):
+        return self.position
+
+    def getRotation(self):
+        return self.rotation
+
+    def getColor(self):
+        return self.color
+    
+    def getScale(self):
+        return self.scale
+    
+    def getVel(self):
+        return self.vel
+
+    def getAcel(self):
+        return self.acel
+
+    def getMaxVel(self):
+        return self.maxVel
+
+    def getMode(self):
+        return self.mode
+
+    def getCollider(self):
+        return self.collider
+    
+    #Setter
+    def setPosition(self, posX, posY, posZ):
+        self.position = (posX, posY, posZ)
+    
+    def setModel(self, nModel):
+        self.model = nModel
+    
+    def setRotation(self, rotX, rotY, rotZ):
+        self.rotation = (rotX, rotY, rotZ)
+
+    def setScale(self, nScale):
+        self.scale = nScale
+    
+    def setVel(self, nVel):
+        self.vel = nVel
+    
+    def setAcel(self, nAcel):
+        self.acel = nAcel
+    
+    def setMaxVel(self, nMaxVel):
+        self.maxVel = nMaxVel
+    
+    def setMode(self, nMode):
+        self.mode = nMode
+
+    def setCollider(self, nCollider):
+        self.collider = nCollider
+        
     def updateVel(self):
         if self.vel < self.maxVel:
             self.vel += self.acel
