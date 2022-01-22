@@ -1,5 +1,5 @@
 from ursina import *
-
+from Main import Liste_Boids
 class Boid (Entity):
 
     def __init__ (self, posX, posY, posZ, rotX, rotY, rotZ, vel, acel, maxVel, mode, scale):
@@ -71,13 +71,84 @@ class Boid (Entity):
 
     def setCollider(self, nCollider):
         self.collider = nCollider
-        
+
+    #Bewegung
     def updateVel(self):
         if self.vel < self.maxVel:
             self.vel += self.acel
 
+    def closeBoids(self):
+        close = []
+        for i in Liste_Boids:
+            if i != self:
+                distanceBoids = distance(self.position, i.position)
+                if distanceBoids < 5:
+                    close.append(i)
+        return close
+
+    def alignment(self):
+        closeOne = self.closeBoids()
+        Boid1XR = self.rotation_x
+        Boid1YR = self.rotation_y
+        Boid1ZR = self.rotation_z
+        for i in closeOne:
+            Boid2XR = i.rotation_x
+            Boid2YR = i.rotation_y
+            Boid2ZR = i.rotation_z
+            avgXR = (Boid1XR+Boid2XR)/2
+            avgYR = (Boid1YR + Boid2YR)/2
+            avgZR = (Boid1ZR + Boid2ZR)/2
+            self.rotation_x = avgXR
+            self.rotation_y = avgYR
+            self.rotation_z = avgZR
+
+    def seperation(self):
+        HitInfo = raycast(origin = self.position, direction = self.up, distance = 5, traverse_target = scene)
+        while HitInfo.hit:
+            self.rotation = self.right * self.vel
+
+    def avoidWall(self):
+        #Raycasts
+        raycastup = raycast(origin = self.position, direction = self.up, distance = 5, traverse_target = scene, ignore = (self,), debug = True)
+        if raycastup.hit:
+            raycastfront = raycast(origin = self.position, direction = self.forward, distance = inf, traverse_target = scene, ignore = (self,), debug = True)
+            raycastback = raycast(origin = self.position, direction = self.back, distance = inf, traverse_target = scene, ignore = (self,), debug = True)
+            raycastleft = raycast(origin = self.position, direction = self.left, distance = inf, traverse_target = scene, ignore = (self,), debug = True)
+            raycastright = raycast(origin = self.position, direction = self.right, distance = inf, traverse_target = scene, ignore = (self,), debug = True)
+
+            distance_up = raycastup.distance
+            distance_front = raycastfront.distance
+            distance_back = raycastback.distance
+            distance_left = raycastleft.distance
+            distance_right = raycastright.distance
+
+            #up kleinste Distanz
+            if (distance_up <= distance_front) and (distance_up <= distance_back) and (distance_up <= distance_left) and (distance_up <= distance_right):
+                while raycastup.hit:
+                    self.rotation += self.back * (self.vel/10)
+
+            #front kleinste Distanz
+            if (distance_front <= distance_up) and (distance_front <= distance_back) and (distance_front <= distance_right) and (distance_up <= distance_left):
+                while raycastup.hit:
+                    self.rotation += self.back * (self.vel/10)
+
+            #back kleinste Distanz
+            if (distance_back <= distance_up) and (distance_back <= distance_front) and (distance_back <= distance_right) and (distance_back <= distance_left):
+                while raycastup.hit:
+                    self.rotation += self.forward * (self.vel/10)
+
+            #left kleinste Distanz
+            if (distance_left <= distance_up) and (distance_left <= distance_right) and (distance_left <= distance_back) and (distance_left <= distance_front):
+                while raycastup.hit:
+                    self.rotation += self.right * (self.vel/10)
+
+            #right kleinste Distanz
+            if (distance_right <= distance_left) and (distance_right <= distance_up) and (distance_right <= distance_front) and (distance_right <= distance_back):
+                while raycastup.hit:
+                    self.rotation += self.left * (self.vel/10)
+            
     def move(self):
-        self.position += self.up * (self.vel/10000)
+        self.position += self.up * (self.vel/1000)
         self.updateVel()
         #Warp Modus
         if self.mode == 1:
@@ -88,13 +159,18 @@ class Boid (Entity):
             if self.y <= -50:
                 self.y = 49
             if self.y >= 50:
-                self.y = 50
+                self.y = -50
             if self.z <= -50:
                 self.z = 49
             if self.z >= 50:
                 self.z = -49
-        #Pong-Modus
+
+        #Wändevermeidung
         if self.mode == 2:
+            self.avoidWall()
+
+        #Pong-Modus
+        if self.mode == 3:
             if self.x <= -49:
                 self.rotation_y = -self.rotation_y
             if self.x >= 49:
@@ -110,3 +186,6 @@ class Boid (Entity):
 
     def update(self):
         self.move()
+        self.alignment()
+        self.seperation()
+        
