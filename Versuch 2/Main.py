@@ -26,7 +26,7 @@ def create_wireframe():
     w5 = Entity(model = 'cube', position = (0,51,0), scale = (101,0.001,101), color = color.red, alpha = 0)
 def create_boids(anzahl):
     for i in range(anzahl):
-        temp = Boid(randint(-10,10), randint(-10,10), randint(-10, 10), randint(0,360), randint(0,360), randint(0,360), uniform(0.0, 100.0), uniform(0.0, 10.0), 150.00, 2, groesse)
+        temp = Boid(randint(-10,10), randint(-10,10), randint(-10, 10), randint(0,360), randint(0,360), randint(0,360), uniform(0.0, 100.0), uniform(0.0, 10.0), 150.00, 1, groesse)
         Liste_Boids.append(temp)
 
 def input(key):
@@ -44,6 +44,9 @@ def input(key):
     if held_keys["2"]:
         for i in Liste_Boids:
             i.setMode(2)
+    if held_keys["3"]:
+        for i in Liste_Boids:
+            i.setMode(3)
 
 def create_instruction():
     #https://www.youtube.com/watch?v=kb2wJYTwTHw 15.01.2022
@@ -51,18 +54,19 @@ def create_instruction():
                             \nRechtsklick + Mausbewegen
                             \n\nKamerabewegen:
                             \nRechtsklick +
-                            \nrechts:                [A]
-                            \nlinks:                   [D]
-                            \nvorwärts:           [W]
-                            \nrückwärts:          [S]
-                            \nhoch:                   [E]
-                            \nrunter:                [Q]
+                            \nrechts:                      [A]
+                            \nlinks:                         [D]
+                            \nvorwärts:                 [W]
+                            \nrückwärts:                [S]
+                            \nhoch:                         [E]
+                            \nrunter:                      [Q]
                             \n\nBoidanzahl ändern:
-                            \nmehr:                  [+]
-                            \nweniger:              [-]
+                            \nmehr:                        [+]
+                            \nweniger:                    [-]
                             \n\nBoidverhalten:
-                            \nAbprallen:           [1]
-                            \nWarp:                   [2]
+                            \nWarp:                         [1]
+                            \nWaende vermeiden [2]
+                            \nAbprallen:                 [3]
 
 
                         '''
@@ -86,7 +90,7 @@ create_wireframe()
 create_instruction()
 #Boids
 ######################################################################################################################################
-anzahl = 2
+anzahl = 0
 groesse = 5
 ######################################################################################################################################
 
