@@ -124,28 +124,23 @@ class Boid (Entity):
 
             #up kleinste Distanz
             if (distance_up <= distance_front) and (distance_up <= distance_back) and (distance_up <= distance_left) and (distance_up <= distance_right):
-                while raycastup.hit:
-                    self.rotation += self.back * (self.vel/10)
+                self.rotation += self.back * (self.vel/10)
 
             #front kleinste Distanz
             if (distance_front <= distance_up) and (distance_front <= distance_back) and (distance_front <= distance_right) and (distance_up <= distance_left):
-                while raycastup.hit:
-                    self.rotation += self.back * (self.vel/10)
+                self.rotation += self.back * (self.vel/10)
 
             #back kleinste Distanz
             if (distance_back <= distance_up) and (distance_back <= distance_front) and (distance_back <= distance_right) and (distance_back <= distance_left):
-                while raycastup.hit:
-                    self.rotation += self.forward * (self.vel/10)
+                self.rotation += self.forward * (self.vel/10)
 
             #left kleinste Distanz
             if (distance_left <= distance_up) and (distance_left <= distance_right) and (distance_left <= distance_back) and (distance_left <= distance_front):
-                while raycastup.hit:
-                    self.rotation += self.right * (self.vel/10)
+                self.rotation += self.right * (self.vel/10)
 
             #right kleinste Distanz
             if (distance_right <= distance_left) and (distance_right <= distance_up) and (distance_right <= distance_front) and (distance_right <= distance_back):
-                while raycastup.hit:
-                    self.rotation += self.left * (self.vel/10)
+                self.rotation += self.left * (self.vel/10)
             
     def move(self):
         self.position += self.up * (self.vel/1000)
