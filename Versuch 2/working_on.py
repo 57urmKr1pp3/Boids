@@ -28,3 +28,7 @@ def eigenschaften(self):
 
     #cohesion    
     
+
+def pong(self):
+    if self.x <= -49:
+        if 
