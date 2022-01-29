@@ -110,10 +110,50 @@ class Boid (Entity):
             self.vel = avgV
 
     def seperation(self):
+        # proximity = self.closeBoids()
+        # for i in proximity:
+        #     if distance(self.position, i.position) < 2:
+        #         self.position -= Vec3(i.position + self.position)
         proximity = self.closeBoids()
-        for i in proximity:
-            if distance(self.position, i.position) < 1:
-                self.position -= Vec3(self.up + Vec3(i.position-self.up)-self.up)
+        #Versuch 1
+        #ProxPos = []
+        #for i in proximity:
+        #    ProxPos.append(i.position)
+        #try:
+        #    center = sum(ProxPos)/len(ProxPos)
+        #    if distance(self.position, center) < 1:
+        #        self.position -= Vec3(self.up + Vec3(Vec3(center - self.position)-self.up))
+        #except:
+        #    pass
+
+        #Versuch 2
+        if len(proximity) > 1:
+            for i in proximity:
+                if distance(self.position, i.position) < 2:
+                    center = (self.position + i.position)/2
+                    self.position -= Vec3(center)
+
+    def cohesion(self):
+        proximity = self.closeBoids()
+        #Versuch 1
+        #ProxPos = []
+        #for i in proximity:
+        #    ProxPos.append(i.position)
+        #try:
+        #    center = sum(ProxPos)/len(ProxPos)
+        #    if distance(self.position, center) >= 2:
+        #        self.position += Vec3(self.up + Vec3(Vec3(center - self.position)-self.up))
+        #except:
+        #    pass
+        #Versuch 2
+        center = self.position
+        if len(proximity) > 1:
+            for i in proximity:
+                center = (center + i.position)/2
+        if distance(self.position, center) >= 2:
+            self.position += Vec3(center - self.position)
+
+
 
     def avoidWall(self):
         #Raycasts
@@ -190,7 +230,8 @@ class Boid (Entity):
     def update(self):
         self.move()
         self.alignment()
-        self.seperation()
+        #self.seperation()
+        #self.cohesion()
 
 def create_wireframe():
     #05.01.2022
@@ -216,14 +257,14 @@ def create_wireframe():
 
 def create_boids(anzahl):
     for i in range(anzahl):
-        temp = Boid(randint(-10,10), randint(-10,10), randint(-10, 10), randint(0,360), randint(0,360), randint(0,360), uniform(0.0, 100.0), uniform(0.0, 10.0), 300.0, 1, groesse)
+        temp = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), randint(0,360), randint(0,360), randint(0,360), uniform(0.0, 100.0), uniform(0.0, 10.0), 300.0, 1, groesse)
         Liste_Boids.append(temp)
 
 def input(key):
     #https://www.ursinaengine.org/entity_basics.html 10.01.2022
     #10.01.2022
     if held_keys["+"]:
-        temp = Boid(randint(-10,10), randint(-10,10), randint(-10, 10), randint(0,360), randint(0,360), randint(0,360), uniform(50.0, 300.0), uniform(0.0, 10.0), 300.0, 1, groesse)
+        temp = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), randint(0,360), randint(0,360), randint(0,360), uniform(50.0, 300.0), uniform(0.0, 10.0), 300.0, 1, groesse)
         Liste_Boids.append(temp)
     if held_keys["-"]:
         Liste_Boids[len(Liste_Boids)-1].disable()
@@ -281,7 +322,7 @@ create_instruction()
 #Boids
 ######################################################################################################################################
 anzahl = 25
-groesse = 10
+groesse = 30
 ######################################################################################################################################
 
 Liste_Boids = []
