@@ -131,7 +131,7 @@ class Boid (Entity):
             for i in proximity:
                 if distance(self.position, i.position) < 2:
                     center = (self.position + i.position)/2
-                    self.position -= Vec3(center)
+                    self.position -= Vec3(center - self.position) * .005
 
     def cohesion(self):
         proximity = self.closeBoids()
@@ -151,7 +151,7 @@ class Boid (Entity):
             for i in proximity:
                 center = (center + i.position)/2
         if distance(self.position, center) >= 2:
-            self.position += Vec3(center - self.position)
+            self.position += Vec3(center - self.position) * 0.005
 
 
 
