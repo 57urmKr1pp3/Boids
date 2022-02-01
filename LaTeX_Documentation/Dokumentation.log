@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  18 JAN 2022 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  1 FEB 2022 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,10 +440,6 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-Overfull \hbox (87.82567pt too wide) in paragraph at lines 19--19
- []$ 
- []
-
 [1
 
 {C:/Users/olive/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
@@ -452,96 +448,109 @@ Overfull \hbox (87.82567pt too wide) in paragraph at lines 19--19
 \openout4 = `Dokumentation.toc'.
 
 
+
+pdfTeX warning: pdflatex.exe (file ./UML/Boids_UML.pdf): PDF inclusion: found P
+DF version <1.7>, but at most version <1.5> allowed
+<UML/Boids_UML.pdf, id=64, page=1, 598.15468pt x 847.24525pt>
+File: UML/Boids_UML.pdf Graphic file (type pdf)
+<use UML/Boids_UML.pdf, page 1>
+Package pdftex.def Info: UML/Boids_UML.pdf , page1 used on input line 25.
+(pdftex.def)             Requested size: 448.6149pt x 635.43237pt.
+
+Overfull \hbox (58.6149pt too wide) in paragraph at lines 25--26
+[] 
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 	\newpage
-               [1] [2] [3]
-
-pdfTeX warning: pdflatex.exe (file ./UML/Boids_UML.pdf): PDF inclusion: found P
-DF version <1.7>, but at most version <1.5> allowed
-<UML/Boids_UML.pdf, id=76, page=1, 598.15468pt x 847.24525pt>
-File: UML/Boids_UML.pdf Graphic file (type pdf)
-<use UML/Boids_UML.pdf, page 1>
-Package pdftex.def Info: UML/Boids_UML.pdf , page1 used on input line 32.
-(pdftex.def)             Requested size: 448.6149pt x 635.43237pt.
-
-Overfull \hbox (58.6149pt too wide) in paragraph at lines 32--33
-[] 
- []
-
-[4]
+l.26 	\newpage
+               [1] [2]
 Overfull \vbox (71.6757pt too high) has occurred while \output is active []
 
 
-[5 <./UML/Boids_UML.pdf>]
-Overfull \hbox (27.10355pt too wide) in paragraph at lines 37--38
+[3 <./UML/Boids_UML.pdf>]
+Overfull \hbox (27.10355pt too wide) in paragraph at lines 30--31
 \OT1/cmr/m/n/12 chen Darstel-lung war frei uberlassen. Auf-grund der ein-deuti
 -gen und verstandlichen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-\OT1/cmr/m/n/12 Grad haben kann.
+Overfull \hbox (14.35692pt too wide) in paragraph at lines 30--31
+\OT1/cmr/m/n/12 Ob-jekte wer-den dargestellt und durch spez-i-fis-che Funk-tio-
+nen (up-date(), move())
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+\OT1/cmr/m/n/12 erklart wer-den.
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+[]$[]$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 45--47
-\OT1/cmr/m/n/12 eili-gen Achse moglich.
+[]$[]$
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+[]$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
-
+Overfull \hbox (8.4057pt too wide) in paragraph at lines 48--50
+\OT1/cmr/m/n/12 lassen diese Wand dann in dem gle-ichen Winkel, nach dem \OT1/c
+mr/m/it/12 Einfallswinkel-
  []
 
-[6]
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+[]$[]$
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 60--62
 []$[]$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
-[]$[]$
- []
-
-[7] [8] (Dokumentation.aux)
+[5] [6] [7] [8] (Dokumentation.aux)
 Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
-(rerunfilecheck)             Checksum: 1FE73F144456D5B79C33E394362D5C45;1113.
+(rerunfilecheck)             Checksum: 59FB7233F85004E334689B0E49A00DB4;1141.
  ) 
 Here is how much of TeX's memory you used:
- 10964 strings out of 478659
- 172341 string characters out of 2845920
- 466769 words of memory out of 3000000
- 28887 multiletter control sequences out of 15000+600000
+ 10966 strings out of 478659
+ 172351 string characters out of 2845920
+ 465769 words of memory out of 3000000
+ 28886 multiletter control sequences out of 15000+600000
  415078 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,14n,76p,783b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,6n,76p,684b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\olive\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbxti10.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/olive/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/olive/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/olive/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/olive/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C
-:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/esvect/vect10.pf
-b>
-Output written on Dokumentation.pdf (9 pages, 151336 bytes).
+/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/olive/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/olive/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Dokumentation.pdf (9 pages, 136753 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
