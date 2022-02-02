@@ -99,27 +99,35 @@ class Boid (Entity):
     def alignment(self):
         #Die Boids in der Nähe werden zwischengespeichert
         proximity = self.closeBoids()
-        #Die einzelnen Rotationswerte und die Geschwindigkeit des self.Boids werden hier gespeichert
+        #Die einzelnen Rotationswerte und die Geschwindigkeitswerte des self.Boids werden hier gespeichert
         Boid1XR = self.rotation_x
         Boid1YR = self.rotation_y
         Boid1ZR = self.rotation_z
         Boid1V = self.vel
+        Boid1MV = self.maxVel
+        Boid1A = self.acel
         for i in proximity: # für jeden Boid in der Nähe wird das Alignment-Verfahren durchgegangen
             #Rotations und Geschwindikeitswerte des zu vergleichenden Boids zwischengespeichert
             Boid2XR = i.rotation_x
             Boid2YR = i.rotation_y
             Boid2ZR = i.rotation_z
             Boid2V = i.vel
+            Boid2MV = i.maxVel
+            Boid2A = i.acel
             #Die Durchschnitte der einzelnen Werte werden hier berechnet
             avgXR = (Boid1XR + Boid2XR)/2
             avgYR = (Boid1YR + Boid2YR)/2
             avgZR = (Boid1ZR + Boid2ZR)/2
             avgV = (Boid1V + Boid2V)/2
+            avgMV = (Boid1MV + Boid2MV)/2
+            avgA = (Boid1A + Boid2A)/2
             #Die Durchschnittswerte überschreiben die Rotations und Geschwindigkeitswerte des self.Boid
             self.rotation_x = avgXR
             self.rotation_y = avgYR
             self.rotation_z = avgZR
             self.vel = avgV
+            self.maxVel = avgMV
+            self.acel = avgA
 
     def seperation(self):
         # proximity = self.closeBoids()
@@ -146,7 +154,7 @@ class Boid (Entity):
                 if distance(self.position, i.position) < 2:
                     center = (self.position + i.position)/2
                     #Die Differenz zwischen der Mitte und der eigenen Position wird von der Position subtrahiert um den Abstand zu erhöhen
-                    self.position -= Vec3(center - self.position) * .005
+                    self.position -= Vec3(center - self.position) * .05
 
     def cohesion(self):
         #Versuch 1
@@ -170,7 +178,7 @@ class Boid (Entity):
         #falls die Distanz des Boids zu der Mitte groß genug ist wird der Abstand zur Mitte der Position hinzugefügt
         #damit die Boids immer in die Mitte des Flocks ziehen
         if distance(self.position, center) >= 2:
-            self.position += Vec3(center - self.position) * .005
+            self.position += Vec3(center - self.position) * .05
 
 
 
