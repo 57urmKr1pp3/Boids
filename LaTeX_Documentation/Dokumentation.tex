@@ -32,7 +32,7 @@
 	
 	\subsection{Darstellung des Raumes}
 		Zur Darstellung des Raumes werden 12 Objekte in Form eines Würfels erstellt, jedoch werden diese dann so skaliert, dass sie die Form eines Rechteckes annehmen. Diese werden dann so angeordnet, dass sie die Kanten eines Würfels bilden. 
-		Des Weiteren werden die Seitenflächen erstellt. Dabei werden wie davor 6 Objekte in Form eines Würfels erstellt. Nur werden diese jetzt so skaliert, dass sie eine quadratische Fläche bilden. Um diese unsichtbar zu machen wird der Sichtbarkeitswert $\alpha$ auf Null gesetzt.
+		Des Weiteren werden die Seitenflächen erstellt. Dabei werden wie davor 6 Objekte in Form eines Würfels erstellt. Nur werden diese jetzt so skaliert, dass sie eine quadratische Fläche bilden. Um diese unsichtbar zu machen wird der Sichtbarkeitswert auf Null gesetzt.
 		
 	\subsection{Allgemeines zu den Boids}
 		Boids sind Körper, die sich Bewegen. Zur Veranschaulichung der Richtung sollten die Boids einen Körper mit einer Spitze haben, wie zum Beispiel ein Kegel. Da ein Kegel sehr viele Seiten hat, die alle jedes Bild berechnet werden müssen und dadurch die Performance senken, sollte man auf einen einfacheren Körper mit Spitze zurückgreifen, wie eine Pyramide.  Diese Körper bewegen sind jedoch nicht chaotisch, da sie sich an drei Regeln handeln, die später erklärt werden.\linebreak
@@ -68,13 +68,23 @@
 	
 	
 	\section{Umsetzung}
+	\subsection{Allgemein}
+	Aufrgund der Umsetzung der Eigesnchaften ist es nicht möglich die Darstellungsebene und die Informationsebene in verschiedene Dateien aufzuteilen. Es würde ein Import-Fehler auftreten, da die Liste aus der Darstellungsebene in die Informationsebene importiert werden müsste.
+	
 	\subsection{Fenster}
-	Mit dem Aufrufen der Klasse \textbf{\emph{Ursina}} wird ein Fenster erschaffen, welches am Ende ausgeführt wird, mit all den benötigen Grafiken. Diesem Fenster kann man einen Titel vergeben, welche dann als Task angezeigt wird. Diese Klasse hat wie jede andere Klasse in Ursina die Funktion \textbf{\emph{input()}} mit deren Hilfe man die Eingabe des Benutzers verarbeiten kann, die in dieser Umsetzung hier nachzulesen sind. Um dem Benutzer die Nutzung der Simulation zu vereinfachen, erstellt man in der Funktion \textbf{\emph{createinstruction()}}, mit der Klasse \textbf{\emph{Text}} eine Beschreibung und skaliert und positioniert sie so, dass sie nicht im Vordergrund liegt.[Code]
+	Mit dem Aufrufen der Klasse \textbf{\emph{Ursina}} wird ein Fenster erschaffen, welches am Ende ausgeführt wird, mit all den benötigen Grafiken. Diesem Fenster kann man einen Titel vergeben, welche dann als Task angezeigt wird. Diese Klasse hat wie jede andere Klasse in Ursina die Funktion \textbf{\emph{input()}} mit deren Hilfe man die Eingabe des Benutzers verarbeiten kann, die in dieser Umsetzung hier nachzulesen sind. Um dem Benutzer die Nutzung der Simulation zu vereinfachen, erstellt man in der Funktion \textbf{\emph{createInstruction()}}, mit der Klasse \textbf{\emph{Text}} eine Beschreibung und skaliert und positioniert sie so, dass sie nicht im Vordergrund liegt.[Code]
 	\subsection{Raum}
-	In der Funtkion \textbf{\emph{createwireframe()}} werden 12 Objekte der Klasse \emph{\textbf{Entity}} in Form eines Würfel erstellt, die so verformt werden, dass sie zu Quadern werden und so positioniert werden, dass sie die Kanten eines größeren Würfels bilden. Darauf werden wie zuvor 6 Würfel erstellt, jedoch werden diese so skaliert, dass sie zu quadratischen Flächen werden, welche nach der Positionierung die Seitenfläche des Würfels bilden. Da diese Seiten nicht nötig zu sehen sind, kann der 4. Faktor der Farbe auf 0 gesetzt werden oder die Variable $\alpha$, die den Sichtbarkeitswert darstellt, auf 0 gesetzt wird. Bei dieser Umsetzung wird letzteres benutzt.[Code]
+	In der Funtkion \textbf{\emph{createWireframe()}} werden 12 Objekte der Klasse \emph{\textbf{Entity}} in Form eines Würfel erstellt, die so verformt werden, dass sie zu Quadern werden und so positioniert werden, dass sie die Kanten eines größeren Würfels bilden. Darauf werden wie zuvor 6 Würfel erstellt, jedoch werden diese so skaliert, dass sie zu quadratischen Flächen werden, welche nach der Positionierung die Seitenfläche des Würfels bilden. Da diese Seiten nicht nötig zu sehen sind, kann der 4. Faktor der Farbe auf 0 gesetzt werden oder die Variable $\alpha$, die den Sichtbarkeitswert darstellt, auf 0 gesetzt wird. Bei dieser Umsetzung wird letzteres benutzt.[Code]
 	
 	\subsection{Boids}
-	
+	Die Darstellung der Boids erfolgt durch die Implementierung der gleichnamigen Klasse \textbf{\emph{Boid}}. Diese Klasse erbt von der Klasse \textbf{\emph{Entity}}, welche laut den Entwicklern von Ursina die "god class" ist. 
+	Den Boids wird eine selbsterstellte .blender-Datei als Model gegeben. Dieses Model gleicht einer Pyramide. Die Farbe dieser Pyramide wird mithilfe des \emph{random\textunderscore color()} Befehls der color Klasse festgelegt, welche innerhalb self.color gespeichert wird. Des Weiteren speichert der Boid seine Position sowohl in einem Tuple unter self.position und als auch in drei einzelnen Variablen self.x, self.y und self.z. Um die Bewegung zu ermöglichen wird dem Boid eine Ausrichtung gegeben, die er unter self.rotation speichert. Um die Geschwindigkeit zu variieren wird die Geschwindigkeit, die Beschleunigung und die zu maximal erreichende Geschwindigkeit unter self.vel, self.acel und self.maxVel gespeichert. Um das Verhalten an den Wänden zu ändern, speichert der Boid den aktuellen Modus unter self.mode. 
+	Nach dem Konstruktor werden die Getter, die die Werte der Eigenschaften zurückgeben und die Seter, die die Werte der Eigenschaften überschreiben, deklariert.
+	Im folgenden werden die weiteren Funktionen erklärt:
+	\begin{itemize}
+		\item updateVel()
+		Damit sich die Boids nicht mit der selben Geschwindigkeit bewegen, wird hier die Geschwindigkeit mithilfe der Addition der Beschleunigung self.acel erhöht.
+	\end{itemize}
 	\subsection{Eingabe}
 	%wichtigste Funktionen
 	\newpage

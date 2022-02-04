@@ -154,7 +154,7 @@ class Boid (Entity):
                 if distance(self.position, i.position) < 2:
                     center = (self.position + i.position)/2
                     #Die Differenz zwischen der Mitte und der eigenen Position wird von der Position subtrahiert um den Abstand zu erhöhen
-                    self.position -= Vec3(center - self.position) * .05
+                    self.position += Vec3(center - self.position) *.05
 
     def cohesion(self):
         #Versuch 1
@@ -178,7 +178,7 @@ class Boid (Entity):
         #falls die Distanz des Boids zu der Mitte groß genug ist wird der Abstand zur Mitte der Position hinzugefügt
         #damit die Boids immer in die Mitte des Flocks ziehen
         if distance(self.position, center) >= 2:
-            self.position += Vec3(center - self.position) * .05
+            self.position -= Vec3(center - self.position) *.05
 
 
 
@@ -267,11 +267,11 @@ class Boid (Entity):
 
     def update(self):
         #Funktion zur Bewegung wird aufgerufen
+        self.cohesion()
         self.move()
         #Funktion zur Einhaltung der Regeln werden aufgerufen
-        self.alignment()
         self.seperation()
-        self.cohesion()
+        self.alignment()
 
 def createWireframe():
     #05.01.2022
@@ -289,12 +289,12 @@ def createWireframe():
     wf10 = Entity(model = "cube", collider = 'box', position =(0, 51, 51), scale_x = -102)
     wf11 = Entity(model = "cube", collider = 'box', position =(51, 51, 0), scale_z = 102)
     wf12 = Entity(model = "cube", collider = 'box', position =(0, 51, -51), scale_x = -102)
-    w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(101,101,0), color = color.red, alpha = 0)
-    w2 = Entity(model='cube', collider = 'box', position = (0,0,52), scale = (101,101,0), color = color.red, alpha = 0)
-    w3 = Entity(model='cube', collider = 'box', position = (-52, 0,0), scale = (0, 101, 101), color = color.red, alpha = 0)
-    w4 = Entity(model='cube', collider = 'box', position = (52, 0,0), scale = (0, 101, 101), color = color.red, alpha = 0)
-    w5 = Entity(model = 'cube', collider = 'box', position = (0,-52,0), scale = (101,0,101), color = color.red, alpha = 0)
-    w5 = Entity(model = 'cube', collider = 'box', position = (0,52,0), scale = (101,0,101), color = color.red, alpha = 0)
+    w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(110,110,0), color = color.red, alpha = 0)
+    w2 = Entity(model='cube', collider = 'box', position = (0,0,52), scale = (110,110,0), color = color.red, alpha = 0)
+    w3 = Entity(model='cube', collider = 'box', position = (-52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
+    w4 = Entity(model='cube', collider = 'box', position = (52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
+    w5 = Entity(model = 'cube', collider = 'box', position = (0,-52,0), scale = (110,0,110), color = color.red, alpha = 0)
+    w5 = Entity(model = 'cube', collider = 'box', position = (0,52,0), scale = (110,0,110), color = color.red, alpha = 0)
 
 def createBoids(anzahl):
     #Boids werden erstellt und in der Liste gespeichert
