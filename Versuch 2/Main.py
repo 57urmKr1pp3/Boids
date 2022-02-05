@@ -17,7 +17,7 @@ class Boid (Entity):
         self.collider = 'box'
 
     #Getter 
-    #geben die Werte der Eigenschaften zurück
+    #geben die Werte der Eigenschaften zurueck
     def getModel(self):
         return self.model
 
@@ -49,7 +49,7 @@ class Boid (Entity):
         return self.collider
     
     #Setter 
-    #übeschreiben die Eigenschaften mit neuen Werten
+    #uebeschreiben die Eigenschaften mit neuen Werten
     def setPosition(self, posX, posY, posZ):
         self.position = (posX, posY, posZ)
     
@@ -79,25 +79,25 @@ class Boid (Entity):
 
     #Bewegung
     def updateVel(self):
-        #Die Geschwindigkeit wird durch Addition der Beschleunigung so lange erhöht bis sie das Maximum erreicht hat
+        #Die Geschwindigkeit wird durch Addition der Beschleunigung so lange erhoeht bis sie das Maximum erreicht hat
         if self.vel < self.maxVel:
             self.vel += self.acel
 
     def closeBoids(self):
-        #Diese Funktion ist dazu da um die Boids in der Nähe zu erfassen
+        #Diese Funktion ist dazu da um die Boids in der Naehe zu erfassen
         close = []
-        #Dafür wird die Liste benutzt, die bei der Erstellung der Boids befüllt wird
+        #Dafuer wird die Liste benutzt, die bei der Erstellung der Boids befuellt wird
         #jeder Boid außer man selbst wird in dieser for-Schleife durchgegangen
         for i in Liste_Boids:
             if i != self:
-                #wenn die Distanz zwischen dem self.Boid und dem zu vergleichenden Boid unter 5 liegt wird der vergleichende Boid in die Liste mit den Boids in der Nähe hinzugefügt
+                #wenn die Distanz zwischen dem self.Boid und dem zu vergleichenden Boid unter 5 liegt wird der vergleichende Boid in die Liste mit den Boids in der Naehe hinzugefuegt
                 distanceBoids = distance(self.position, i.position)
                 if distanceBoids < 5:
                     close.append(i)
         return close
 
     def alignment(self):
-        #Die Boids in der Nähe werden zwischengespeichert
+        #Die Boids in der Naehe werden zwischengespeichert
         proximity = self.closeBoids()
         #Die einzelnen Rotationswerte und die Geschwindigkeitswerte des self.Boids werden hier gespeichert
         Boid1XR = self.rotation_x
@@ -106,7 +106,7 @@ class Boid (Entity):
         Boid1V = self.vel
         Boid1MV = self.maxVel
         Boid1A = self.acel
-        for i in proximity: # für jeden Boid in der Nähe wird das Alignment-Verfahren durchgegangen
+        for i in proximity: # fuer jeden Boid in der Naehe wird das Alignment-Verfahren durchgegangen
             #Rotations und Geschwindikeitswerte des zu vergleichenden Boids zwischengespeichert
             Boid2XR = i.rotation_x
             Boid2YR = i.rotation_y
@@ -121,7 +121,7 @@ class Boid (Entity):
             avgV = (Boid1V + Boid2V)/2
             avgMV = (Boid1MV + Boid2MV)/2
             avgA = (Boid1A + Boid2A)/2
-            #Die Durchschnittswerte überschreiben die Rotations und Geschwindigkeitswerte des self.Boid
+            #Die Durchschnittswerte ueberschreiben die Rotations und Geschwindigkeitswerte des self.Boid
             self.rotation_x = avgXR
             self.rotation_y = avgYR
             self.rotation_z = avgZR
@@ -130,31 +130,34 @@ class Boid (Entity):
             self.acel = avgA
 
     def seperation(self):
+        #Versuch 1 fehlerhaft
+        #Die Boids in der Naehe werden zwischengespeichert
         # proximity = self.closeBoids()
-        # for i in proximity:
-        #     if distance(self.position, i.position) < 2:
-        #         self.position -= Vec3(i.position + self.position)
-        #Versuch 1
-        #ProxPos = []
-        #for i in proximity:
-        #    ProxPos.append(i.position)
-        #try:
-        #    center = sum(ProxPos)/len(ProxPos)
-        #    if distance(self.position, center) < 1:
-        #        self.position -= Vec3(self.up + Vec3(Vec3(center - self.position)-self.up))
-        #except:
-        #    pass
-
-        #Versuch 2
-        #Die Boids in der Nähe werden zwischengespeichert
-        proximity = self.closeBoids()
-        if len(proximity) > 1:
-            for i in proximity:
-                #wenn die Distanz zwischen dem self.Boid und des zu vergeichenden Boids <2 ist wird die Mitte zwischen den beiden Boids berechnet
-                if distance(self.position, i.position) < 2:
-                    center = (self.position + i.position)/2
-                    #Die Differenz zwischen der Mitte und der eigenen Position wird von der Position subtrahiert um den Abstand zu erhöhen
-                    self.position += Vec3(center - self.position) *.05
+        # if len(proximity) > 1:
+        #     for i in proximity:
+        #         #wenn die Distanz zwischen dem self.Boid und des zu vergeichenden Boids <2 ist wird die Mitte zwischen den beiden Boids berechnet
+        #         if distance(self.position, i.position) < 2:
+        #             center = (self.position + i.position)/2
+        #             #Die Differenz zwischen der Mitte und der eigenen Position wird von der Position subtrahiert um den Abstand zu erhoehen
+        #             self.position += Vec3(center - self.position) *.05
+        #Versuch 2 resourcenfressend
+        #Raycast werden erstellt die in 5 Richtungen gerichtet sind, eine Distanz von 0.3 haben, und die Wände ignorieren
+        raycastup = raycast(origin = self.position, direction = self.up, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
+        raycastright = raycast(origin = self.position, direction = self.right, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
+        raycastleft = raycast(origin = self.position, direction = self.left, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
+        raycastback = raycast(origin = self.position, direction = self.back, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
+        raycastforward = raycast(origin = self.position, direction = self.forward, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
+        #Falls einer der Raycasts einen Boid berührt dreht er in die andere Richtung
+        if raycastup.hit:
+            self.rotation += self.back * self.vel/1000
+        if raycastback.hit:
+            self.rotation += self.forward * self.vel/1000
+        if raycastforward.hit:
+            self.rotation += self.back * self.vel/1000
+        if raycastright.hit:
+            self.rotation += self.left * self.vel/1000
+        if raycastleft.hit:
+            self.rotation += self.right * self.vel/1000
 
     def cohesion(self):
         #Versuch 1
@@ -168,14 +171,14 @@ class Boid (Entity):
         #except:
         #    pass
         #Versuch 2
-        #Die Boids in der Nähe werden gespeichert
+        #Die Boids in der Naehe werden gespeichert
         proximity = self.closeBoids()
-        #Die Mitte aller Boids in der Nähe wird berechnet
+        #Die Mitte aller Boids in der Naehe wird berechnet
         center = self.position
         if len(proximity) > 1:
             for i in proximity:
                 center = (center + i.position)/2
-        #falls die Distanz des Boids zu der Mitte groß genug ist wird der Abstand zur Mitte der Position hinzugefügt
+        #falls die Distanz des Boids zu der Mitte groß genug ist wird der Abstand zur Mitte der Position hinzugefuegt
         #damit die Boids immer in die Mitte des Flocks ziehen
         if distance(self.position, center) >= 2:
             self.position -= Vec3(center - self.position) *.05
@@ -185,8 +188,8 @@ class Boid (Entity):
     def avoidWall(self):
         #Raycasts
         #Ein Raycast wird erzeugt der in die Bewegungsrichtung 5 Einheiten weit ausgerchtet ist 
-        raycastup = raycast(origin = self.position, direction = self.up, distance = 5, traverse_target = scene, ignore = (self,), debug = True)
-        #Wenn dieser Raycast etwas berührt werden weitere Raycast erstellt, die in 4 weitere Richtungen ausgerichtet sind
+        raycastup = raycast(origin = self.position, direction = self.up, distance = 10, traverse_target = scene, ignore = (self,), debug = True)
+        #Wenn dieser Raycast etwas beruehrt werden weitere Raycast erstellt, die in 4 weitere Richtungen ausgerichtet sind
         if raycastup.hit:
             raycastfront = raycast(origin = self.position, direction = (self.up + self.forward), distance = 10, traverse_target = scene, ignore = (self,), debug = True)
             raycastback = raycast(origin = self.position, direction = (self.up + self.back), distance = 10, traverse_target = scene, ignore = (self,), debug = True)
@@ -199,7 +202,7 @@ class Boid (Entity):
             distance_left = raycastleft.distance
             distance_right = raycastright.distance
             
-            #je nach kleinster Distanz werden verschiedene Rotationsänderung durchgeführt
+            #je nach kleinster Distanz werden verschiedene Rotationsaenderung durchgefuehrt
             #up kleinste Distanz
             if (distance_up <= distance_front) and (distance_up <= distance_back) and (distance_up <= distance_left) and (distance_up <= distance_right):
                 self.rotation += self.back * self.vel
@@ -221,14 +224,14 @@ class Boid (Entity):
                 self.rotation += self.left * self.vel
             
     def move(self):
-        #Die Posiiton wird durch Multiplikation der Geschwindigkeit und der Bewegungsrichtung verändert
+        #Die Posiiton wird durch Multiplikation der Geschwindigkeit und der Bewegungsrichtung veraendert
         #Die Bewegungsrichtung ist hier up/hoch, da die Modeldatei danach ausgerichtet ist
         self.position += self.up * (self.vel/1000)
         self.updateVel()
         #Warp Modus
 
         if self.mode == 1:
-            #falls die Position des Boids nach der Bewegung die der Wände überschreiten wird die Position auf die gegenüberliegende Seite gesetzt
+            #falls die Position des Boids nach der Bewegung die der Waende ueberschreiten wird die Position auf die gegenueberliegende Seite gesetzt
             if self.x <= -49:
                 self.x = 48
             if self.x >= 49:
@@ -242,14 +245,14 @@ class Boid (Entity):
             if self.z >= 49:
                 self.z = -48
 
-        #Wändevermeidung
+        #Waendevermeidung
         elif self.mode == 2:
-            #Funktion zur Wändevermeidung wird aufgerufen
+            #Funktion zur Waendevermeidung wird aufgerufen
             self.avoidWall()
 
         #Pong-Modus
         elif self.mode == 3:
-            #bei Überschreitung des Bereichs soll die Rotation verändert werden
+            #bei ueberschreitung des Bereichs soll die Rotation veraendert werden
             #Problem: Rotationsordnung ist zu spezifisch sodass man es nicht allgemein verfassen kann
             #         ebenfalls funktioniert die Rechnung: Rotation*-1-180 nicht wegen ^
             if self.x <= -49:
@@ -273,28 +276,30 @@ class Boid (Entity):
         self.seperation()
         self.alignment()
 
-def createWireframe():
-    #05.01.2022
-    #Wireframe
-    #Erzeugung des Würfels
-    wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x = 102)
-    wf2 = Entity(model = "cube", collider = 'box', position = (-51, -51, 0), scale_z = 102)
-    wf3 = Entity(model = "cube", collider = 'box', position = (0, -51, 51), scale_x = 102)
-    wf4 = Entity(model = "cube", collider = 'box', position = (51, -51, 0), scale_z = 102)
-    wf5 = Entity(model = "cube", collider = 'box', position = (51, 0, 51), scale_y = 102)
-    wf6 = Entity(model = "cube", collider = 'box', position = (51, 0, -51), scale_y = -102)
-    wf7 = Entity(model = "cube", collider = 'box', position = (-51, 0, 51), scale_y = 102)
-    wf8 = Entity(model = "cube", collider = 'box', position = (-51, 0, -51), scale_y = 102)
-    wf9 = Entity(model = "cube", collider = 'box', position = (-51, 51, 0), scale_z = -102)
-    wf10 = Entity(model = "cube", collider = 'box', position =(0, 51, 51), scale_x = -102)
-    wf11 = Entity(model = "cube", collider = 'box', position =(51, 51, 0), scale_z = 102)
-    wf12 = Entity(model = "cube", collider = 'box', position =(0, 51, -51), scale_x = -102)
-    w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(110,110,0), color = color.red, alpha = 0)
-    w2 = Entity(model='cube', collider = 'box', position = (0,0,52), scale = (110,110,0), color = color.red, alpha = 0)
-    w3 = Entity(model='cube', collider = 'box', position = (-52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
-    w4 = Entity(model='cube', collider = 'box', position = (52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
-    w5 = Entity(model = 'cube', collider = 'box', position = (0,-52,0), scale = (110,0,110), color = color.red, alpha = 0)
-    w5 = Entity(model = 'cube', collider = 'box', position = (0,52,0), scale = (110,0,110), color = color.red, alpha = 0)
+class Wireframe (Entity):
+    def __init__(self):
+        #05.01.2022
+        #Wireframe
+        #Erzeugung des Wuerfels
+        self.wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x = 102)
+        self.wf2 = Entity(model = "cube", collider = 'box', position = (-51, -51, 0), scale_z = 102)
+        self.wf3 = Entity(model = "cube", collider = 'box', position = (0, -51, 51), scale_x = 102)
+        self.wf4 = Entity(model = "cube", collider = 'box', position = (51, -51, 0), scale_z = 102)
+        self.wf5 = Entity(model = "cube", collider = 'box', position = (51, 0, 51), scale_y = 102)
+        self.wf6 = Entity(model = "cube", collider = 'box', position = (51, 0, -51), scale_y = -102)
+        self.wf7 = Entity(model = "cube", collider = 'box', position = (-51, 0, 51), scale_y = 102)
+        self.wf8 = Entity(model = "cube", collider = 'box', position = (-51, 0, -51), scale_y = 102)
+        self.wf9 = Entity(model = "cube", collider = 'box', position = (-51, 51, 0), scale_z = -102)
+        self.wf10 = Entity(model = "cube", collider = 'box', position =(0, 51, 51), scale_x = -102)
+        self.wf11 = Entity(model = "cube", collider = 'box', position =(51, 51, 0), scale_z = 102)
+        self.wf12 = Entity(model = "cube", collider = 'box', position =(0, 51, -51), scale_x = -102)
+        #Erzeugung der Waende
+        self.w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(110,110,0), color = color.red, alpha = 0)
+        self.w2 = Entity(model='cube', collider = 'box', position = (0,0,52), scale = (110,110,0), color = color.red, alpha = 0)
+        self.w3 = Entity(model='cube', collider = 'box', position = (-52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
+        self.w4 = Entity(model='cube', collider = 'box', position = (52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
+        self.w5 = Entity(model = 'cube', collider = 'box', position = (0,-52,0), scale = (110,0,110), color = color.red, alpha = 0)
+        self.w5 = Entity(model = 'cube', collider = 'box', position = (0,52,0), scale = (110,0,110), color = color.red, alpha = 0)
 
 def createBoids(anzahl):
     #Boids werden erstellt und in der Liste gespeichert
@@ -306,7 +311,7 @@ def input(key):
     #https://www.ursinaengine.org/entity_basics.html 10.01.2022
     #10.01.2022
     if held_keys["+"]:
-        #Boid wird erstellt und der Liste hinzugefügt
+        #Boid wird erstellt und der Liste hinzugefuegt
         temp = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), randint(0,360), randint(0,360), randint(0,360), uniform(50.0, 300.0), uniform(0.0, 10.0), 300.0, 1, groesse)
         Liste_Boids.append(temp)
 
@@ -316,7 +321,7 @@ def input(key):
         #letzter Boid wird aus der Liste entfernt
         Liste_Boids.pop()
 
-    #Der Modus jedes Boids wird geändert
+    #Der Modus jedes Boids wird geaendert
     if held_keys["1"]:
         for i in Liste_Boids:
             i.setMode(1)
@@ -337,11 +342,11 @@ def createInstruction():
                             \nRechtsklick +
                             \nrechts:                      [A]
                             \nlinks:                         [D]
-                            \nvorwärts:                 [W]
-                            \nrückwärts:                [S]
+                            \nvorwaerts:                 [W]
+                            \nrueckwaerts:                [S]
                             \nhoch:                         [E]
                             \nrunter:                      [Q]
-                            \n\nBoidanzahl ändern:
+                            \n\nBoidanzahl aendern:
                             \nmehr:                        [+]
                             \nweniger:                    [-]
                             \n\nBoidverhalten:
@@ -365,24 +370,24 @@ window.title = "Boids Simulation"
 
 #Kamera
 #https://www.ursinaengine.org/cheat_sheet.html#camera 30.12.2021
-#Kameraposition wird verändert um den Bereich von Anfang an zu sehen
+#Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
 camera.position = (0,10,-350)
-#EditorCamera ermöglicht die Veränderung der Kamera
+#EditorCamera ermoeglicht die Veraenderung der Kamera
 EditorCamera()
 
 #Erstellen
 #Wireframe
-createWireframe()
+wireframe = Wireframe()
 #Anleitung
 createInstruction()
 #Boids
 ######################################################################################################################################
-anzahl = 25
+anzahl = 20
 groesse = 30
 ######################################################################################################################################
 
 Liste_Boids = []
 createBoids(anzahl)
 
-#Fenster wird ausgeführt
+#Fenster wird ausgefuehrt
 app.run()
