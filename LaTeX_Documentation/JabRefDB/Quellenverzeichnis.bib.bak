@@ -1,3 +1,133 @@
+@WWW{2022,
+  date  = {15.01.2022},
+  title = {Ursina: Entity Basics},
+  url   = {https://www.ursinaengine.org/entity_basics.html},
+}
+
+@WWW{2022d,
+  date   = {15.01.2022},
+  title  = {Ursina Engine Tutorial 02: Displaying Text and Keyboard Input},
+  url    = {https://www.youtube.com/watch?v=kb2wJYTwTHw},
+  author = {Kazeki Takeru},
+}
+
+@WWW{2022k,
+  date  = {2022-02-06},
+  title = {ursina engine},
+  url   = {www.ursinaengine.org},
+}
+
+@WWW{2022l,
+  date  = {2022-02-06},
+  title = {Ursina: Cheat Sheet Entity},
+  url   = {https://www.ursinaengine.org/cheat_sheet_dark.html#Entity},
+}
+
+@WWW{Lague2022,
+  date   = {2022-02-06},
+  title  = {Coding Adventure: Boids Regeln},
+  url    = {https://youtu.be/bqtqltqcQhw?t=94},
+  author = {Sebastian Lague},
+}
+
+@WWW{Space2022,
+  date   = {2022-02-06},
+  title  = {Making a 3D pong Game in Python with Ursina Engine},
+  url    = {https://www.youtube.com/watch?v=NLn-hB1P9tQ},
+  author = {MK Coding Space},
+}
+
+@WWW{2022m,
+  date  = {2022-02-06},
+  title = {Ursina: Cheat Sheet Ursina},
+  url   = {https://www.ursinaengine.org/cheat_sheet.html#Ursina},
+}
+
+@WWW{2022o,
+  date  = {2022-02-06},
+  title = {Gimbal Lock},
+  url   = {https://de.wikipedia.org/wiki/Gimbal_Lock},
+}
+
+@WWW{andysarcade2022,
+  date   = {2022-02-06},
+  title  = {Original Atari PONG (1972) arcade machine gameplay video},
+  url    = {https://www.youtube.com/watch?v=fiShX2pTz9A},
+  author = {andys-arcade},
+}
+
+@WWW{2022p,
+  date  = {2022-02-06},
+  title = {Ursina: ursina for dummies transparency},
+  url   = {https://www.ursinaengine.org/ursina_for_dummies.html#:~:text=a bit transparent.-,Transparency,-So we have},
+}
+
+@WWW{2022q,
+  date  = {2022-02-06},
+  title = {Ursina: urisna for dummies Creating your first program},
+  url   = {https://www.ursinaengine.org/ursina_for_dummies.html#:~:text=Creating your first program},
+}
+
+@WWW{2022r,
+  date  = {2022-02-06},
+  title = {Ursina: Collision},
+  url   = {https://www.ursinaengine.org/collision.html},
+}
+
+@WWW{godclass,
+  date  = {2022-02-06},
+  title = {Ursina: Entity "god class"},
+  url   = {https://www.ursinaengine.org/entity_basics.html#:~:text=An entity is a thing in the world, and is the "god class" in ursina.},
+}
+
+@WWW{color,
+  date  = {2022-02-06},
+  title = {Ursina: Color},
+  url   = {https://www.ursinaengine.org/entity_basics.html#:~:text=print(s.aspect_ratio)-,Setting the color,-e.color = color},
+}
+
+@WWW{distance,
+  date  = {2022-02-06},
+  title = {Ursina: Distance Check},
+  url   = {https://www.ursinaengine.org/collision.html#:~:text=None
+hits = []
+entities = []-,Distance Check,-Sometimes it enough},
+}
+
+@WWW{HitInfo,
+  date  = {2022-02-06},
+  title = {Ursina: HitInfo},
+  url   = {https://www.ursinaengine.org/collision.html#:~:text=gray
+
+app.run()-,HitInfo,-All of these},
+}
+
+@WWW{raycast,
+  date  = {2022-02-06},
+  title = {Ursina: Collision raycast},
+  url   = {https://www.ursinaengine.org/collision.html#:~:text=cube', collider='box')-,raycast(),-raycast(origin, direction},
+}
+
+@WWW{update,
+  date  = {2022-02-06},
+  title = {Ursina: update()},
+  url   = {https://www.ursinaengine.org/entity_basics.html#:~:text=cube', scale=(3,1,1))-,Update,    An Entity's update method will be called automatically:,-e = Entity()
+def},
+}
+
+@WWW{input,
+  date  = {2022-02-06},
+  title = {Ursina: input-handler},
+  url   = {https://www.ursinaengine.org/cheat_sheet.html#input_handler},
+}
+
+@WWW{text,
+  date   = {2022-01-15},
+  title  = {Ursina Engine Tutorial 02: Displaying Text and Keyboard Input},
+  url    = {https://www.youtube.com/watch?v=kb2wJYTwTHw},
+  author = {Kazeki Takeru},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
 
 @Comment{jabref-meta: fileDirectoryLatex-olive-DESKTOP-7KHB2CQ:C:\\Users\\olive\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64;}
