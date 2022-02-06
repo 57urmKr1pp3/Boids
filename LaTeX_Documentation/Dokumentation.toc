@@ -9,8 +9,8 @@
 \contentsline {subsection}{\numberline {3.1}Allgemein}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Fenster}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Raum}{6}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Boids}{6}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Funktionen im Fenster}{9}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.4}Boids}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Funktionen im Fenster}{10}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Eingabe}{10}{subsection.3.6}%
 \contentsline {section}{\numberline {4}wichtigste Funktionen}{11}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Fenster}{11}{subsection.4.1}%

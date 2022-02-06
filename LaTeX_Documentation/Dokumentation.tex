@@ -114,7 +114,8 @@ Aufrgund der Umsetzung der Eigesnchaften ist es nicht möglich die Darstellungse
 Mit dem Aufrufen der Klasse \textbf{\emph{Ursina}}\cite{2022m} wird ein Fenster erschaffen, welches am Ende ausgeführt wird, mit all den benötigen Grafiken\cite{2022q}. Diesem Fenster kann man einen Titel vergeben, welche dann als Task angezeigt wird\cite{2022q}. Diese Klasse hat wie jede andere Klasse\cite{2022} die Funktion \textbf{\emph{input()}}, mit deren Hilfe man die Eingabe des Benutzers verarbeiten kann, die in dieser Umsetzung \hyperref[sec:input]{\textbf{\emph{hier}}} nachzulesen sind. Um dem Benutzer die Nutzung der Simulation zu vereinfachen, erstellt man in der Funktion \textbf{\emph{createInstruction()}}, mit der Klasse \textbf{\emph{Text}} eine Beschreibung und skaliert und positioniert sie so, dass sie nicht im Vordergrund liegt\cite{text}.\hyperref[CodeFenster]{\textbf{\emph{[Code]}}}
 
 \subsection{Raum}\label{Wireframe}
-Die Klasse \textbf{\emph{Wireframe}} wird erstellt, welche von der \textbf{\emph{Entity}}-Klasse\cite{2022l} erbt. Diese Klasse beinhaltet insgesamt 18 andere Entitys. 12 davon sind Würfel die so skaliert und positioniert werden, dass sie die Kanten eines großen Würfels bilden. Die anderen 6 sind ebenfalls Würfel, welche jedoch so skaliert werden, dass sie quadratischen Flächen formen. Diese Flächen werden dann so positioniert, dass die Seitenflächen des großen Würfels bilden. Da diese Seitenflächen nicht nötig zu sehen sind, kann man entweder den $\alpha$-Wert der Farbe oder den $\alpha$-Wert einzeln auf 0 setzen, beide Werte sind die Sichtbarkeitswerte \cite{2022p}. Bei dieser Umsetzung wird letzteres angewandt. Sowohl den Kanten, als auch den Seitenflächen wird eine Box als Kollisionskörper unter \emph{collider} zugeteilt, damit die Boids daran abprallen können\cite{2022r}.\hyperref[CodeRaum]{\textbf{\emph{[Code]}}} \newline \scriptsize Warum diese Klasse erstellt werden muss, wird im Teil \hyperref[sec:seperation]{\textbf{\emph{seperation()}}} erklärt. 
+Die Klasse \textbf{\emph{Wireframe}} wird erstellt, welche von der \textbf{\emph{Entity}}-Klasse\cite{2022l} erbt. Diese Klasse beinhaltet insgesamt 18 andere Entitys. 12 davon sind Würfel die so skaliert und positioniert werden, dass sie die Kanten eines großen Würfels bilden. Die anderen 6 sind ebenfalls Würfel, welche jedoch so skaliert werden, dass sie quadratischen Flächen formen. Diese Flächen werden dann so positioniert, dass die Seitenflächen des großen Würfels bilden. Da diese Seitenflächen nicht nötig zu sehen sind, kann man entweder den $\alpha$-Wert der Farbe oder den $\alpha$-Wert einzeln auf 0 setzen, beide Werte sind die Sichtbarkeitswerte \cite{2022p}. Bei dieser Umsetzung wird letzteres angewandt. Sowohl den Kanten, als auch den Seitenflächen wird eine Box als Kollisionskörper unter \emph{collider} zugeteilt, damit die Boids daran abprallen können\cite{2022r}.\hyperref[CodeRaum]{\textbf{\emph{[Code]}}} \newline \scriptsize Warum diese Klasse erstellt werden muss, wird im Teil \hyperref[sec:seperation]{\textbf{\emph{seperation()}}} erklärt.
+\newpage
 \normalsize\subsection{Boids}\label{sec:Boid}
 Die Darstellung der Boids erfolgt durch die Implementierung der gleichnamigen Klasse \textbf{\emph{Boid}}. Diese Klasse erbt von der Klasse \textbf{\emph{Entity}}\cite{2022l}, welche laut den Entwicklern von Ursina die \emph{"god class"} ist\cite{godclass}. 
 Den Boids wird eine selbsterstellte .blender-Datei als Model gegeben. Dieses Model gleicht einer Pyramide. Die Farbe dieser Pyramide wird mithilfe des \emph{random\textunderscore color()} Befehls der Klasse \textbf{\emph{color}} festgelegt, welche innerhalb \emph{self.color} gespeichert wird\cite{color}. Des Weiteren speichert der Boid seine Position sowohl in einem Tuple unter \emph{self.position} und als auch in drei einzelnen Variablen \emph{self.x}, \emph{self.y} und \emph{self.z}. Um die Bewegung zu ermöglichen wird dem Boid eine Ausrichtung gegeben, die er unter \emph{self.rotation} speichert\cite{2022l}. Um die Geschwindigkeit zu variieren wird die Geschwindigkeit, die Beschleunigung und die zu maximal erreichende Geschwindigkeit unter \emph{self.vel}, \emph{self.acel} und \emph{self.maxVel} gespeichert. Um das Verhalten an den Wänden zu ändern, speichert der Boid den aktuellen Modus unter \emph{self.mode}. Damit der Boid die \textbf{Raycasts} der anderen Boids auslösen kann, wird dem Boid ein Körper zugeteilt der dies ermöglicht, welcher unter \emph{self.collider} gespeichert wurde. Den Boids wird eine Box zugeteilt, da die von den vorgegebenen Beispielen am passendsten sind\cite{2022r}.
@@ -279,18 +280,19 @@ def cohesion(self):
 \end{lstlisting}
 \subsection{seperationCohesion()}\label{CodeseperationCohesion}
 \begin{lstlisting}[style=mystyle, language=Python]
-	def seperationCohesion(self):
-		...
-		raycastup = raycast(origin = self.position, direction = self.up, distance = 5, traverse_target = scene, ignore = (Wireframe,))
-		...
-		if raycastup.hit:
-			distance_up = raycastup.distance
-			if distance_up < 2:
-				self.rotation += self.back * self.vel/1000
-			if distance_up > 2:
-				self.rotation += self.back * self.vel/1000
-		...
+def seperationCohesion(self):
+	...
+	raycastup = raycast(origin = self.position, direction = self.up, distance = 5, traverse_target = scene, ignore = (Wireframe,))
+	...
+	if raycastup.hit:
+		distance_up = raycastup.distance
+		if distance_up < 2:
+			self.rotation += self.back * self.vel/1000
+		if distance_up > 2:
+			self.rotation += self.back * self.vel/1000
+	...
 \end{lstlisting}
+\newpage
 \subsection{input()}\label{Codeinput}
 \begin{lstlisting}[style=mystyle, language=Python]
 	if held_keys["+"]:
