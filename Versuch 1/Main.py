@@ -55,9 +55,9 @@ def create_boids(anzahl, liste):
         temp = Boid(randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), randint(-10, 10), 1, groesse)
         Liste_Boids.append(temp)
 
-def update():
+#def update():
     #https://www.ursinaengine.org/entity_basics.html 10.01.2022
-    eigenschaften(Liste_Boids)
+    #eigenschaften(Liste_Boids)
 
 def input(key):
     #https://www.ursinaengine.org/entity_basics.html 10.01.2022

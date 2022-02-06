@@ -1,7 +1,7 @@
 #Import
 from ursina import *
 import math
-from working_on import rotation
+from working_on import eigenschaften, rotation
 
 #Klasse
 class Boid (Entity):
@@ -21,6 +21,7 @@ class Boid (Entity):
         self.model = 'sprites'
         self.scale = scale
         self.mode = mode
+        self.collider = 'box'
         
     #Getter geben die Werte der Eigenschaft zurück
     def getPosition(self):
@@ -131,11 +132,14 @@ class Boid (Entity):
 
         #Rotation
         rotation(self)
-        
+    
+
     #damit die bewegung gleichmäßig unabhängig von den aeusseren Umstaenden passiert wird mit time.dt multipliziert
     #https://www.ursinaengine.org/entity_basics.html 30.12.21
     def update(self):
         self.move()
+        eigenschaften(self)
+        
 
 # #Rekursionsfehler
 # class Wireframe(Entity):
