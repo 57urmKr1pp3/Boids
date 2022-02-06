@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  16 JAN 2022 15:13
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  6 FEB 2022 01:17
->>>>>>> adaptDir-und-checkCollision
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  6 FEB 2022 03:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -485,9 +481,6 @@ Package: filehook-2020 2020/09/29 v0.8a Hooks for input files
 \c@pytx@pylab@default@default=\count341
 \c@pytx@pylabcon@default@default=\count342
 )
-(C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
@@ -496,25 +489,25 @@ File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 ) (Dokumentation.aux)
 \openout1 = `Dokumentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-Package hyperref Info: Link coloring OFF on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -528,9 +521,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count344
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (Dokumentation.out) (Dokumentation.out)
 \@outlinefile=\write5
 \openout5 = `Dokumentation.out'.
@@ -576,23 +569,23 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 No file pythontex-files-Dokumentation/Dokumentation.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on inp
-ut line 19.
+ut line 29.
 \c@listing=\count352
 \newfloat@ftype=\count353
-Package newfloat Info: float type `listing'=8 on input line 19.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+Package newfloat Info: float type `listing'=8 on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-26.
+36.
 
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
@@ -611,10 +604,10 @@ DF version <1.7>, but at most version <1.5> allowed
 <UML/Boids_UML.pdf, id=136, page=1, 598.15468pt x 847.24525pt>
 File: UML/Boids_UML.pdf Graphic file (type pdf)
 <use UML/Boids_UML.pdf, page 1>
-Package pdftex.def Info: UML/Boids_UML.pdf , page1 used on input line 33.
+Package pdftex.def Info: UML/Boids_UML.pdf , page1 used on input line 43.
 (pdftex.def)             Requested size: 448.6149pt x 635.43237pt.
 
-Overfull \hbox (58.6149pt too wide) in paragraph at lines 33--34
+Overfull \hbox (58.6149pt too wide) in paragraph at lines 43--44
 [] 
  []
 
@@ -623,46 +616,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \newpage
+l.44 \newpage
               [1] [2]
 Overfull \vbox (71.6757pt too high) has occurred while \output is active []
 
 
 [3 <./UML/Boids_UML.pdf>]
-Overfull \hbox (16.00644pt too wide) in paragraph at lines 38--39
+Overfull \hbox (16.00644pt too wide) in paragraph at lines 48--49
 \OT1/cmr/m/n/12 chen Darstel-lung war frei uberlassen. Auf-grund der ein-fache
 n und verstandlichen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 \OT1/cmr/m/n/12 spater erklart wer-den.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 []$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
-[]$[]$
- []
-
-
-Overfull \hbox (8.4057pt too wide) in paragraph at lines 56--58
-\OT1/cmr/m/n/12 lassen diese Wand dann in dem gle-ichen Winkel, nach dem \OT1/c
-mr/m/it/12 Einfallswinkel-
  []
 
 
@@ -671,138 +648,2754 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--65
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 []$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
+Overfull \hbox (8.4057pt too wide) in paragraph at lines 66--68
+\OT1/cmr/m/n/12 lassen diese Wand dann in dem gle-ichen Winkel, nach dem \OT1/c
+mr/m/it/12 Einfallswinkel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 []$[]$
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
+Underfull \hbox (badness 10000) in paragraph at lines 96--100
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 
-<<<<<<< HEAD
-Package rerunfilecheck Info: Checksums for `Dokumentation.out':
-(rerunfilecheck)             Before: F60B9484C89C030350B9A79C6CA3DF50;1122
-(rerunfilecheck)             After:  1FE73F144456D5B79C33E394362D5C45;1113.
-=======
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--117
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--117
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
 
-[9] [10] [11]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-90.
+[9] [10]
+(C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 #
+       Fenster wird erstellt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 #Fenster 
+               wird erstellt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 #Fenster 
+               wird erstellt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 #Fenster wird 
+                    erstellt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 #Fenster wird 
+                    erstellt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 #Fenster wird erstellt
+                            
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 #
+       Fenstertitel wird festgelegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 #Fenstertitel 
+                    wird festgelegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 #Fenstertitel 
+                    wird festgelegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 #Fenstertitel wird 
+                         festgelegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 #Fenstertitel wird 
+                         festgelegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 #Fenstertitel wird festgelegt
+                                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 #
+       Fenster wird ausgefuehrt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 #Fenster 
+               wird ausgefuehrt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 #Fenster 
+               wird ausgefuehrt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 #Fenster wird 
+                    ausgefuehrt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 #Fenster wird 
+                    ausgefuehrt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 #Fenster wird ausgefuehrt
+                               
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #
+       Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition 
+                      wird veraendert um den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition 
+                      wird veraendert um den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird 
+                           veraendert um den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird 
+                           veraendert um den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird veraendert 
+                                      um den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird veraendert 
+                                      um den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird veraendert um 
+                                         den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird veraendert um 
+                                         den Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird veraendert um den 
+                                             Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 #Kameraposition wird veraendert um den 
+                                             Bereich von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...aposition wird veraendert um den Bereich 
+                                                  von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...aposition wird veraendert um den Bereich 
+                                                  von Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...ition wird veraendert um den Bereich von 
+                                                  Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...ition wird veraendert um den Bereich von 
+                                                  Anfang an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...ird veraendert um den Bereich von Anfang 
+                                                  an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...ird veraendert um den Bereich von Anfang 
+                                                  an zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ... veraendert um den Bereich von Anfang an 
+                                                  zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ... veraendert um den Bereich von Anfang an 
+                                                  zu sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...raendert um den Bereich von Anfang an zu 
+                                                  sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...raendert um den Bereich von Anfang an zu 
+                                                  sehen
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...ert um den Bereich von Anfang an zu sehen
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #
+       EditorCamera ermoeglicht die Veraenderung der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera 
+                    ermoeglicht die Veraenderung der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera 
+                    ermoeglicht die Veraenderung der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera ermoeglicht 
+                                die Veraenderung der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera ermoeglicht 
+                                die Veraenderung der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera ermoeglicht die 
+                                    Veraenderung der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera ermoeglicht die 
+                                    Veraenderung der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera ermoeglicht die Veraenderung 
+                                                 der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 #EditorCamera ermoeglicht die Veraenderung 
+                                                 der Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 ...rCamera ermoeglicht die Veraenderung der 
+                                                  Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 ...rCamera ermoeglicht die Veraenderung der 
+                                                  Kamera
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 ...a ermoeglicht die Veraenderung der Kamera
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 #
+       Erzeugung des Wuerfels
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 #Erzeugung 
+                 des Wuerfels
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 #Erzeugung 
+                 des Wuerfels
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 #Erzeugung des 
+                     Wuerfels
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 #Erzeugung des 
+                     Wuerfels
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 #Erzeugung des Wuerfels
+                             
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 #
+       Erzeugung der Waende
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 #Erzeugung 
+                 der Waende
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 #Erzeugung 
+                 der Waende
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 #Erzeugung der 
+                     Waende
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 #Erzeugung der 
+                     Waende
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 #Erzeugung der Waende
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 def 
+          closeBoids(self):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 def 
+          closeBoids(self):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 def 
+          closeBoids(self):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     for 
+              i in Liste_Boids:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     for 
+              i in Liste_Boids:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     for 
+              i in Liste_Boids:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     for i in 
+                   Liste_Boids:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     for i in 
+                   Liste_Boids:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     for i in 
+                   Liste_Boids:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197     	if 
+              i != self:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197     	if 
+              i != self:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197     	if 
+              i != self:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#
+            wenn die Distanz zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#
+            wenn die Distanz zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn 
+                 die Distanz zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn 
+                 die Distanz zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die 
+                     Distanz zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die 
+                     Distanz zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz 
+                             zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz 
+                             zwischen dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz zwischen 
+                                      dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz zwischen 
+                                      dem self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz zwischen dem 
+                                          self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz zwischen dem 
+                                          self.Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz zwischen dem self.
+                                               Boid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     	#wenn die Distanz zwischen dem self.B
+                                                oid und dem zu vergleichende...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...#wenn die Distanz zwischen dem self.Boid 
+                                                  und dem zu vergleichenden ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...#wenn die Distanz zwischen dem self.Boid 
+                                                  und dem zu vergleichenden ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...n die Distanz zwischen dem self.Boid und 
+                                                  dem zu vergleichenden Boid...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...n die Distanz zwischen dem self.Boid und 
+                                                  dem zu vergleichenden Boid...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...e Distanz zwischen dem self.Boid und dem 
+                                                  zu vergleichenden Boid unt...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...e Distanz zwischen dem self.Boid und dem 
+                                                  zu vergleichenden Boid unt...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...istanz zwischen dem self.Boid und dem zu 
+                                                  vergleichenden Boid unter ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...istanz zwischen dem self.Boid und dem zu 
+                                                  vergleichenden Boid unter ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... dem self.Boid und dem zu vergleichenden 
+                                                  Boid unter 5 liegt wird de...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... dem self.Boid und dem zu vergleichenden 
+                                                  Boid unter 5 liegt wird de...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...self.Boid und dem zu vergleichenden Boid 
+                                                  unter 5 liegt wird der ver...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...self.Boid und dem zu vergleichenden Boid 
+                                                  unter 5 liegt wird der ver...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...oid und dem zu vergleichenden Boid unter 
+                                                  5 liegt wird der vergleich...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...oid und dem zu vergleichenden Boid unter 
+                                                  5 liegt wird der vergleich...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...d und dem zu vergleichenden Boid unter 5 
+                                                  liegt wird der vergleichen...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...d und dem zu vergleichenden Boid unter 5 
+                                                  liegt wird der vergleichen...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...dem zu vergleichenden Boid unter 5 liegt 
+                                                  wird der vergleichende Boi...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...dem zu vergleichenden Boid unter 5 liegt 
+                                                  wird der vergleichende Boi...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...u vergleichenden Boid unter 5 liegt wird 
+                                                  der vergleichende Boid in ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...u vergleichenden Boid unter 5 liegt wird 
+                                                  der vergleichende Boid in ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...rgleichenden Boid unter 5 liegt wird der 
+                                                  vergleichende Boid in die ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...rgleichenden Boid unter 5 liegt wird der 
+                                                  vergleichende Boid in die ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...oid unter 5 liegt wird der vergleichende 
+                                                  Boid in die Liste mit den ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...oid unter 5 liegt wird der vergleichende 
+                                                  Boid in die Liste mit den ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...nter 5 liegt wird der vergleichende Boid 
+                                                  in die Liste mit den Boids...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...nter 5 liegt wird der vergleichende Boid 
+                                                  in die Liste mit den Boids...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...r 5 liegt wird der vergleichende Boid in 
+                                                  die Liste mit den Boids in...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...r 5 liegt wird der vergleichende Boid in 
+                                                  die Liste mit den Boids in...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...liegt wird der vergleichende Boid in die 
+                                                  Liste mit den Boids in der...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...liegt wird der vergleichende Boid in die 
+                                                  Liste mit den Boids in der...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...wird der vergleichende Boid in die Liste 
+                                                  mit den Boids in der Naehe...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...wird der vergleichende Boid in die Liste 
+                                                  mit den Boids in der Naehe...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... der vergleichende Boid in die Liste mit 
+                                                  den Boids in der Naehe hin...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... der vergleichende Boid in die Liste mit 
+                                                  den Boids in der Naehe hin...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... vergleichende Boid in die Liste mit den 
+                                                  Boids in der Naehe hinzuge...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... vergleichende Boid in die Liste mit den 
+                                                  Boids in der Naehe hinzuge...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...eichende Boid in die Liste mit den Boids 
+                                                  in der Naehe hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...eichende Boid in die Liste mit den Boids 
+                                                  in der Naehe hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...hende Boid in die Liste mit den Boids in 
+                                                  der Naehe hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...hende Boid in die Liste mit den Boids in 
+                                                  der Naehe hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...e Boid in die Liste mit den Boids in der 
+                                                  Naehe hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...e Boid in die Liste mit den Boids in der 
+                                                  Naehe hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... in die Liste mit den Boids in der Naehe 
+                                                  hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ... in die Liste mit den Boids in der Naehe 
+                                                  hinzugefuegt
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...e mit den Boids in der Naehe hinzugefuegt
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11]
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200     		if 
+               distanceBoids < 5:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200     		if 
+               distanceBoids < 5:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200     		if 
+               distanceBoids < 5:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
+00.
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 190.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 200.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202     return 
+                 close
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202     return 
+                 close
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202     return 
+                 close
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `192' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \begin{lstlisting}[style=mystyle]
+                                       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 def 
+          createBoids(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 def 
+          createBoids(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 def 
+          createBoids(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #
+       Boids werden erstellt und in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids 
+             werden erstellt und in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids 
+             werden erstellt und in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden 
+                    erstellt und in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden 
+                    erstellt und in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt 
+                             und in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt 
+                             und in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und 
+                                 in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und 
+                                 in der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und in 
+                                    der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und in 
+                                    der Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und in der 
+                                        Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und in der 
+                                        Liste gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und in der Liste 
+                                              gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 #Boids werden erstellt und in der Liste 
+                                              gespeichert
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `179' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ...den erstellt und in der Liste gespeichert
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for 
+          i in range(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for 
+          i in range(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for 
+          i in range(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for i in 
+               range(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for i in 
+               range(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for i in 
+               range(anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `230' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for i in range(
+                     anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `133' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for i in range(
+                     anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package color Error: Argument `36' not in range [0,1].
+
+See the color package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 for i in range(
+                     anzahl):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 [12] [13] (Dokumentation.aux)
 Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: C8C63AA543D57AD76E2C9242361B9F56;2340.
->>>>>>> adaptDir-und-checkCollision
  ) 
 Here is how much of TeX's memory you used:
- 16282 strings out of 478659
- 270233 string characters out of 2845920
- 885872 words of memory out of 3000000
- 34059 multiletter control sequences out of 15000+600000
- 416732 words of font info for 81 fonts, out of 8000000 for 9000
+ 16277 strings out of 478659
+ 270165 string characters out of 2845920
+ 891912 words of memory out of 3000000
+ 34056 multiletter control sequences out of 15000+600000
+ 416078 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,6n,76p,1234b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,6n,76p,1234b,1935s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\olive\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-<<<<<<< HEAD
-1200.pk><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbxti10.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/olive/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/olive/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/olive/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/olive/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C
-:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/esvect/vect10.pf
-b>
-Output written on Dokumentation.pdf (9 pages, 151489 bytes).
-=======
 1095.pk> <C:\Users\olive\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/olive/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/olive/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/olive/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
-olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
-:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
-10.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmti12.pfb>
-Output written on Dokumentation.pdf (14 pages, 244112 bytes).
->>>>>>> adaptDir-und-checkCollision
+amsfonts/cm/cmbx12.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/olive/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/olive/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/olive/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/o
+live/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
+Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12
+.pfb>
+Output written on Dokumentation.pdf (14 pages, 223289 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
+ 347 PDF objects out of 1000 (max. 8388607)
  75 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

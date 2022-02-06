@@ -11,11 +11,21 @@
 \usepackage{xcolor}
 \usepackage{pythontex}
 \hypersetup{linktoc=all}
-\lstset{language=Python}
 \definecolor{code}{rgb}{255,255,255}
 \definecolor{background}{rgb}{0,0,0}
-\lstdefinestyle{mystyle}{backgroundcolor=\color{background}, }
-\lstset{basicstyle = \small, breaklines=true, numbers=left}
+\lstdefinestyle{mystyle}{%
+backgroundcolor=\color[rgb]{192,192,192},
+basicstyle=\small,
+commentstyle=\color[rgb]{0,179,0},
+keywordstyle=\color[rgb]{230,133,36},
+showstringspaces=false,
+numbers=left,
+numberstyle=\tiny,
+numbersep=10pt,
+breaklines=true,
+language=Python
+}
+
 \begin{document}
 %Titelseite
 \begin{titlepage}
@@ -156,7 +166,7 @@ Wie auch die \hyperref[sec:update]{\textbf{\emph{update()}}}-Funtkion wird die i
 \newpage
 \section{wichtigste Funktionen}
 \subsection{Fenster}
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 #Fenster wird erstellt
 app = Ursina()
 #Fenstertitel wird festgelegt
@@ -165,14 +175,14 @@ window.title = "Boids Simulation"
 app.run()
 \end{lstlisting}
 \subsection{Kamera}
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 #Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
 camera.position = (0,10,-350)
 #EditorCamera ermoeglicht die Veraenderung der Kamera
 EditorCamera()
 \end{lstlisting}
 \subsection{Wireframe}
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 #Erzeugung des Wuerfels
 wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x = 102)
 ...
@@ -180,7 +190,7 @@ wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x
 w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(110,110,0), color = color.red, alpha = 0)
 \end{lstlisting}
 \subsection{closeBoids()}
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 def closeBoids(self):
     close = []
     for i in Liste_Boids:
@@ -192,7 +202,7 @@ def closeBoids(self):
     return close
 \end{lstlisting}
 \subsection{createBoids()}
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 def createBoids(anzahl):
 #Boids werden erstellt und in der Liste gespeichert
 for i in range(anzahl):
