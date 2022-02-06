@@ -1,0 +1,102 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[202({\natexlab{a}})]{2022}
+Ursina: Entity basics, {\natexlab{a}}.
+\newblock URL \url{https://www.ursinaengine.org/entity_basics.html}.
+
+\bibitem[202({\natexlab{b}})]{2022k}
+ursina engine, {\natexlab{b}}.
+\newblock URL \url{www.ursinaengine.org}.
+
+\bibitem[202({\natexlab{c}})]{2022l}
+Ursina: Cheat sheet entity, {\natexlab{c}}.
+\newblock URL \url{https://www.ursinaengine.org/cheat_sheet_dark.html#Entity}.
+
+\bibitem[202({\natexlab{d}})]{2022m}
+Ursina: Cheat sheet ursina, {\natexlab{d}}.
+\newblock URL \url{https://www.ursinaengine.org/cheat_sheet.html#Ursina}.
+
+\bibitem[202({\natexlab{e}})]{2022o}
+Gimbal lock, {\natexlab{e}}.
+\newblock URL \url{https://de.wikipedia.org/wiki/Gimbal_Lock}.
+
+\bibitem[202({\natexlab{f}})]{2022p}
+Ursina: ursina for dummies transparency, {\natexlab{f}}.
+\newblock URL
+  \url{https://www.ursinaengine.org/ursina_for_dummies.html#:~:text=a bit
+  transparent.-,Transparency,-So we have}.
+
+\bibitem[202({\natexlab{g}})]{2022q}
+Ursina: urisna for dummies creating your first program, {\natexlab{g}}.
+\newblock URL
+  \url{https://www.ursinaengine.org/ursina_for_dummies.html#:~:text=Creating
+  your first program}.
+
+\bibitem[202({\natexlab{h}})]{2022r}
+Ursina: Collision, {\natexlab{h}}.
+\newblock URL \url{https://www.ursinaengine.org/collision.html}.
+
+\bibitem[Hit()]{HitInfo}
+Ursina: Hitinfo.
+\newblock URL \url{https://www.ursinaengine.org/collision.html#:~:text=gray
+  app.run()-,HitInfo,-All of these}.
+
+\bibitem[col()]{color}
+Ursina: Color.
+\newblock URL
+  \url{https://www.ursinaengine.org/entity_basics.html#:~:text=print(s.aspect_ratio)-,Setting
+  the color,-e.color = color}.
+
+\bibitem[dis()]{distance}
+Ursina: Distance check.
+\newblock URL \url{https://www.ursinaengine.org/collision.html#:~:text=None
+  hits = [] entities = []-,Distance Check,-Sometimes it enough}.
+
+\bibitem[god()]{godclass}
+Ursina: Entity "god class".
+\newblock URL \url{https://www.ursinaengine.org/entity_basics.html#:~:text=An
+  entity is a thing in the world, and is the "god class" in ursina.}
+
+\bibitem[inp()]{input}
+Ursina: input-handler.
+\newblock URL
+  \url{https://www.ursinaengine.org/cheat_sheet.html#input_handler}.
+
+\bibitem[ray()]{raycast}
+Ursina: Collision raycast.
+\newblock URL \url{https://www.ursinaengine.org/collision.html#:~:text=cube',
+  collider='box')-,raycast(),-raycast(origin, direction}.
+
+\bibitem[upd()]{update}
+Ursina: update().
+\newblock URL
+  \url{https://www.ursinaengine.org/entity_basics.html#:~:text=cube',
+  scale=(3,1,1))-,Update,    An Entity's update method will be called
+  automatically:,-e = Entity() def}.
+
+\bibitem[andys arcade()]{andysarcade2022}
+andys arcade.
+\newblock Original atari pong (1972) arcade machine gameplay video.
+\newblock URL \url{https://www.youtube.com/watch?v=fiShX2pTz9A}.
+
+\bibitem[Lague()]{Lague2022}
+Sebastian Lague.
+\newblock Coding adventure: Boids regeln.
+\newblock URL \url{https://youtu.be/bqtqltqcQhw?t=94}.
+
+\bibitem[Space()]{Space2022}
+MK~Coding Space.
+\newblock Making a 3d pong game in python with ursina engine.
+\newblock URL \url{https://www.youtube.com/watch?v=NLn-hB1P9tQ}.
+
+\bibitem[Takeru()]{2022d}
+風気タケル~/Kazeki Takeru.
+\newblock Ursina engine tutorial 02: Displaying text and keyboard input.
+\newblock URL \url{https://www.youtube.com/watch?v=kb2wJYTwTHw}.
+
+\end{thebibliography}

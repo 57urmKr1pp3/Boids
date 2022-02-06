@@ -92,7 +92,7 @@ class Boid (Entity):
             if i != self:
                 #wenn die Distanz zwischen dem self.Boid und dem zu vergleichenden Boid unter 5 liegt wird der vergleichende Boid in die Liste mit den Boids in der Naehe hinzugefuegt
                 distanceBoids = distance(self.position, i.position)
-                if distanceBoids < 5:
+                if distanceBoids < 6:
                     close.append(i)
         return close
 
@@ -129,48 +129,18 @@ class Boid (Entity):
             self.maxVel = avgMV
             self.acel = avgA
 
-    def seperation(self):
+    def seperation(self):#sparrend fehlerhaft
         #Versuch 1 fehlerhaft
         #Die Boids in der Naehe werden zwischengespeichert
-        # proximity = self.closeBoids()
-        # if len(proximity) > 1:
-        #     for i in proximity:
-        #         #wenn die Distanz zwischen dem self.Boid und des zu vergeichenden Boids <2 ist wird die Mitte zwischen den beiden Boids berechnet
-        #         if distance(self.position, i.position) < 2:
-        #             center = (self.position + i.position)/2
-        #             #Die Differenz zwischen der Mitte und der eigenen Position wird von der Position subtrahiert um den Abstand zu erhoehen
-        #             self.position += Vec3(center - self.position) *.05
-        #Versuch 2 resourcenfressend
-        #Raycast werden erstellt die in 5 Richtungen gerichtet sind, eine Distanz von 0.3 haben, und die Wände ignorieren
-        raycastup = raycast(origin = self.position, direction = self.up, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
-        raycastright = raycast(origin = self.position, direction = self.right, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
-        raycastleft = raycast(origin = self.position, direction = self.left, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
-        raycastback = raycast(origin = self.position, direction = self.back, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
-        raycastforward = raycast(origin = self.position, direction = self.forward, distance = 0.3, traverse_target = scene, ignore = (Wireframe,))
-        #Falls einer der Raycasts einen Boid berührt dreht er in die andere Richtung
-        if raycastup.hit:
-            self.rotation += self.back * self.vel/1000
-        if raycastback.hit:
-            self.rotation += self.forward * self.vel/1000
-        if raycastforward.hit:
-            self.rotation += self.back * self.vel/1000
-        if raycastright.hit:
-            self.rotation += self.left * self.vel/1000
-        if raycastleft.hit:
-            self.rotation += self.right * self.vel/1000
-
+        proximity = self.closeBoids()
+        if len(proximity) > 1:
+            for i in proximity:
+                #wenn die Distanz zwischen dem self.Boid und des zu vergeichenden Boids <2 ist wird die Mitte zwischen den beiden Boids berechnet
+                if distance(self.position, i.position) < 2:
+                    center = (self.position + i.position)/2
+                    #Die Differenz zwischen der Mitte und der eigenen Position wird von der Position subtrahiert um den Abstand zu erhoehen
+                    self.position += Vec3(center - self.position) *.05
     def cohesion(self):
-        #Versuch 1
-        #ProxPos = []
-        #for i in proximity:
-        #    ProxPos.append(i.position)
-        #try:
-        #    center = sum(ProxPos)/len(ProxPos)
-        #    if distance(self.position, center) >= 2:
-        #        self.position += Vec3(self.up + Vec3(Vec3(center - self.position)-self.up))
-        #except:
-        #    pass
-        #Versuch 2
         #Die Boids in der Naehe werden gespeichert
         proximity = self.closeBoids()
         #Die Mitte aller Boids in der Naehe wird berechnet
@@ -184,6 +154,54 @@ class Boid (Entity):
             self.position -= Vec3(center - self.position) *.05
 
 
+    def seperationCohesion(self):
+        #Versuch 2 resourcenfressend
+        #Raycast werden erstellt die in 5 Richtungen gerichtet sind, eine Distanz von 5 haben, und die Wände ignorieren
+        raycastup = raycast(origin = self.position, direction = self.up, distance = 5, traverse_target = scene, ignore = (Wireframe,))
+        raycastright = raycast(origin = self.position, direction = self.right, distance = 5, traverse_target = scene, ignore = (Wireframe,))
+        raycastleft = raycast(origin = self.position, direction = self.left, distance = 5, traverse_target = scene, ignore = (Wireframe,))
+        raycastback = raycast(origin = self.position, direction = self.back, distance = 5, traverse_target = scene, ignore = (Wireframe,))
+        raycastforward = raycast(origin = self.position, direction = self.forward, distance = 5, traverse_target = scene, ignore = (Wireframe,))
+
+        #Falls einer der Raycasts einen Boid berührt, wird die Distanz gespeichert
+        # Falls diese Distanz kleiner als 2 ist dreht der Boid weg
+        # Falls diese Distanz größer als 2 ist dreht der Boid hin
+    
+        if raycastup.hit:
+            distance_up = raycastup.distance
+            if distance_up < 2:
+                self.rotation += self.back * self.vel/1000
+            if distance_up > 2:
+                self.rotation += self.back * self.vel/1000
+
+        if raycastright.hit:
+            distance_right = raycastright.distance
+            if distance_right < 2:
+                self.rotation += self.left * self.vel/1000
+            if distance_right > 2:
+                self.rotation += self.right * self.vel/1000
+
+        if raycastleft.hit:
+            distance_left = raycastleft.distance
+            if distance_left < 2:
+                self.rotation += self.right * self.vel/1000
+            if distance_left > 2:
+                self.rotation += self.left * self.vel/1000
+
+        if raycastback.hit:
+            distance_back = raycastback.distance
+            if distance_back < 2:
+                self.rotation += self.forward * self.vel/1000
+            if distance_back > 2:
+                self.rotation += self.back * self.vel/1000
+
+        if raycastforward.hit:
+            distance_forward = raycastforward.distance
+            if distance_forward < 2:
+                self.rotation += self.back * self.vel/1000
+            if distance_forward > 2:
+                self.rotation += self.forward * self.vel/1000
+        
 
     def avoidWall(self):
         #Raycasts
@@ -270,11 +288,14 @@ class Boid (Entity):
 
     def update(self):
         #Funktion zur Bewegung wird aufgerufen
-        self.cohesion()
         self.move()
         #Funktion zur Einhaltung der Regeln werden aufgerufen
-        self.seperation()
         self.alignment()
+        #ressourcensparend
+        #self.cohesion()
+        #self.seperation()
+        #ressourcenfressend
+        self.seperationCohesion()
 
 class Wireframe (Entity):
     def __init__(self):
@@ -382,7 +403,7 @@ wireframe = Wireframe()
 createInstruction()
 #Boids
 ######################################################################################################################################
-anzahl = 20
+anzahl = 10
 groesse = 30
 ######################################################################################################################################
 
