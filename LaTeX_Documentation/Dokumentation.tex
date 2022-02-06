@@ -14,23 +14,6 @@
 \usepackage[square, numbers]{natbib}
 \bibliographystyle{plainnat}
 \hypersetup{linktoc=all}
-<<<<<<< HEAD
-\definecolor{code}{rgb}{255,255,255}
-\definecolor{background}{rgb}{0,0,0}
-\lstdefinestyle{mystyle}{%
-backgroundcolor=\color[rgb]{192,192,192},
-basicstyle=\small,
-commentstyle=\color[rgb]{0,179,0},
-keywordstyle=\color[rgb]{230,133,36},
-showstringspaces=false,
-numbers=left,
-numberstyle=\tiny,
-numbersep=10pt,
-breaklines=true,
-language=Python
-}
-
-=======
 \lstdefinestyle{mystyle}{%
 	backgroundcolor=\color{gray!12},
 	basicstyle=\scriptsize,
@@ -44,7 +27,6 @@ language=Python
 }
 
 
->>>>>>> adaptDir-und-checkCollision
 \begin{document}
 	
 %Titelseite
@@ -187,13 +169,8 @@ Wie auch die \hyperref[sec:update]{\textbf{\emph{update()}}}-Funtkion\cite{updat
 %wichtigste Funktionen
 \newpage
 \section{wichtigste Funktionen}
-<<<<<<< HEAD
-\subsection{Fenster}
-\begin{lstlisting}[style=mystyle]
-=======
 \subsection{Fenster}\label{CodeFenster}
 \begin{lstlisting}[style=mystyle, language=Python]
->>>>>>> adaptDir-und-checkCollision
 #Fenster wird erstellt
 app = Ursina()
 #Fenstertitel wird festgelegt
@@ -201,38 +178,24 @@ window.title = "Boids Simulation"
 #Fenster wird ausgefuehrt
 app.run()
 \end{lstlisting}
-<<<<<<< HEAD
-\subsection{Kamera}
-\begin{lstlisting}[style=mystyle]
-=======
 \subsection{Kamera}\label{Kamera}
 \begin{lstlisting}[style=mystyle, language=Python]
->>>>>>> adaptDir-und-checkCollision
 #Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
 camera.position = (0,10,-350)
 #EditorCamera ermoeglicht die Veraenderung der Kamera
 EditorCamera()
 \end{lstlisting}
-<<<<<<< HEAD
-\subsection{Wireframe}
-\begin{lstlisting}[style=mystyle]
-=======
+
 \subsection{Wireframe}\label{CodeRaum}
 \begin{lstlisting}[style=mystyle, language=Python]
->>>>>>> adaptDir-und-checkCollision
 #Erzeugung des Wuerfels
 wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x = 102)
 ...
 #Erzeugung der Waende
 w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(110,110,0), color = color.red, alpha = 0)
 \end{lstlisting}
-<<<<<<< HEAD
-\subsection{closeBoids()}
-\begin{lstlisting}[style=mystyle]
-=======
 \subsection{closeBoids()}\label{CodecloseBoids}
 \begin{lstlisting}[style=mystyle, language=Python]
->>>>>>> adaptDir-und-checkCollision
 def closeBoids(self):
     close = []
     for i in Liste_Boids:
@@ -243,14 +206,10 @@ def closeBoids(self):
     			close.append(i)
     return close
 \end{lstlisting}
-<<<<<<< HEAD
-\subsection{createBoids()}
-\begin{lstlisting}[style=mystyle]
-=======
+
 \newpage
 \subsection{createBoids()}\label{CodecreateBoids}
 \begin{lstlisting}[style=mystyle, language=Python]
->>>>>>> adaptDir-und-checkCollision
 def createBoids(anzahl):
 	#Boids werden erstellt und in der Liste gespeichert
 	for i in range(anzahl):
