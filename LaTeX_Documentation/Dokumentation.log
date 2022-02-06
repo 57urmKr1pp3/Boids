@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  6 FEB 2022 21:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  6 FEB 2022 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,64 +684,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
 Package natbib Warning: Citation `text' on page 6 undefined on input line 96.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
-
- []
-
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
 
-Overfull \hbox (1.58441pt too wide) in paragraph at lines 127--129
+Overfull \hbox (1.58441pt too wide) in paragraph at lines 128--130
 \OT1/cmr/bx/it/12 seper-a-tionCo-he-sion()\OT1/cmr/m/n/12 -Funktion 5 \OT1/cmr/
 bx/n/12 Ray-casts \OT1/cmr/m/n/12 er-stellt die in Be-we-gungsrich-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--133
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--139
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--139
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 140--143
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
 
  []
 
@@ -752,7 +752,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.173 #
+l.174 #
        Fenster wird erstellt
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -761,7 +761,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.173 #
+l.174 #
        Fenster wird erstellt
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -773,7 +773,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.174 app 
+l.175 app 
           = Ursina()
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -782,7 +782,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.174 app 
+l.175 app 
           = Ursina()
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -794,7 +794,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.175 #
+l.176 #
        Fenstertitel wird festgelegt
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -803,7 +803,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.175 #
+l.176 #
        Fenstertitel wird festgelegt
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -815,7 +815,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.176 window.
+l.177 window.
              title = "Boids Simulation"
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -824,7 +824,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.176 window.
+l.177 window.
              title = "Boids Simulation"
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -836,7 +836,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.177 #
+l.178 #
        Fenster wird ausgefuehrt
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -845,7 +845,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.177 #
+l.178 #
        Fenster wird ausgefuehrt
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -857,7 +857,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.178 app.
+l.179 app.
           run()
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -866,7 +866,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.178 app.
+l.179 app.
           run()
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -878,7 +878,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.182 #
+l.183 #
        Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -887,7 +887,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.182 #
+l.183 #
        Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -899,7 +899,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.183 camera.
+l.184 camera.
              position = (0,10,-350)
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -908,7 +908,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.183 camera.
+l.184 camera.
              position = (0,10,-350)
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -920,7 +920,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.184 #
+l.185 #
        EditorCamera ermoeglicht die Veraenderung der Kamera
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -929,7 +929,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.184 #
+l.185 #
        EditorCamera ermoeglicht die Veraenderung der Kamera
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -941,7 +941,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.185 EditorCamera(
+l.186 EditorCamera(
                    )
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -950,7 +950,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.185 EditorCamera(
+l.186 EditorCamera(
                    )
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -962,7 +962,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.189 #
+l.190 #
        Erzeugung des Wuerfels
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -971,7 +971,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.189 #
+l.190 #
        Erzeugung des Wuerfels
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -983,7 +983,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.190 wf1 
+l.191 wf1 
           = Entity(model = "cube", collider = 'box', position = (0, -51, -51...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -992,7 +992,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.190 wf1 
+l.191 wf1 
           = Entity(model = "cube", collider = 'box', position = (0, -51, -51...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1004,7 +1004,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.191 ...
+l.192 ...
          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1013,7 +1013,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.191 ...
+l.192 ...
          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1025,7 +1025,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.192 #
+l.193 #
        Erzeugung der Waende
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1034,7 +1034,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.192 #
+l.193 #
        Erzeugung der Waende
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1046,7 +1046,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.193 w1 
+l.194 w1 
          = Entity(model = 'cube', collider = 'box', position = (0,0,-52),sca...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1055,7 +1055,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.193 w1 
+l.194 w1 
          = Entity(model = 'cube', collider = 'box', position = (0,0,-52),sca...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1067,7 +1067,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.197 def 
+l.198 def 
           closeBoids(self):
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1076,7 +1076,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.197 def 
+l.198 def 
           closeBoids(self):
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1088,7 +1088,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.198     close 
+l.199     close 
                 = []
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1097,7 +1097,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.198     close 
+l.199     close 
                 = []
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1109,7 +1109,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.199     for 
+l.200     for 
               i in Liste_Boids:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1118,7 +1118,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.199     for 
+l.200     for 
               i in Liste_Boids:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1130,7 +1130,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.200     	if 
+l.201     	if 
               i != self:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1139,7 +1139,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.200     	if 
+l.201     	if 
               i != self:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1151,7 +1151,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.201     	#
+l.202     	#
             wenn die Distanz zwischen dem self.Boid und dem zu vergleichende...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1160,7 +1160,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.201     	#
+l.202     	#
             wenn die Distanz zwischen dem self.Boid und dem zu vergleichende...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1172,7 +1172,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.202 		    distanceBoids 
+l.203 		    distanceBoids 
                           = distance(self.position, i.position)
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1181,7 +1181,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.202 		    distanceBoids 
+l.203 		    distanceBoids 
                           = distance(self.position, i.position)
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1193,7 +1193,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.203     		if 
+l.204     		if 
                distanceBoids < 5:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1202,7 +1202,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.203     		if 
+l.204     		if 
                distanceBoids < 5:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1212,17 +1212,17 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
-03.
+04.
 (C:\Users\olive\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 203.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 204.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.204     			close.
+l.205     			close.
                    append(i)
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1231,7 +1231,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.204     			close.
+l.205     			close.
                    append(i)
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1243,7 +1243,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.205     return 
+l.206     return 
                  close
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1252,7 +1252,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.205     return 
+l.206     return 
                  close
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1265,7 +1265,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.210 def 
+l.211 def 
           createBoids(anzahl):
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1274,7 +1274,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.210 def 
+l.211 def 
           createBoids(anzahl):
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1286,7 +1286,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.211 	#
+l.212 	#
         Boids werden erstellt und in der Liste gespeichert
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1295,7 +1295,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.211 	#
+l.212 	#
         Boids werden erstellt und in der Liste gespeichert
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1307,7 +1307,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.212 	for 
+l.213 	for 
            i in range(anzahl):
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1316,7 +1316,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.212 	for 
+l.213 	for 
            i in range(anzahl):
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1328,7 +1328,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.213 		temp 
+l.214 		temp 
              = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), rand...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1337,7 +1337,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.213 		temp 
+l.214 		temp 
              = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), rand...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1349,7 +1349,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.214 		Liste_Boids.
+l.215 		Liste_Boids.
                     append(temp)
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1358,7 +1358,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.214 		Liste_Boids.
+l.215 		Liste_Boids.
                     append(temp)
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1370,7 +1370,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.218 def 
+l.219 def 
           seperation(self)
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1379,7 +1379,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.218 def 
+l.219 def 
           seperation(self)
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1391,7 +1391,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.219 	proximity 
+l.220 	proximity 
                  = self.closeBoids()
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1400,7 +1400,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.219 	proximity 
+l.220 	proximity 
                  = self.closeBoids()
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1412,7 +1412,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.220 	if 
+l.221 	if 
           len(proximity) > 1:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1421,7 +1421,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.220 	if 
+l.221 	if 
           len(proximity) > 1:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1433,7 +1433,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.221 		for 
+l.222 		for 
             i in proximity:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1442,7 +1442,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.221 		for 
+l.222 		for 
             i in proximity:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1454,7 +1454,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.222 		if 
+l.223 		if 
            distance(self.position, i.position) < 2:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1463,7 +1463,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.222 		if 
+l.223 		if 
            distance(self.position, i.position) < 2:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1475,7 +1475,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.223 			center 
+l.224 			center 
                 = (self.position + i.position)/2
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1484,7 +1484,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.223 			center 
+l.224 			center 
                 = (self.position + i.position)/2
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1496,7 +1496,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.224 			self.
+l.225 			self.
               position += Vec3(center - self.position) *.05
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1505,7 +1505,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.224 			self.
+l.225 			self.
               position += Vec3(center - self.position) *.05
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1517,7 +1517,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.228 def 
+l.229 def 
           cohesion(self):
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1526,7 +1526,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.228 def 
+l.229 def 
           cohesion(self):
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1538,7 +1538,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.229 	proximity 
+l.230 	proximity 
                  = self.closeBoids()
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1547,7 +1547,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.229 	proximity 
+l.230 	proximity 
                  = self.closeBoids()
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1559,7 +1559,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.230 	center 
+l.231 	center 
               = self.position
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1568,7 +1568,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.230 	center 
+l.231 	center 
               = self.position
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1580,7 +1580,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.231 	if 
+l.232 	if 
           len(proximity) > 1:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1589,7 +1589,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.231 	if 
+l.232 	if 
           len(proximity) > 1:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1601,7 +1601,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.232 		for 
+l.233 		for 
             i in proximity:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1610,7 +1610,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.232 		for 
+l.233 		for 
             i in proximity:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1622,7 +1622,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.233 			center 
+l.234 			center 
                 = (center + i.position)/2
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1631,7 +1631,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.233 			center 
+l.234 			center 
                 = (center + i.position)/2
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1643,7 +1643,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.234 	if 
+l.235 	if 
           distance(self.position, center) >= 2:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1652,7 +1652,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.234 	if 
+l.235 	if 
           distance(self.position, center) >= 2:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1664,7 +1664,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.235 		self.
+l.236 		self.
              position -= Vec3(center - self.position) *.05
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1673,7 +1673,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.235 		self.
+l.236 		self.
              position -= Vec3(center - self.position) *.05
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1685,8 +1685,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.239 	def 
-           seperationCohesion(self):
+l.240 def 
+          seperationCohesion(self):
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1694,8 +1694,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.239 	def 
-           seperationCohesion(self):
+l.240 def 
+          seperationCohesion(self):
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1706,8 +1706,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.240 		...
-           
+l.241 	...
+          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1715,8 +1715,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.240 		...
-           
+l.241 	...
+          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1727,8 +1727,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.241 		raycastup 
-                  = raycast(origin = self.position, direction = self.up, dis...
+l.242 	raycastup 
+                 = raycast(origin = self.position, direction = self.up, dist...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1736,8 +1736,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.241 		raycastup 
-                  = raycast(origin = self.position, direction = self.up, dis...
+l.242 	raycastup 
+                 = raycast(origin = self.position, direction = self.up, dist...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1748,8 +1748,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.242 		...
-           
+l.243 	...
+          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1757,8 +1757,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.242 		...
-           
+l.243 	...
+          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1769,8 +1769,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.243 		if 
-           raycastup.hit:
+l.244 	if 
+          raycastup.hit:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1778,8 +1778,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.243 		if 
-           raycastup.hit:
+l.244 	if 
+          raycastup.hit:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1790,8 +1790,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.244 			distance_up 
-                     = raycastup.distance
+l.245 		distance_up 
+                    = raycastup.distance
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1799,8 +1799,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.244 			distance_up 
-                     = raycastup.distance
+l.245 		distance_up 
+                    = raycastup.distance
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1811,8 +1811,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.245 			if 
-            distance_up < 2:
+l.246 		if 
+           distance_up < 2:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1820,8 +1820,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.245 			if 
-            distance_up < 2:
+l.246 		if 
+           distance_up < 2:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1832,8 +1832,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.246 				self.
-               rotation += self.back * self.vel/1000
+l.247 			self.
+              rotation += self.back * self.vel/1000
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1841,8 +1841,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.246 				self.
-               rotation += self.back * self.vel/1000
+l.247 			self.
+              rotation += self.back * self.vel/1000
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1853,8 +1853,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.247 			if 
-            distance_up > 2:
+l.248 		if 
+           distance_up > 2:
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1862,8 +1862,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.247 			if 
-            distance_up > 2:
+l.248 		if 
+           distance_up > 2:
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1874,8 +1874,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.248 				self.
-               rotation += self.back * self.vel/1000
+l.249 			self.
+              rotation += self.back * self.vel/1000
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1883,8 +1883,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.248 				self.
-               rotation += self.back * self.vel/1000
+l.249 			self.
+              rotation += self.back * self.vel/1000
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1895,8 +1895,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.249 		...
-           
+l.250 	...
+          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1904,50 +1904,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.249 		...
-           
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.253 	if 
-          held_keys["+"]:
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \protect 
-l.253 	if 
-          held_keys["+"]:
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.254 		temp 
-             = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), rand...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \protect 
-l.254 		temp 
-             = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), rand...
+l.250 	...
+          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1959,7 +1917,49 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.255 		Liste_Boids.
+l.255 	if 
+          held_keys["+"]:
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.255 	if 
+          held_keys["+"]:
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.256 		temp 
+             = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), rand...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.256 		temp 
+             = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), rand...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.257 		Liste_Boids.
                     append(temp)
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1968,7 +1968,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.255 		Liste_Boids.
+l.257 		Liste_Boids.
                     append(temp)
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1980,7 +1980,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.256 	...
+l.258 	...
           
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1989,7 +1989,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.256 	...
+l.258 	...
           
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2108,11 +2108,11 @@ Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
 Here is how much of TeX's memory you used:
  16885 strings out of 478659
  278556 string characters out of 2845920
- 964460 words of memory out of 3000000
+ 949461 words of memory out of 3000000
  34589 multiletter control sequences out of 15000+600000
  416981 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,6n,76p,1270b,1927s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,6n,76p,1270b,1393s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\olive\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0800.pk> <C:\Users\olive\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -2127,7 +2127,7 @@ sers/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
 b><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmti12.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmtt8.pfb>
-Output written on Dokumentation.pdf (15 pages, 295393 bytes).
+Output written on Dokumentation.pdf (15 pages, 295479 bytes).
 PDF statistics:
  525 PDF objects out of 1000 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)
