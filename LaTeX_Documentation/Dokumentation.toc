@@ -10,7 +10,12 @@
 \contentsline {subsection}{\numberline {3.2}Fenster}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Raum}{6}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Boids}{6}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Eingabe}{7}{subsection.3.5}%
-\contentsline {section}{\numberline {4}wichtigste Funktionen}{8}{section.4}%
-\contentsline {section}{\numberline {5}Abbildungsverzeichnis}{9}{section.5}%
-\contentsline {section}{\numberline {6}Quellennachweis}{10}{section.6}%
+\contentsline {subsection}{\numberline {3.5}Funktionen im Fenster}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Eingabe}{10}{subsection.3.6}%
+\contentsline {section}{\numberline {4}wichtigste Funktionen}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Fenster}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Kamera}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Wireframe}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}closeBoids()}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}createBoids()}{12}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Quellennachweis}{13}{section.5}%
