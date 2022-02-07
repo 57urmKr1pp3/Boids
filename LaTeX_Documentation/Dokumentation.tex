@@ -39,8 +39,9 @@
 
 %Inhaltsverzeichnis
 \title{\Large{\textbf{\underline{Inhaltsverzeichnis}}}}
+\fontsize{11}{0}
 \tableofcontents
-
+\fontsize{12}{0}
 %UML-Diagramm
 \section{UML-Diagramm}
 \includegraphics[scale=0.75, page=1]{UML/Boids_UML.pdf}
@@ -58,7 +59,7 @@ Des Weiteren werden die Seitenflächen erstellt. Dabei werden wie davor 6 Objekt
 \subsection{Allgemeines zu den Boids}
 Boids sind Körper, die sich Bewegen. Zur Veranschaulichung der Richtung sollten die Boids einen Körper mit einer Spitze haben, wie zum Beispiel ein Kegel. Da ein Kegel sehr viele Seiten hat, die alle jedes Bild berechnet werden müssen und dadurch die Performance senken, sollte man auf einen einfacheren Körper mit Spitze zurückgreifen, wie eine Pyramide. Diese Körper bewegen sind jedoch nicht chaotisch, da sie sich an \hyperref[sec:Regel]{\textbf{\emph{drei Regeln}}} handeln, die später erklärt werden.\linebreak
 \newpage
-\textbf{\underline{Verhalten an Wänden}}\label{sec:Verhalten}
+\subsubsection{Verhalten an Wänden}\label{sec:Verhalten}
 Das Verhalten der Boids an den Wänden kann man auf verschiedene Weise gestalten. In dieser Simulation wurden drei davon versucht umzusetzen. 
 \begin{enumerate}
 \item \underline{\textbf{Warp}}\linebreak\label{sec:Warp}
@@ -93,29 +94,30 @@ Der Benutzer soll durch Bewegen der Maus die Kamera rotieren können und durch T
 Aufrgund der Umsetzung der Eigesnchaften ist es nicht möglich die Darstellungsebene und die Informationsebene in verschiedene Dateien aufzuteilen. Es würde ein Import-Fehler auftreten, da die Liste aus der Darstellungsebene in die Informationsebene importiert werden müsste und die Klasse aus der Informationsebene in die Darstellungsebene.
 	
 \subsection{Fenster}\label{sec:Fenster}
-Mit dem Aufrufen der Klasse \textbf{\emph{Ursina}}\cite{2022m} wird ein Fenster erschaffen, welches am Ende ausgeführt wird, mit all den benötigen Grafiken\cite{2022q}. Diesem Fenster kann man einen Titel vergeben, welche dann als Task angezeigt wird\cite{2022q}. Diese Klasse hat wie jede andere Klasse\cite{2022} die Funktion \textbf{\emph{input()}}, mit deren Hilfe man die Eingabe des Benutzers verarbeiten kann, die in dieser Umsetzung \hyperref[sec:input]{\textbf{\emph{hier}}} nachzulesen sind. Um dem Benutzer die Nutzung der Simulation zu vereinfachen, erstellt man in der Funktion \textbf{\emph{createInstruction()}}, mit der Klasse \textbf{\emph{Text}} eine Beschreibung und skaliert und positioniert sie so, dass sie nicht im Vordergrund liegt\cite{text}.\hyperref[CodeFenster]{\textbf{\emph{[Code]}}}
+Mit dem Aufrufen der Klasse \textbf{\emph{Ursina}}\cite{2022m} wird ein Fenster erschaffen, welches am Ende ausgeführt wird, mit all den benötigen Grafiken\cite{2022q}. Diesem Fenster kann man einen Titel vergeben, welche dann als Task angezeigt wird\cite{2022q}. Diese Klasse hat wie jede andere Klasse\cite{2022} die Funktion \textbf{\emph{input()}}, mit deren Hilfe man die Eingabe des Benutzers verarbeiten kann, die in dieser Umsetzung \hyperref[sec:input]{\textbf{\emph{hier}}} nachzulesen sind. Um dem Benutzer die Nutzung der Simulation zu vereinfachen, erstellt man in der Funktion \hyperref[CodeCreateInstructions]{\textbf{\emph{createInstruction()}}}, mit der Klasse \textbf{\emph{Text}} eine Beschreibung und skaliert und positioniert sie so, dass sie nicht im Vordergrund liegt\cite{text}.\hyperref[CodeFenster]{\textbf{\emph{[Code]}}}
 
 \subsection{Raum}\label{Wireframe}
-Die Klasse \textbf{\emph{Wireframe}} wird erstellt, welche von der \textbf{\emph{Entity}}-Klasse\cite{2022l} erbt. Diese Klasse beinhaltet insgesamt 18 andere Entitys. 12 davon sind Würfel die so skaliert und positioniert werden, dass sie die Kanten eines großen Würfels bilden. Die anderen 6 sind ebenfalls Würfel, welche jedoch so skaliert werden, dass sie quadratischen Flächen formen. Diese Flächen werden dann so positioniert, dass die Seitenflächen des großen Würfels bilden. Da diese Seitenflächen nicht nötig zu sehen sind, kann man entweder den $\alpha$-Wert der Farbe oder den $\alpha$-Wert einzeln auf 0 setzen, beide Werte sind die Sichtbarkeitswerte \cite{2022p}. Bei dieser Umsetzung wird letzteres angewandt. Sowohl den Kanten, als auch den Seitenflächen wird eine Box als Kollisionskörper unter \emph{collider} zugeteilt, damit die Boids daran abprallen können\cite{2022r}.\hyperref[CodeRaum]{\textbf{\emph{[Code]}}} \newline \scriptsize Warum diese Klasse erstellt werden muss, wird im Teil \hyperref[sec:seperation]{\textbf{\emph{seperation()}}} erklärt.
+Die Klasse \textbf{\emph{Wireframe}} wird erstellt, welche von der \textbf{\emph{Entity}}-Klasse\cite{2022l} erbt. Diese Klasse beinhaltet insgesamt 18 andere Entitys. 12 davon sind Würfel die so skaliert und positioniert werden, dass sie die Kanten eines großen Würfels bilden. Die anderen 6 sind ebenfalls Würfel, welche jedoch so skaliert werden, dass sie quadratischen Flächen formen. Diese Flächen werden dann so positioniert, dass die Seitenflächen des großen Würfels bilden. Da diese Seitenflächen nicht nötig zu sehen sind, kann man entweder den $\alpha$-Wert der Farbe oder den $\alpha$-Wert einzeln auf 0 setzen, beide Werte sind die Sichtbarkeitswerte \cite{2022p}. Bei dieser Umsetzung wird letzteres angewandt. Sowohl den Kanten, als auch den Seitenflächen wird eine Box als Kollisionskörper unter \emph{self.collider} zugeteilt, damit die Boids daran abprallen können\cite{2022r}. \hyperref[CodeRaum]{\textbf{\emph{[Code]}}} \newline\newline \scriptsize (Warum diese Klasse erstellt werden muss, wird im Teil \hyperref[sec:seperation]{\textbf{\emph{seperation()}}} erklärt.)
 \newpage
 \normalsize\subsection{Boids}\label{sec:Boid}
 Die Darstellung der Boids erfolgt durch die Implementierung der gleichnamigen Klasse \textbf{\emph{Boid}}. Diese Klasse erbt von der Klasse \textbf{\emph{Entity}}\cite{2022l}, welche laut den Entwicklern von Ursina die \emph{"god class"} ist\cite{godclass}. 
-Den Boids wird eine selbsterstellte .blender-Datei als Model gegeben. Dieses Model gleicht einer Pyramide. Die Farbe dieser Pyramide wird mithilfe des \emph{random\textunderscore color()} Befehls der Klasse \textbf{\emph{color}} festgelegt, welche innerhalb \emph{self.color} gespeichert wird\cite{color}. Des Weiteren speichert der Boid seine Position sowohl in einem Tuple unter \emph{self.position} und als auch in drei einzelnen Variablen \emph{self.x}, \emph{self.y} und \emph{self.z}. Um die Bewegung zu ermöglichen wird dem Boid eine Ausrichtung gegeben, die er unter \emph{self.rotation} speichert\cite{2022l}. Um die Geschwindigkeit zu variieren wird die Geschwindigkeit, die Beschleunigung und die zu maximal erreichende Geschwindigkeit unter \emph{self.vel}, \emph{self.acel} und \emph{self.maxVel} gespeichert. Um das Verhalten an den Wänden zu ändern, speichert der Boid den aktuellen Modus unter \emph{self.mode}. Damit der Boid die \textbf{Raycasts} der anderen Boids auslösen kann, wird dem Boid ein Körper zugeteilt der dies ermöglicht, welcher unter \emph{self.collider} gespeichert wurde. Den Boids wird eine Box zugeteilt, da die von den vorgegebenen Beispielen am passendsten sind\cite{2022r}.
+Den Boids wird eine selbsterstellte .blender-Datei als Model gegeben. Dieses Model gleicht einer Pyramide. Die Farbe dieser Pyramide wird mithilfe des \emph{random\textunderscore color()} Befehls der Klasse \textbf{\emph{color}} festgelegt, welche innerhalb \emph{self.color} gespeichert wird\cite{color}. Des Weiteren speichert der Boid seine Position sowohl in einem Tuple unter \emph{self.position} und als auch in drei einzelnen Variablen \emph{self.x}, \emph{self.y} und \emph{self.z}. Um die Bewegung zu ermöglichen wird dem Boid eine Ausrichtung gegeben, die er unter \emph{self.rotation} speichert\cite{2022l}. Um die Geschwindigkeit zu variieren wird die Geschwindigkeit, die Beschleunigung und die zu maximal erreichende Geschwindigkeit unter \emph{self.vel}, \emph{self.acel} und \emph{self.maxVel} gespeichert. Um das Verhalten an den Wänden zu ändern, speichert der Boid den aktuellen Modus unter \emph{self.mode}. Damit der Boid die \textbf{Raycasts}\cite{raycast} der anderen Boids auslösen kann, wird dem Boid ein Körper zugeteilt der dies ermöglicht, welcher unter \emph{self.collider} gespeichert wurde. Den Boids wird eine Box zugeteilt, da die von den vorgegebenen Beispielen am passendsten sind\cite{2022r}.
 Nach dem Konstruktor werden die Getter, die die Werte der Eigenschaften zurückgeben und die Setter, die die Werte der Eigenschaften überschreiben, deklariert.
 Im folgenden werden die weiteren Funktionen erklärt:\newline
 	
-\underline{\textbf{updateVel()}}\label{sec:updateVel}
+\subsubsection{updateVel()}\label{sec:updateVel}
 Damit sich die Boids nicht mit der selben Geschwindigkeit bewegen, wird hier die Geschwindigkeit mithilfe der Addition der Beschleunigung \emph{self.acel} erhöht.
 \newline
 		
-\underline{\textbf{closeBoids()}}\label{sec:closeBoids}
-Damit der Boid sich an die vorgegebenen Regeln halten kann, muss er wissen welche Boids sich in seiner Nähe befinden. Dafür wird in dieser Funktion die Liste in der alle Boids gespeichert wurden (siehe \hyperref[sec:createBoids]{\emph{\textbf{createBoids()}}}) durchgegangen und überprüft ob die Distanz\cite{distance} in zwischen dem Boid und dem zu vergleichenden Boid unter einem bestimmten Wert liegt. Falls dies zu trifft wird der zu vergleichende Boid in eine Liste hinzugefügt, die alle Boids in der Nähe beinhaltet. Diese Liste wird am Ende zurückgegeben. Mithilfe dieser Funktion wird dem Boid ein gewisser Sichtbereich gegeben, da er nicht weiter als der festgelegt Wert "sehen" kann.\hyperref[CodecloseBoids]{\textbf{\emph{[Code]}}}
+\subsubsection{closeBoids()}\label{sec:closeBoids}
+Damit der Boid sich an die vorgegebenen Regeln halten kann, muss er wissen welche Boids sich in seiner Nähe befinden. Dafür wird in dieser Funktion die Liste in der alle Boids gespeichert wurden (siehe \hyperref[sec:createBoids]{\emph{\textbf{createBoids()}}}) durchgegangen und überprüft ob die \textbf{Distanz}\cite{distance} zwischen dem Boid und dem zu vergleichenden Boid unter einem bestimmten Wert liegt. Falls dies zutrifft wird der zu vergleichende Boid in eine Liste hinzugefügt, die alle Boids in der Nähe beinhaltet. Diese Liste wird am Ende zurückgegeben. Mithilfe dieser Funktion wird dem Boid ein gewisser Sichtbereich gegeben, da er nicht weiter als der festgelegt Wert "sehen" kann.\hyperref[CodecloseBoids]{\textbf{\emph{[Code]}}}
 \newline
 		
-\underline{\textbf{alignment()}}\label{sec:alignment}
+\subsubsection{alignment()}\label{sec:alignment}
 Diese Funktion ist dazu da um die \hyperref[sec:Alignment]{2. Regel \textbf{\emph{"Alignment"}}} zu befolgen. Dafür werden anfangs die Boids in der Nähe mithilfe der \hyperref[sec:closeBoids]{\emph{\textbf{closeBoids()}}}-Funktion bestimmt, und in der \emph{proximity}-Liste gespeichert. Darauf werden alle Werte die etwas mit der Bewegung zu tun haben, d.h. sowohl die Rotationswerte als auch alle Werte der Geschwindigkeit des Boids gespeichert. Das Selbe wird nun mit jedem Boid gemacht der in der \emph{proximity}-Liste gespeichert ist. Für jeden gespeicherten Wert wird der Durchschnitt berechnet. Nach der Berechnung werden die Eigenschaften mit diesen Durchschnittswerten überschrieben.
 \newline\newline
 
+\subsubsection{seperation(); cohesion()}
 Damit der Boid die Regeln \hyperref[sec:Seperation]{\textbf{\emph{"Seperation"}}} und \hyperref[sec:Cohesion]{\textbf{\emph{"Cohesion"}}} befolgt gibt es zwei Umsetzungsversuche:\newline\newline
 \underline{\textbf{Versuch 1}} \emph{ressourcensparend}
 \begin{itemize}
@@ -124,21 +126,21 @@ Damit der Boid die Regeln \hyperref[sec:Seperation]{\textbf{\emph{"Seperation"}}
 	\item \textbf{cohesion()}\label{sec:cohesion}\newline
 	Wie auch in der Funktion davor, werden zuerst die Boids in der Nähe in einer Liste gespeichert. Daraufhin wird mithilfe dieser Liste die Durchschnittsposition des gesamten \textbf{Flocks} berechnet. Falls die Distanz\cite{distance} zwischen der eigenen Position und der Durchschnittsposition größer als 2 beträgt, wird dem Boid, die Differenz aus der Durchschnittsposition und der eigenen Position, multipliziert mit 0.5 von der eigenen Position abgezogen, um den Abstand zu verringern.\hyperref[Codecohesion]{\textbf{\emph{[Code]}}}
 \end{itemize}
+\newpage
+\underline{\textbf{Versuch 2}} \emph{ressourcenkonsumierend}\label{sec:seperationCohesion}\newline
+Bei diesem Versuch werden in der \textbf{\emph{seperationCohesion()}}-Funktion 5 \textbf{Raycasts} erstellt die in Bewegungsrichtung, nach vorne, nach hinten , nach links und nach rechts gerichtet sind. Wenn einer der \textbf{Raycasts}\cite{raycast} etwas berührt, wird die \textbf{Distanz}\cite{HitInfo} herausgefunden. Falls diese über 2 liegt, lenkt der Boid zu dem berührten Boid, womit \hyperref[sec:Cohesion]{\textbf{\emph{Cohesion}}} erfüllt wird. Falls die Distanz unter 2 liegt, lenkt der Boid vom berührten Boid, damit \hyperref[sec:Seperation]{\textbf{\emph{Seperation}}} erfüllt wird.\hyperref[CodeseperationCohesion]{\textbf{\emph{[Code]}}}
 
-\underline{\textbf{Versuch 2}} \emph{ressourcenkonsumierend}\label{sec:seperationCohesion}
-Bei diesem Versuch werden in der \textbf{\emph{seperationCohesion()}}-Funktion 5 \textbf{Raycasts} erstellt die in Bewegungsrichtung, nach vorne, nach hinten , nach links und nach rechts gerichtet sind. Wenn einer der \emph{Raycasts}\cite{raycast} etwas berührt, wird die Distanz\cite{HitInfo} herausgefunden. Falls diese über 2 liegt, lenkt der Boid zu dem berührten Boid, womit \hyperref[sec:Cohesion]{\textbf{\emph{Cohesion}}} erfüllt wird. Falls die Distanz unter 2 liegt, lenkt der Boid vom berührten Boid, damit \hyperref[sec:Seperation]{\textbf{\emph{Seperation}}} erfüllt wird.\hyperref[CodeseperationCohesion]{\textbf{\emph{[Code]}}}
-
-\textbf{Anmerkung:}
+\scriptsize\textbf{Anmerkung:}
 Bei Performance-Problemen empfehle ich die \hyperref[sec:seperationCohesion]{\textbf{\emph{seperationCohesion()}}}-Funktion in der \hyperref[sec:update]{\textbf{\emph{update()}}}-Funktion auszukommentieren und dafür die \hyperref[sec:seperation]{\textbf{\emph{seperation()}}}- und \hyperref[sec:cohesion]{\textbf{\emph{cohesion()}}}-Funktion zu entkommentieren.
-\newline\newline
+\newline
 
 		
-\underline{\textbf{avoidWall()}}\label{sec:avoidWall}
-Diese Funktion verändert das Verhalten der Boids in der Nähe der Wände. Dafür erstellt der Boid einen \textbf{Raycast}\cite{raycast}, der in Bewegungsrichtung gerichtet ist. Falls dieser \textbf{Raycast} etwas berührt werden vier weitere erstellt, nur dieses Mal nach nach vorne, hinten , rechts und links gerichtet. Danach wird nach dem Herausfinden der \emph{kleinsten} Distanz\cite{HitInfo} entschieden, in welche Richtung die Rotation durch Addition eines Produktes verändert wird.
+\normalsize\subsubsection{avoidWall()}\label{sec:avoidWall}
+Diese Funktion verändert das Verhalten der Boids in der Nähe der Wände.\newline Dafür erstellt der Boid einen \textbf{Raycast}\cite{raycast}, der in Bewegungsrichtung gerichtet ist. Falls dieser \textbf{Raycast} etwas berührt werden vier weitere erstellt, nur dieses Mal nach nach vorne, hinten , rechts und links gerichtet. Danach wird nach dem Herausfinden der \emph{kleinsten} Distanz\cite{HitInfo} entschieden, in welche Richtung die Rotation durch Addition eines Produktes verändert wird.\newline\newline
 \scriptsize\textbf{Anmerkung:} Bei dem Versuch es zu implementieren, ist mir aufgefallen, dass die Boids durch die Wände schreiten und nie umdrehen. Die einzige logische Möglichkeit, womit ich dies erklären, kann ist das durch die \hyperref[sec:move]{\textbf{\emph{move()}}}-Funktion die Boids die Wände überspringen und dadurch der \textbf{Raycast} nicht aktiviert wird. Man könnte es versuchen zu lösen, indem man bei Überschreitung die Position überschreibt, damit die \textbf{Raycasts} eventuell auslösen.
 \newline\newline
 	
-\normalsize\underline{\textbf{move()}}\label{sec:move}
+\normalsize\subsubsection{move()}\label{sec:move}
 Diese Funktion ermöglicht die Fortbewegung des Boids durch Addition des Produkts aus der Bewegungsrichtung und der Geschwindigkeit dividiert durch 1000. Des Weiteren wird die Geschwindigkeit erhöht, durch den Aufruf der \hyperref[sec:updateVel]{\textbf{\emph{updateVel()}}}-Funktion.
 In dieser Funktion wird neben der Bewegung auch das Verhalten an den Wänden bestimmt durch Abgleichung des Moduswertes.\newline
 \begin{itemize}
@@ -147,7 +149,7 @@ In dieser Funktion wird neben der Bewegung auch das Verhalten an den Wänden bes
 \item Falls der Wert auf 3 liegt, wird der \hyperref[sec:Pong]{\textbf{\emph{"PONG"}}-Modus} aufgerufen. Dabei wird versucht bei Überschreitung der Grenzwerte bestimmte Rotationswerte nach dem "Einfallswinkel entspricht Ausgleichswinkel"-Prinzip zu ändern, dies hat jedoch mithilfe der Rechnung *-1-180 oder anderen Methoden\cite{Space2022} nicht funktioniert, da es zu viele Spezialfälle gibt um es allgemein zu verfassen, und außerdem vermute ich, dass es ebenfalls aufgrund des Gimbal-Locks\cite{2022o} nicht funktioniert.
 \end{itemize}
 		
-\underline{\textbf{update()}}\label{sec:update}
+\subsubsection{update()}\label{sec:update}
 Da diese Funktion jedes Bild automatisch aufgerufen wird\cite{update}, ruft sie alle nötigen Funtkionen auf. D.h. \hyperref[sec:move]{\textbf{\emph{move()}}}, \hyperref[sec:cohesion]{\textbf{\emph{cohesion()}}}, \hyperref[sec:seperation]{\textbf{\emph{seperation()}}} und \hyperref[sec:alignment]{\textbf{\emph{alignment()}}}.
 			
 \subsection{Funktionen im Fenster}
@@ -171,27 +173,27 @@ Wie auch die \hyperref[sec:update]{\textbf{\emph{update()}}}-Funtkion\cite{updat
 \section{wichtigste Funktionen}
 \subsection{Fenster}\label{CodeFenster}
 \begin{lstlisting}[style=mystyle, language=Python]
-#Fenster wird erstellt
+ #Fenster wird erstellt
 app = Ursina()
-#Fenstertitel wird festgelegt
+ #Fenstertitel wird festgelegt
 window.title = "Boids Simulation"
-#Fenster wird ausgefuehrt
+ #Fenster wird ausgefuehrt
 app.run()
 \end{lstlisting}
 \subsection{Kamera}\label{Kamera}
 \begin{lstlisting}[style=mystyle, language=Python]
-#Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
+ #Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
 camera.position = (0,10,-350)
-#EditorCamera ermoeglicht die Veraenderung der Kamera
+ #EditorCamera ermoeglicht die Veraenderung der Kamera
 EditorCamera()
 \end{lstlisting}
 
 \subsection{Wireframe}\label{CodeRaum}
 \begin{lstlisting}[style=mystyle, language=Python]
-#Erzeugung des Wuerfels
+ #Erzeugung des Wuerfels
 wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x = 102)
 ...
-#Erzeugung der Waende
+ #Erzeugung der Waende
 w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(110,110,0), color = color.red, alpha = 0)
 \end{lstlisting}
 \subsection{closeBoids()}\label{CodecloseBoids}
@@ -258,6 +260,13 @@ def seperationCohesion(self):
 		temp = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), randint(0,360), randint(0,360), randint(0,360), uniform(50.0, 300.0), uniform(0.0, 10.0), 300.0, 1, groesse)
 		Liste_Boids.append(temp)
 	...
+\end{lstlisting}
+\subsection{createInstructions}\label{CodeCreateInstructions}
+\begin{lstlisting}[style=mystyle, language=Python]
+def createInstruction():
+	text_Beschreibung = ''' ... '''
+
+	beschreibung = Text(text_Beschreibung, line_height = 0.5, scale = 0.7, x = -.8, y = -.12, color = color.white)
 \end{lstlisting}
 \newpage
 %Abbildungsverzeichnis
