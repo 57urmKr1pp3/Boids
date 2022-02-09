@@ -171,7 +171,7 @@ Wie auch die \hyperref[sec:update]{\textbf{\emph{update()}}}-Funtkion\cite{updat
 %wichtigste Funktionen
 \newpage
 \section{wichtigste Funktionen}
-\subsection{Fenster}\label{CodeFenster}
+\subsection{Fenster}(Main.py Zeilen 460-465, 488-489)\label{CodeFenster}
 \begin{lstlisting}[style=mystyle, language=Python]
  #Fenster wird erstellt
 app = Ursina()
@@ -180,7 +180,7 @@ window.title = "Boids Simulation"
  #Fenster wird ausgefuehrt
 app.run()
 \end{lstlisting}
-\subsection{Kamera}\label{Kamera}
+\subsection{Kamera}(Main.py Zeilen 469-472)\label{Kamera}
 \begin{lstlisting}[style=mystyle, language=Python]
  #Kameraposition wird veraendert um den Bereich von Anfang an zu sehen
 camera.position = (0,10,-350)
@@ -188,7 +188,7 @@ camera.position = (0,10,-350)
 EditorCamera()
 \end{lstlisting}
 
-\subsection{Wireframe}\label{CodeRaum}
+\subsection{Wireframe}(Main.py Zeilen 300-323)\label{CodeRaum}
 \begin{lstlisting}[style=mystyle, language=Python]
  #Erzeugung des Wuerfels
 wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x = 102)
@@ -196,7 +196,7 @@ wf1 = Entity(model = "cube", collider = 'box', position = (0, -51, -51), scale_x
  #Erzeugung der Waende
 w1 = Entity(model = 'cube', collider = 'box', position = (0,0,-52),scale=(110,110,0), color = color.red, alpha = 0)
 \end{lstlisting}
-\subsection{closeBoids()}\label{CodecloseBoids}
+\subsection{closeBoids()}(Main.py Zeilen 86-97)\label{CodecloseBoids}
 \begin{lstlisting}[style=mystyle, language=Python]
 def closeBoids(self):
     close = []
@@ -210,7 +210,7 @@ def closeBoids(self):
 \end{lstlisting}
 
 \newpage
-\subsection{createBoids()}\label{CodecreateBoids}
+\subsection{createBoids()}(Main.py Zeilen 400-404)\label{CodecreateBoids}
 \begin{lstlisting}[style=mystyle, language=Python]
 def createBoids(anzahl):
 	#Boids werden erstellt und in der Liste gespeichert
@@ -218,7 +218,7 @@ def createBoids(anzahl):
 		temp = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), randint(0,360), randint(0,360), randint(0,360), uniform(0.0, 100.0), uniform(0.0, 10.0), 300.0, 1, groesse)
 		Liste_Boids.append(temp)
 \end{lstlisting}
-\subsection{seperation()}\label{Codeseperation}
+\subsection{seperation()} (Main.py zeilen 132-142)\label{Codeseperation}
 \begin{lstlisting}[style=mystyle, language=Python]
 def seperation(self)
 	proximity = self.closeBoids()
@@ -228,7 +228,7 @@ def seperation(self)
 			center = (self.position + i.position)/2
 			self.position += Vec3(center - self.position) *.05
 \end{lstlisting}
-\subsection{cohesion()}\label{Codecohesion}
+\subsection{cohesion()}(Main.py Zeilen 143-154)\label{Codecohesion}
 \begin{lstlisting}[style=mystyle, language=Python]
 def cohesion(self):
 	proximity = self.closeBoids()
@@ -239,7 +239,7 @@ def cohesion(self):
 	if distance(self.position, center) >= 2:
 		self.position -= Vec3(center - self.position) *.05
 \end{lstlisting}
-\subsection{seperationCohesion()}\label{CodeseperationCohesion}
+\subsection{seperationCohesion()}(main.py Zeilen 157-203)\label{CodeseperationCohesion}
 \begin{lstlisting}[style=mystyle, language=Python]
 def seperationCohesion(self):
 	...
@@ -254,14 +254,14 @@ def seperationCohesion(self):
 	...
 \end{lstlisting}
 \newpage
-\subsection{input()}\label{Codeinput}
+\subsection{input()}(mian.py Zeilen 406-429)\label{Codeinput}
 \begin{lstlisting}[style=mystyle, language=Python]
 	if held_keys["+"]:
 		temp = Boid(randint(-30,30), randint(-30,30), randint(-30, 30), randint(0,360), randint(0,360), randint(0,360), uniform(50.0, 300.0), uniform(0.0, 10.0), 300.0, 1, groesse)
 		Liste_Boids.append(temp)
 	...
 \end{lstlisting}
-\subsection{createInstructions}\label{CodeCreateInstructions}
+\subsection{createInstructions}(Main.py Zeilen 431-456)\label{CodeCreateInstructions}
 \begin{lstlisting}[style=mystyle, language=Python]
 def createInstruction():
 	text_Beschreibung = ''' ... '''

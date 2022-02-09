@@ -320,7 +320,82 @@ class Wireframe (Entity):
         self.w3 = Entity(model='cube', collider = 'box', position = (-52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
         self.w4 = Entity(model='cube', collider = 'box', position = (52, 0,0), scale = (0, 110, 110), color = color.red, alpha = 0)
         self.w5 = Entity(model = 'cube', collider = 'box', position = (0,-52,0), scale = (110,0,110), color = color.red, alpha = 0)
-        self.w5 = Entity(model = 'cube', collider = 'box', position = (0,52,0), scale = (110,0,110), color = color.red, alpha = 0)
+        self.w6 = Entity(model = 'cube', collider = 'box', position = (0,52,0), scale = (110,0,110), color = color.red, alpha = 0)
+
+    def getWF1(self):
+        return self.wf1
+    def getWF2(self):
+        return self.wf2
+    def getWF3(self):
+        return self.wf3
+    def getWF4(self):
+        return self.wf4
+    def getWF5(self):
+        return self.wf5
+    def getWF6(self):
+        return self.wf6
+    def getWF7(self):
+        return self.wf7
+    def getWF8(self):
+        return self.wf8
+    def getWF9(self):
+        return self.wf9
+    def getWF10(self):
+        return self.wf10
+    def getWF11(self):
+        return self.wf11
+    def getWF12(self):
+        return self.wf12
+    def getW1(self):
+        return self.w1
+    def getW2(self):
+        return self.w2
+    def getW3(self):
+        return self.w3
+    def getW4(self):
+        return self.w4
+    def getW5(self):
+        return self.w5
+    def getW6(self):
+        return self.w6
+    def setWF1(self, nWF):
+        self.wf1 = nWF    
+    def setWF2(self, nWF):
+        self.wf2 = nWF
+    def setWF3(self, nWF):
+        self.wf3 = nWF
+    def setWF4(self, nWF):
+        self.wf4 = nWF
+    def setWF5(self, nWF):
+        self.wf5 = nWF
+    def setWF6(self, nWF):
+        self.wf6 = nWF
+    def setWF7(self, nWF):
+        self.wf7 = nWF
+    def setWF8(self, nWF):
+        self.wf8 = nWF
+    def setWF9(self, nWF):
+        self.wf9 = nWF
+    def setWF10(self, nWF):
+        self.wf10 = nWF
+    def setWF11(self, nWF):
+        self.wf11 = nWF
+    def setWF12(self, nWF):
+        self.wf12 = nWF
+    def setW1(self, nW):
+        self.w1 = nW
+    def setW2(self, nW):
+        self.w2 = nW
+    def setW3(self, nW):
+        self.w3 = nW
+    def setW4(self, nW):
+        self.w4 = nW
+    def setW5(self, nW):
+        self.w5 = nW
+    def setW6(self, nW):
+        self.w6 = nW
+
+
 
 def createBoids(anzahl):
     #Boids werden erstellt und in der Liste gespeichert
