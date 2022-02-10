@@ -4,9 +4,8 @@ from random import randint, uniform
 
 
 class Boid (Entity):
-
-    def __init__ (self, posX, posY, posZ, rotX, rotY, rotZ, vel, acel, maxVel, mode, scale):
-        super().__init__(model="sprites.blend", position = (posX, posY, posZ), rotation = (rotX, rotY, rotZ), color = color.random_color(), scale = scale)
+    def __init__ (self, posX, posY, posZ, rotX, rotY, rotZ, vel, acel, maxVel, mode, groesse):
+        super().__init__(model="sprites.blend", position = (posX, posY, posZ), rotation = (rotX, rotY, rotZ), color = color.random_color(), scale = groesse)
         self.x = posX
         self.y = posY
         self.z = posZ
@@ -412,7 +411,7 @@ def input(key):
         Liste_Boids.append(temp)
 
     if held_keys["-"]:
-        #Der letzte Boid wird deaktiviert um ihn nicht mehr zu sehen
+        #Der letzte Boid wird deaktiviert um nicht mehr angezeigt zu werden
         Liste_Boids[len(Liste_Boids)-1].disable()
         #letzter Boid wird aus der Liste entfernt
         Liste_Boids.pop()
@@ -478,8 +477,8 @@ wireframe = Wireframe()
 createInstruction()
 #Boids
 ######################################################################################################################################
-anzahl = 10
-groesse = 30
+anzahl = 1
+groesse = (500,500,500)
 ######################################################################################################################################
 
 Liste_Boids = []
