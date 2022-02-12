@@ -111,7 +111,7 @@ def},
   url   = {https://www.ursinaengine.org/cheat_sheet.html#input_handler},
 }
 
-@WWW{text,
+@WWW{Takeru2022,
   date   = {2022-01-15},
   title  = {Ursina Engine Tutorial 02: Displaying Text and Keyboard Input},
   url    = {https://www.youtube.com/watch?v=kb2wJYTwTHw},

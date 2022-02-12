@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  9 FEB 2022 01:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.15)  12 FEB 2022 02:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -699,15 +699,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 []$[]$
  []
 
+
+Overfull \hbox (42.32039pt too wide) in paragraph at lines 82--84
+[] \OT1/cmr/m/n/12 Diese Regel be-sagt, dass die Boids in die Mitte des Schwarm
+s steuern.[]\OT1/cmr/bx/n/8 [Umsetzung][] 
+ []
+
+
+Overfull \hbox (46.7032pt too wide) in paragraph at lines 87--88
+\OT1/cmr/m/n/12 ermoglicht wer-den, die An-zahl der Boids und deren Ver-hal-te
+n zu andern.[]\OT1/cmr/bx/n/12 [Umsetzung][] 
+ []
+
 [6]
 
-Package natbib Warning: Citation `text' on page 7 undefined on input line 97.
-
-
-Overfull \hbox (11.83635pt too wide) in paragraph at lines 100--101
-\OT1/cmr/m/n/12 unter \OT1/cmr/m/it/12 self.collider \OT1/cmr/m/n/12 zugeteilt,
- damit die Boids daran abprallen konnen[[]]. []\OT1/cmr/bx/it/12 [Code][] 
- []
+Package natbib Warning: Citation `Takeru2022' on page 7 undefined on input line
+ 97.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
@@ -738,6 +745,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--119
 Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
+
+
+LaTeX Warning: Hyper reference `UmsetzungCohesion' on page 9 undefined on input
+ line 121.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
@@ -2228,14 +2239,17 @@ Package natbib Warning: There were undefined citations.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: 06201C2736EADE4D9A9008D0BEA079B2;4199.
  ) 
 Here is how much of TeX's memory you used:
- 16947 strings out of 478659
- 279571 string characters out of 2845920
- 949718 words of memory out of 3000000
- 34635 multiletter control sequences out of 15000+600000
+ 16949 strings out of 478659
+ 279684 string characters out of 2845920
+ 949815 words of memory out of 3000000
+ 34637 multiletter control sequences out of 15000+600000
  420209 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,6n,76p,1284b,1393s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2254,9 +2268,9 @@ live/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 cm/cmr8.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmti12.pfb><C:/Users/olive/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmtt8.pfb>
-Output written on Dokumentation.pdf (16 pages, 313726 bytes).
+Output written on Dokumentation.pdf (16 pages, 315896 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
+ 603 PDF objects out of 1000 (max. 8388607)
  149 named destinations out of 1000 (max. 500000)
  286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

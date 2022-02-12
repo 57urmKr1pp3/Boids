@@ -139,6 +139,7 @@ class Boid (Entity):
                     center = (self.position + i.position)/2
                     #Die Differenz zwischen der Mitte und der eigenen Position wird von der Position subtrahiert um den Abstand zu erhoehen
                     self.position += Vec3(center - self.position) *.05
+                    
     def cohesion(self):
         #Die Boids in der Naehe werden gespeichert
         proximity = self.closeBoids()
@@ -205,7 +206,7 @@ class Boid (Entity):
     def avoidWall(self):
         #Raycasts
         #Ein Raycast wird erzeugt der in die Bewegungsrichtung 5 Einheiten weit ausgerchtet ist 
-        raycastup = raycast(origin = self.position, direction = self.up, distance = 10, traverse_target = scene, ignore = (self,), debug = True)
+        raycastup = raycast(origin = self.position, direction = self.up, distance = 7, traverse_target = scene, ignore = (self,), debug = True)
         #Wenn dieser Raycast etwas beruehrt werden weitere Raycast erstellt, die in 4 weitere Richtungen ausgerichtet sind
         if raycastup.hit:
             raycastfront = raycast(origin = self.position, direction = (self.up + self.forward), distance = 10, traverse_target = scene, ignore = (self,), debug = True)
