@@ -5,44 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 32 items.
 Database file #1: JabRefDB/Quellenverzeichnis.bib
-Warning--entry type for "2022" isn't style-file defined
---line 1 of file JabRefDB/Quellenverzeichnis.bib
-Warning--entry type for "2022d" isn't style-file defined
---line 13 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "2022k" isn't style-file defined
---line 27 of file JabRefDB/Quellenverzeichnis.bib
+--line 7 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "2022l" isn't style-file defined
---line 39 of file JabRefDB/Quellenverzeichnis.bib
+--line 19 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "Lague2022" isn't style-file defined
---line 51 of file JabRefDB/Quellenverzeichnis.bib
+--line 31 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "Space2022" isn't style-file defined
---line 65 of file JabRefDB/Quellenverzeichnis.bib
+--line 45 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "2022m" isn't style-file defined
---line 79 of file JabRefDB/Quellenverzeichnis.bib
+--line 59 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "2022o" isn't style-file defined
---line 91 of file JabRefDB/Quellenverzeichnis.bib
+--line 71 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "andysarcade2022" isn't style-file defined
---line 103 of file JabRefDB/Quellenverzeichnis.bib
+--line 83 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "2022p" isn't style-file defined
---line 117 of file JabRefDB/Quellenverzeichnis.bib
+--line 97 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "2022q" isn't style-file defined
---line 129 of file JabRefDB/Quellenverzeichnis.bib
+--line 109 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "2022r" isn't style-file defined
---line 141 of file JabRefDB/Quellenverzeichnis.bib
+--line 121 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "godclass" isn't style-file defined
---line 153 of file JabRefDB/Quellenverzeichnis.bib
+--line 133 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "color" isn't style-file defined
---line 165 of file JabRefDB/Quellenverzeichnis.bib
+--line 145 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "distance" isn't style-file defined
---line 177 of file JabRefDB/Quellenverzeichnis.bib
+--line 157 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "HitInfo" isn't style-file defined
---line 193 of file JabRefDB/Quellenverzeichnis.bib
+--line 173 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "raycast" isn't style-file defined
---line 209 of file JabRefDB/Quellenverzeichnis.bib
+--line 189 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "update" isn't style-file defined
---line 221 of file JabRefDB/Quellenverzeichnis.bib
+--line 201 of file JabRefDB/Quellenverzeichnis.bib
 Warning--entry type for "input" isn't style-file defined
---line 235 of file JabRefDB/Quellenverzeichnis.bib
+--line 215 of file JabRefDB/Quellenverzeichnis.bib
+Warning--entry type for "Takeru2022" isn't style-file defined
+--line 227 of file JabRefDB/Quellenverzeichnis.bib
+Warning--entry type for "2022" isn't style-file defined
+--line 241 of file JabRefDB/Quellenverzeichnis.bib
 Warning--to sort, need author or key in 2022k
 Warning--to sort, need author or key in 2022
 Warning--to sort, need author or key in 2022l
@@ -52,8 +52,8 @@ Warning--to sort, need author or key in 2022p
 Warning--to sort, need author or key in 2022r
 Warning--to sort, need author or key in godclass
 Warning--to sort, need author or key in color
-Warning--to sort, need author or key in distance
 Warning--to sort, need author or key in raycast
+Warning--to sort, need author or key in distance
 Warning--to sort, need author or key in HitInfo
 Warning--to sort, need author or key in 2022o
 Warning--to sort, need author or key in update
@@ -76,10 +76,10 @@ Warning--empty year in update
 Warning--empty year in andysarcade2022
 Warning--empty year in Lague2022
 Warning--empty year in Space2022
-Warning--empty year in 2022d
+Warning--empty year in Takeru2022
 You've used 19 entries,
             2773 wiz_defined-function locations,
-            656 strings with 7027 characters,
+            657 strings with 7025 characters,
 and the built_in function-call counts, 4865 in all, are:
 = -- 453
 > -- 40

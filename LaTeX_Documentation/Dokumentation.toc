@@ -1,35 +1,36 @@
-\contentsline {section}{\numberline {1}UML-Diagramm}{4}{section.1}%
-\contentsline {section}{\numberline {2}Grundidee}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Umgebung}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Darstellung des Raumes}{5}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Allgemeines zu den Boids}{5}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Verhalten an Wänden}{6}{subsubsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.4}Regeln}{6}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Eingabe}{6}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Umsetzung}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Allgemein}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Fenster}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Raum}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Boids}{8}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}updateVel()}{8}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}closeBoids()}{8}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}alignment()}{9}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}seperation(); cohesion()}{9}{subsubsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.5}avoidWall()}{10}{subsubsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {3.4.6}move()}{10}{subsubsection.3.4.6}%
-\contentsline {subsubsection}{\numberline {3.4.7}update()}{11}{subsubsection.3.4.7}%
-\contentsline {subsection}{\numberline {3.5}Funktionen im Fenster}{11}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Eingabe}{11}{subsection.3.6}%
-\contentsline {section}{\numberline {4}wichtigste Funktionen}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Fenster}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Kamera}{12}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Wireframe}{12}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}closeBoids()}{12}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}createBoids()}{13}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}seperation()}{13}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}cohesion()}{13}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}seperationCohesion()}{13}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}input()}{14}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}createInstructions}{14}{subsection.4.10}%
-\contentsline {section}{\numberline {5}Quellennachweis}{15}{section.5}%
-\contentsline {section}{References}{15}{section*.2}%
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}UML-Diagramm}{3}{section.1}%
+\contentsline {section}{\numberline {2}Grundidee}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Umgebung}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Darstellung des Raumes}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Allgemeines zu den Boids}{4}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Verhalten an Wänden}{5}{subsubsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.4}Regeln}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Eingabe}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Umsetzung}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Allgemein}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fenster}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Raum}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Boids}{7}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}updateVel()}{7}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}closeBoids()}{7}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}alignment()}{8}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}seperation(); cohesion()}{8}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}avoidWall()}{9}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}move()}{9}{subsubsection.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.4.7}update()}{10}{subsubsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.5}Funktionen im Fenster}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Eingabe}{10}{subsection.3.6}%
+\contentsline {section}{\numberline {4}wichtigste Funktionen}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Fenster}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Kamera}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}createInstructions}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Wireframe}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}closeBoids()}{11}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}seperation()}{12}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}cohesion()}{12}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}seperationCohesion()}{12}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}update()}{13}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}createBoids()}{13}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}input()}{13}{subsection.4.11}%
+\contentsline {section}{Literatur}{14}{section*.2}%
