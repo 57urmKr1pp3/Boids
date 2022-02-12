@@ -322,6 +322,7 @@ class Wireframe (Entity):
         self.w5 = Entity(model = 'cube', collider = 'box', position = (0,-52,0), scale = (110,0,110), color = color.red, alpha = 0)
         self.w6 = Entity(model = 'cube', collider = 'box', position = (0,52,0), scale = (110,0,110), color = color.red, alpha = 0)
 
+    #Getter
     def getWF1(self):
         return self.wf1
     def getWF2(self):
@@ -358,6 +359,8 @@ class Wireframe (Entity):
         return self.w5
     def getW6(self):
         return self.w6
+        
+    #Setter
     def setWF1(self, nWF):
         self.wf1 = nWF    
     def setWF2(self, nWF):
